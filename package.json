@@ -1,0 +1,17 @@
+{
+  "name": "hrsaworkbook",
+  "version": "1.0.0",
+  "description": "my version",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "author": "jfffrsn",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.71.1"
+  }
+}

@@ -1,0 +1,79 @@
+.site-footer {
+  color: var(--white);
+
+  &__nav {
+    background-color: var(--hrsa-gray-dark);
+    padding: 2rem;
+  }
+  &__nav-header {
+    color: #aaa;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+
+    &__item {
+      margin: 0.5rem 0;
+      padding: 0;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+  &__copyright {
+    background-color: var(--hrsa-gray-darker);
+    padding: 1rem;
+  }
+  &__copyright-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 0;
+    color: #bababa;
+    font-size: 0.8125rem;
+  }
+  &__copyright-info {
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1;
+  }
+  &__hhs-logo {
+    max-width: 3rem;
+    width: 100%;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  &__copyright-product {
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  &__copyright-product-text {
+    margin-right: 1rem;
+    > a {
+      color: #f2f2f2;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        border-bottom: #fff 1px solid;
+      }
+    }
+  }
+  &__hrsa-logo {
+    max-width: 6rem;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}

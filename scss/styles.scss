@@ -1,0 +1,18 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --hrsa-blue: #2f5470;
+  --hrsa-orange: #eca421;
+  --hrsa-teal: #3a8080;
+  --hrsa-gray-lightest: #eef2f5;
+  --hrsa-gray-dark: #333;
+  --hrsa-gray-darker: #272727;
+}
+
+body {
+  background-color: var(--hrsa-gray-lightest);
+  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@import "footer.scss";
