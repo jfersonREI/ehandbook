@@ -1,28 +1,6 @@
 :root {
-  --white: #fff;
-  --black: #000;
-
-  --hrsa-blue-dark: #0e3c58;
-  --hrsa-blue-medium: #d4e4f1;
-  --hrsa-blue-light: #f4f9fe;
-
-  --hrsa-gray: #dbdbdb;
-  --hrsa-gray-light: #f0f0f0;
-
-  --hrsa-teal-dark: #004c4c;
-  --hrsa-teal-medium: #407972;
-  --hrsa-teal-light: #e7f7f6;
-
-  --hrsa-red-dark: #9a0101;
-  --hrsa-gray-blue-light: #deecf3;
-  --hrsa-yellow-light: #faedcb;
-
-  --hrsa-blue: #2f5470;
-  --hrsa-orange: #eca421;
-  --hrsa-teal: #3a8080;
-  --hrsa-gray-lightest: #eef2f5;
-  --hrsa-gray-dark: #333;
-  --hrsa-gray-darker: #272727;
+  --white: #ffffff;
+  --black: #000000;
 
   --hrsa-gray-025: #fcfcfd;
   --hrsa-gray-050: #f9fafb;
@@ -36,20 +14,68 @@
   --hrsa-gray-800: #182230;
   --hrsa-gray-900: #101828;
   --hrsa-gray-950: #0c111d;
+
+  --hrsa-blue-50: #f4f9fe;
+  --hrsa-blue-100: #87acc8;
+  --hrsa-blue-200: #6e96b5;
+  --hrsa-blue-300: #5780a0;
+  --hrsa-blue-400: #426a89;
+  --hrsa-blue-500: #2f5470;
+  --hrsa-blue-600: #224b69;
+  --hrsa-blue-700: #174160;
+  --hrsa-blue-800: #0e3755;
+  --hrsa-blue-900: #072c48;
+
+  --hrsa-teal-50: #e7f7f6;
+  --hrsa-teal-100: #91cac3;
+  --hrsa-teal-200: #7ab9b1;
+  --hrsa-teal-300: #65a59d;
+  --hrsa-teal-400: #529088;
+  --hrsa-teal-500: #407972;
+  --hrsa-teal-600: #327069;
+  --hrsa-teal-700: #25655e;
+  --hrsa-teal-800: #1b5951;
+  --hrsa-teal-900: #124b44;
+
+  --hrsa-red-50: #f6cfcf;
+  --hrsa-red-100: #f38080;
+  --hrsa-red-200: #e46060;
+  --hrsa-red-300: #d04040;
+  --hrsa-red-400: #b72020;
+  --hrsa-red-500: #9a0101;
+  --hrsa-red-600: #980000;
+  --hrsa-red-700: #900000;
+  --hrsa-red-800: #840000;
+  --hrsa-red-900: #730000;
+
+  --hrsa-orange-50: #faedcb;
+  --hrsa-orange-100: #f2c26b;
+  --hrsa-orange-200: #efb346;
+  --hrsa-orange-300: #eca421;
+  --hrsa-orange-400: #da9312;
+  --hrsa-orange-500: #bf8106;
+  --hrsa-orange-600: #bb7800;
+  --hrsa-orange-700: #b26c00;
+  --hrsa-orange-800: #9f5f00;
+  --hrsa-orange-900: #805000;
+
+  --hrsa-body-bg: #eef2f5;
+  --hrsa-footer-dark: #333;
+  --hrsa-footer-darker: #272727;
+
+  --disabled-dark: #adadad;
+  --disabled-light: #e6e6e6;
+  --disabled: #c9c9c9;
 }
 
 body {
-  background-color: var(--hrsa-gray-lightest);
+  background-color: var(--hrsa-body-bg);
   font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-//disabled
-$disabled-dark: #adadad;
-$disabled-light: #e6e6e6;
-$disabled: #c9c9c9;
-
 @import "layout/skipnav.scss";
+@import "layout/main.scss";
 @import "layout/hhs-banner.scss";
 @import "layout/breadcrumbs.scss";
 @import "layout/footer.scss";

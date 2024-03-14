@@ -27,7 +27,7 @@
     color: red;
   }
   &:disabled {
-    background-color: $disabled;
+    background-color: var(--disabled);
     color: #fff;
     pointer-events: none;
   }
@@ -47,15 +47,15 @@
 
   //primary
   &--primary {
-    background-color: red;
+    background-color: var(--hrsa-blue-500);
     color: #fff;
     &:hover {
-      background-color: blue;
-      color: #fff;
+      background-color: var(--hrsa-orange-300);
+      color: var(--hrsa-blue-500);
     }
     &:active {
-      background-color: green;
-      color: #fff;
+      background-color: var(--hrsa-orange-400);
+      color: var(--hrsa-blue-500);
     }
   }
   //light
@@ -76,22 +76,22 @@
   //outline-primary
   &--outline-primary {
     background-color: transparent;
-    box-shadow: inset 0 0 0 2px red;
-    color: red;
+    box-shadow: inset 0 0 0 1px var(--hrsa-blue-500);
+    color: var(--hrsa-blue-500);
     &:disabled {
       background-color: transparent;
-      box-shadow: inset 0 0 0 2px $disabled;
-      color: $disabled;
+      box-shadow: inset 0 0 0 1px var(--disabled);
+      color: var(--disabled);
     }
     &:hover {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 2px green;
-      color: green;
+      background-color: var(--hrsa-gray-200);
+      box-shadow: inset 0 0 0 1px var(--hrsa-blue-700);
+      color: var(--hrsa-blue-700);
     }
     &:active {
-      background-color: transparent;
-      box-shadow: inset 0 0 0 2px blue;
-      color: blue;
+      background-color: var(--hrsa-gray-300);
+      box-shadow: inset 0 0 0 1px var(--hrsa-blue-900);
+      color: var(--hrsa-blue-900);
     }
   }
 }

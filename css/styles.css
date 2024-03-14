@@ -1,23 +1,6 @@
 :root {
-  --white: #fff;
-  --black: #000;
-  --hrsa-blue-dark: #0e3c58;
-  --hrsa-blue-medium: #d4e4f1;
-  --hrsa-blue-light: #f4f9fe;
-  --hrsa-gray: #dbdbdb;
-  --hrsa-gray-light: #f0f0f0;
-  --hrsa-teal-dark: #004c4c;
-  --hrsa-teal-medium: #407972;
-  --hrsa-teal-light: #e7f7f6;
-  --hrsa-red-dark: #9a0101;
-  --hrsa-gray-blue-light: #deecf3;
-  --hrsa-yellow-light: #faedcb;
-  --hrsa-blue: #2f5470;
-  --hrsa-orange: #eca421;
-  --hrsa-teal: #3a8080;
-  --hrsa-gray-lightest: #eef2f5;
-  --hrsa-gray-dark: #333;
-  --hrsa-gray-darker: #272727;
+  --white: #ffffff;
+  --black: #000000;
   --hrsa-gray-025: #fcfcfd;
   --hrsa-gray-050: #f9fafb;
   --hrsa-gray-100: #f2f4f7;
@@ -30,10 +13,56 @@
   --hrsa-gray-800: #182230;
   --hrsa-gray-900: #101828;
   --hrsa-gray-950: #0c111d;
+  --hrsa-blue-50: #f4f9fe;
+  --hrsa-blue-100: #87acc8;
+  --hrsa-blue-200: #6e96b5;
+  --hrsa-blue-300: #5780a0;
+  --hrsa-blue-400: #426a89;
+  --hrsa-blue-500: #2f5470;
+  --hrsa-blue-600: #224b69;
+  --hrsa-blue-700: #174160;
+  --hrsa-blue-800: #0e3755;
+  --hrsa-blue-900: #072c48;
+  --hrsa-teal-50: #e7f7f6;
+  --hrsa-teal-100: #91cac3;
+  --hrsa-teal-200: #7ab9b1;
+  --hrsa-teal-300: #65a59d;
+  --hrsa-teal-400: #529088;
+  --hrsa-teal-500: #407972;
+  --hrsa-teal-600: #327069;
+  --hrsa-teal-700: #25655e;
+  --hrsa-teal-800: #1b5951;
+  --hrsa-teal-900: #124b44;
+  --hrsa-red-50: #f6cfcf;
+  --hrsa-red-100: #f38080;
+  --hrsa-red-200: #e46060;
+  --hrsa-red-300: #d04040;
+  --hrsa-red-400: #b72020;
+  --hrsa-red-500: #9a0101;
+  --hrsa-red-600: #980000;
+  --hrsa-red-700: #900000;
+  --hrsa-red-800: #840000;
+  --hrsa-red-900: #730000;
+  --hrsa-orange-50: #faedcb;
+  --hrsa-orange-100: #f2c26b;
+  --hrsa-orange-200: #efb346;
+  --hrsa-orange-300: #eca421;
+  --hrsa-orange-400: #da9312;
+  --hrsa-orange-500: #bf8106;
+  --hrsa-orange-600: #bb7800;
+  --hrsa-orange-700: #b26c00;
+  --hrsa-orange-800: #9f5f00;
+  --hrsa-orange-900: #805000;
+  --hrsa-body-bg: #eef2f5;
+  --hrsa-footer-dark: #333;
+  --hrsa-footer-darker: #272727;
+  --disabled-dark: #adadad;
+  --disabled-light: #e6e6e6;
+  --disabled: #c9c9c9;
 }
 
 body {
-  background-color: var(--hrsa-gray-lightest);
+  background-color: var(--hrsa-body-bg);
   font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -73,6 +102,10 @@ body {
   position: relative;
 }
 
+.site-main {
+  padding: 1rem 0;
+}
+
 .hhs-banner {
   width: 100%;
   background-color: #272727;
@@ -104,7 +137,7 @@ body {
 
 .breadcrumb {
   font-size: 0.75rem;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 0;
 }
 .breadcrumb__list {
@@ -179,7 +212,7 @@ body {
   color: var(--white);
 }
 .site-footer__nav {
-  background-color: var(--hrsa-gray-dark);
+  background-color: var(--hrsa-footer-dark);
   padding: 2rem 0;
 }
 .site-footer__nav-header {
@@ -218,7 +251,7 @@ body {
   border-bottom: #fff 1px solid;
 }
 .site-footer__copyright {
-  background-color: var(--hrsa-gray-darker);
+  background-color: var(--hrsa-footer-darker);
   padding: 1rem;
 }
 .site-footer__copyright-group {
@@ -347,7 +380,7 @@ body {
 .icon-task-list__secondary-text {
   text-align: right;
   color: var(--hrsa-gray-400);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
 }
 .icon-task-list__actions {
   padding: 0;
@@ -395,7 +428,7 @@ body {
   color: red;
 }
 .icon-btn:disabled {
-  background-color: #c9c9c9;
+  background-color: var(--disabled);
   color: #fff;
   pointer-events: none;
 }
@@ -413,16 +446,16 @@ body {
   fill: currentColor;
 }
 .icon-btn--primary {
-  background-color: red;
+  background-color: var(--hrsa-blue-500);
   color: #fff;
 }
 .icon-btn--primary:hover {
-  background-color: blue;
-  color: #fff;
+  background-color: var(--hrsa-orange-300);
+  color: var(--hrsa-blue-500);
 }
 .icon-btn--primary:active {
-  background-color: green;
-  color: #fff;
+  background-color: var(--hrsa-orange-400);
+  color: var(--hrsa-blue-500);
 }
 .icon-btn--light {
   background-color: transparent;
@@ -438,21 +471,21 @@ body {
 }
 .icon-btn--outline-primary {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px red;
-  color: red;
+  box-shadow: inset 0 0 0 1px var(--hrsa-blue-500);
+  color: var(--hrsa-blue-500);
 }
 .icon-btn--outline-primary:disabled {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #c9c9c9;
-  color: #c9c9c9;
+  box-shadow: inset 0 0 0 1px var(--disabled);
+  color: var(--disabled);
 }
 .icon-btn--outline-primary:hover {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px green;
-  color: green;
+  background-color: var(--hrsa-gray-200);
+  box-shadow: inset 0 0 0 1px var(--hrsa-blue-700);
+  color: var(--hrsa-blue-700);
 }
 .icon-btn--outline-primary:active {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px blue;
-  color: blue;
+  background-color: var(--hrsa-gray-300);
+  box-shadow: inset 0 0 0 1px var(--hrsa-blue-900);
+  color: var(--hrsa-blue-900);
 }

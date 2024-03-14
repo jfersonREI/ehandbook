@@ -2,7 +2,7 @@
   color: var(--white);
 
   &__nav {
-    background-color: var(--hrsa-gray-dark);
+    background-color: var(--hrsa-footer-dark);
     padding: 2rem 0;
   }
   &__nav-header {
@@ -44,7 +44,7 @@
     }
   }
   &__copyright {
-    background-color: var(--hrsa-gray-darker);
+    background-color: var(--hrsa-footer-darker);
     padding: 1rem;
   }
   &__copyright-group {
