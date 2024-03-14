@@ -1,12 +1,41 @@
 :root {
   --white: #fff;
   --black: #000;
+
+  --hrsa-blue-dark: #0e3c58;
+  --hrsa-blue-medium: #d4e4f1;
+  --hrsa-blue-light: #f4f9fe;
+
+  --hrsa-gray: #dbdbdb;
+  --hrsa-gray-light: #f0f0f0;
+
+  --hrsa-teal-dark: #004c4c;
+  --hrsa-teal-medium: #407972;
+  --hrsa-teal-light: #e7f7f6;
+
+  --hrsa-red-dark: #9a0101;
+  --hrsa-gray-blue-light: #deecf3;
+  --hrsa-yellow-light: #faedcb;
+
   --hrsa-blue: #2f5470;
   --hrsa-orange: #eca421;
   --hrsa-teal: #3a8080;
   --hrsa-gray-lightest: #eef2f5;
   --hrsa-gray-dark: #333;
   --hrsa-gray-darker: #272727;
+
+  --hrsa-gray-025: #fcfcfd;
+  --hrsa-gray-050: #f9fafb;
+  --hrsa-gray-100: #f2f4f7;
+  --hrsa-gray-200: #eaecf0;
+  --hrsa-gray-300: #d0d5dd;
+  --hrsa-gray-400: #98a2b3;
+  --hrsa-gray-500: #667085;
+  --hrsa-gray-600: #475467;
+  --hrsa-gray-700: #344054;
+  --hrsa-gray-800: #182230;
+  --hrsa-gray-900: #101828;
+  --hrsa-gray-950: #0c111d;
 }
 
 body {
@@ -15,6 +44,15 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-@import "skipnav.scss";
-@import "breadcrumbs.scss";
-@import "footer.scss";
+//disabled
+$disabled-dark: #adadad;
+$disabled-light: #e6e6e6;
+$disabled: #c9c9c9;
+
+@import "layout/skipnav.scss";
+@import "layout/hhs-banner.scss";
+@import "layout/breadcrumbs.scss";
+@import "layout/footer.scss";
+
+@import "components/icon-task-list.scss";
+@import "components/icon-btn.scss";
