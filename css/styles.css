@@ -14,6 +14,42 @@ body {
   font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.site-skipnav {
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  background: #0b4778;
+  left: 0;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: -5rem;
+  transition: 0.15s ease-in-out;
+  z-index: 100;
+}
+.site-skipnav:visited {
+  color: #fff;
+}
+.site-skipnav:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-skipnav:active {
+  color: #fff;
+}
+.site-skipnav:focus {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0;
+  background: #0b4778;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.15s ease-in-out;
+}
+.site-skipnav__container {
+  position: relative;
+}
+
 .site-footer {
   color: var(--white);
 }
@@ -36,9 +72,25 @@ body {
 .site-footer__nav-list__item {
   margin: 0.5rem 0;
   padding: 0;
+  color: #f2f2f2;
+  font-size: 0.875rem;
 }
 .site-footer__nav-list__item:first-of-type {
   margin-top: 0;
+}
+.site-footer__nav-list__item i {
+  margin-right: 0.75rem;
+}
+.site-footer__nav-list__item > a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.site-footer__nav-list__item > a:hover, .site-footer__nav-list__item > a:focus {
+  color: var(--white);
+  text-decoration: none;
+}
+.site-footer__nav-list__item > a:hover span, .site-footer__nav-list__item > a:focus span {
+  border-bottom: #fff 1px solid;
 }
 .site-footer__copyright {
   background-color: var(--hrsa-gray-darker);

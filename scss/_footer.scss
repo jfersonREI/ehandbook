@@ -20,8 +20,26 @@
     &__item {
       margin: 0.5rem 0;
       padding: 0;
+      color: #f2f2f2;
+      font-size: 0.875rem;
       &:first-of-type {
         margin-top: 0;
+      }
+      i {
+        margin-right: 0.75rem;
+      }
+      > a {
+        color: #f2f2f2;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          color: var(--white);
+          text-decoration: none;
+
+          span {
+            border-bottom: #fff 1px solid;
+          }
+        }
       }
     }
   }
