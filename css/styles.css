@@ -106,6 +106,53 @@ body {
   padding: 1rem 0;
 }
 
+.foo-header {
+  background-color: forestgreen;
+  height: 100px;
+}
+
+.foo-crumbs {
+  background-color: lawngreen;
+  padding: 1rem;
+}
+
+.foo-main {
+  background-color: gold;
+}
+.foo-main--site-sidebar-mini-open {
+  padding-left: 80px;
+  background-image: linear-gradient(90deg, #fff, #fff 80px, gold 80px, gold 80px);
+}
+
+.foo-sidebar-mini {
+  background-color: white;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  display: inline-block;
+}
+
+.foo-sidebar-mini-to-top {
+  background-color: purple;
+  width: 80px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.foo-sidebar-mini-to-top--show {
+  display: block;
+  opacity: 1;
+}
+
+.foo-footer {
+  background-color: brown;
+  height: 100px;
+}
+
 .hhs-banner {
   width: 100%;
   background-color: #272727;
