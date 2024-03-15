@@ -173,8 +173,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-flex;
-  height: 0.5rem;
-  width: 0.5rem;
+  height: 0.625rem;
+  width: 0.625rem;
   content: "";
 }
 @media only screen and (min-width: 480px) {
@@ -194,18 +194,19 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-flex;
-    height: 0.5rem;
-    width: 0.5rem;
+    height: 0.625rem;
+    width: 0.625rem;
     content: "";
   }
 }
 .breadcrumb__link {
   text-decoration: none;
   font-weight: 600;
-  color: #2f5470;
+  color: var(--hrsa-blue-500);
 }
 .breadcrumb__link:hover, .breadcrumb__link:focus {
   text-decoration: underline;
+  color: var(--hrsa-blue-700);
 }
 
 .site-footer {
@@ -315,6 +316,8 @@ body {
   display: flex;
   align-items: center;
   border-bottom: var(--hrsa-gray-300) 1px solid;
+  text-decoration: none;
+  color: var(--black);
 }
 .icon-task-list__item:last-of-type {
   border-bottom: 0;
@@ -375,11 +378,11 @@ body {
   font-size: 0.8125rem;
   padding: 0.125rem 0;
   margin: 0;
-  color: var(--hrsa-gray-400);
+  color: var(--hrsa-gray-500);
 }
 .icon-task-list__secondary-text {
   text-align: right;
-  color: var(--hrsa-gray-400);
+  color: var(--hrsa-gray-500);
   font-size: 0.75rem;
 }
 .icon-task-list__actions {
@@ -443,6 +446,19 @@ body {
   display: block;
   width: 1.125rem;
   height: 1.125rem;
+  fill: currentColor;
+}
+.icon-btn--xs {
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+}
+.icon-btn--xs svg,
+.icon-btn--xs img {
+  display: block;
+  width: 1rem;
+  height: 1rem;
   fill: currentColor;
 }
 .icon-btn--primary {
