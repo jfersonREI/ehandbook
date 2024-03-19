@@ -1,8 +1,8 @@
-$site-header-height: 100px;
-$site-sidebar-mini-width: 80px;
+$site-header-height: 80px;
+$site-sidebar-mini-width: 64px;
 
 .foo-header {
-  background-color: forestgreen;
+  background-color: var(--hrsa-blue-500);
   height: $site-header-height;
 }
 .foo-crumbs {
@@ -34,14 +34,17 @@ $site-sidebar-mini-width: 80px;
   display: inline-block;
 }
 .foo-sidebar-mini-to-top {
-  background-color: purple;
+  background-color: var(--hrsa-blue-800);
+  color: var(--white);
   width: $site-sidebar-mini-width;
   height: $site-header-height;
   position: fixed;
   top: 0;
   left: 0;
-
+  transition-property: opacity;
+  transition-duration: 200ms;
   opacity: 0;
+
   &--show {
     display: block;
     opacity: 1;
