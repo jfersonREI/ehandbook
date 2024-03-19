@@ -68,6 +68,13 @@
   --disabled: #c9c9c9;
 }
 
+/* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: var(--hrsa-body-bg);
   font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
@@ -80,9 +87,11 @@ body {
 
 @import "layout/hhs-banner.scss";
 @import "layout/breadcrumbs.scss";
+@import "layout/nav-secondary.scss";
 @import "layout/footer.scss";
 
 @import "components/icon-task-list.scss";
 @import "components/icon-btn.scss";
+@import "components/icon-btn-list.scss";
 @import "components/sidebar-top-btn.scss";
 @import "components/sidebar-menu.scss";

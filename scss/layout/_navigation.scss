@@ -5,12 +5,9 @@ $site-sidebar-mini-width: 64px;
   background-color: var(--hrsa-blue-500);
   height: $site-header-height;
 }
-.foo-crumbs {
-  background-color: lawngreen;
-  padding: 1rem;
-}
+
 .foo-main {
-  background-color: gold;
+  background-color: var(--hrsa-body-bg);
 
   &--site-sidebar-mini-open {
     padding-left: $site-sidebar-mini-width;
@@ -18,8 +15,8 @@ $site-sidebar-mini-width: 64px;
       90deg,
       #fff,
       #fff $site-sidebar-mini-width,
-      gold $site-sidebar-mini-width,
-      gold $site-sidebar-mini-width
+      var(--hrsa-body-bg) $site-sidebar-mini-width,
+      var(--hrsa-body-bg) $site-sidebar-mini-width
     );
   }
 }
@@ -44,6 +41,7 @@ $site-sidebar-mini-width: 64px;
   transition-property: opacity;
   transition-duration: 200ms;
   opacity: 0;
+  display: none;
 
   &--show {
     display: block;
@@ -52,6 +50,6 @@ $site-sidebar-mini-width: 64px;
 }
 
 .foo-footer {
-  background-color: brown;
+  background-color: var(--hrsa-footer-dark);
   height: 100px;
 }

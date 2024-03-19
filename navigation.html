@@ -15,14 +15,79 @@
     <!-- SKIPNAV -->
     <a class="site-skipnav" href="#main-content">Skip to main content</a>
     <!-- END SKIPNAV -->
-    <div class="foo-header">HEADER</div>
+    <div class="foo-header" id="top">HEADER</div>
     <!-- /.foo-header -->
     <main class="foo-main foo-main--site-sidebar-mini-open">
       <div class="container">
         <div class="row">
           <div class="col-md-12 mb-5">
-            <div class="foo-crumbs">CRUMBS</div>
-            <!-- /.foo-crumbs -->
+            <div class="nav-secondary">
+              <!-- BREADCRUMBS -->
+              <nav class="breadcrumb">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <ol class="breadcrumb__list">
+                        <li class="breadcrumb__list-item">
+                          <a href="" class="breadcrumb__link"
+                            ><span>Home</span></a
+                          >
+                        </li>
+                        <li class="breadcrumb__list-item">
+                          <a href="" class="breadcrumb__link"
+                            ><span>Federal Contracting</span></a
+                          >
+                        </li>
+                        <li class="breadcrumb__list-item">
+                          <a href="" class="breadcrumb__link"
+                            ><span>2nd to last item</span></a
+                          >
+                        </li>
+                        <li
+                          class="breadcrumb__list-item current"
+                          aria-current="page"
+                        >
+                          <span>Last item</span>
+                        </li>
+                      </ol>
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.container -->
+              </nav>
+              <!-- /.breadcrumb -->
+              <!-- END BREADCRUMBS -->
+
+              <ul class="icon-btn-list">
+                <li class="icon-btn-list__item">
+                  <button
+                    class="icon-btn icon-btn--sm icon-btn--primary"
+                    aria-label="Button Action"
+                  >
+                    <i class="fa-solid fa-bell"></i>
+                  </button>
+                </li>
+                <li class="icon-btn-list__item">
+                  <button
+                    class="icon-btn icon-btn--sm icon-btn--primary"
+                    aria-label="Button Action"
+                  >
+                    <i class="fa-solid fa-star"></i>
+                  </button>
+                </li>
+                <li class="icon-btn-list__item">
+                  <button
+                    class="icon-btn icon-btn--sm icon-btn--primary"
+                    aria-label="Button Action"
+                  >
+                    <i class="fa-solid fa-print"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- /.nav-secondary  -->
 
             <h2>MAIN</h2>
             <p>
@@ -98,7 +163,11 @@
 
     <div class="foo-sidebar-mini">
       <div class="foo-sidebar-mini-to-top">
-        <button class="sidebar-top-btn" aria-label="Back to top">
+        <button
+          class="sidebar-top-btn"
+          aria-label="Back to top"
+          onclick="window.location.href='#top';"
+        >
           <i class="fa-solid fa-chevron-up"></i>
         </button>
       </div>
