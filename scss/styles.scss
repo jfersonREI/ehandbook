@@ -63,6 +63,12 @@
   --hrsa-footer-dark: #333;
   --hrsa-footer-darker: #272727;
 
+  --hrsa-alert-info: #e7f6f8;
+  --hrsa-alert-warning: #faf3d1;
+  --hrsa-alert-success: #ecf3ec;
+  --hrsa-alert-error: #f4e3db;
+  --hrsa-alert-emergency: #9c3d10;
+
   --disabled-dark: #adadad;
   --disabled-light: #e6e6e6;
   --disabled: #c9c9c9;
@@ -87,7 +93,7 @@ body {
 
 @import "layout/hhs-banner.scss";
 @import "layout/breadcrumbs.scss";
-@import "layout/nav-secondary.scss";
+@import "layout/nav-crumb.scss";
 @import "layout/footer.scss";
 
 @import "components/icon-task-list.scss";
@@ -95,3 +101,4 @@ body {
 @import "components/icon-btn-list.scss";
 @import "components/sidebar-top-btn.scss";
 @import "components/sidebar-menu.scss";
+@import "components/alerts.scss";

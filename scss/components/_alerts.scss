@@ -1,0 +1,87 @@
+.site-alert {
+  background-color: #f0f0f0;
+  color: #1b1b1b;
+  &--info > &__body {
+    background-color: var(--hrsa-alert-info);
+    &::before {
+      background-image: url(../../img/alerts/icon-alert-info.svg);
+    }
+  }
+  &--warning > &__body {
+    background-color: var(--hrsa-alert-warning);
+    &::before {
+      background-image: url(../../img/alerts/icon-alert-warning.svg);
+    }
+  }
+  &--success > &__body {
+    background-color: var(--hrsa-alert-success);
+    &::before {
+      background-image: url(../../img/alerts/icon-alert-success.svg);
+    }
+  }
+  &--error > &__body {
+    background-color: var(--hrsa-alert-error);
+    &::before {
+      background-image: url(../../img/alerts/icon-alert-error.svg);
+    }
+  }
+  &--emergency > &__body {
+    background-color: var(--hrsa-alert-emergency);
+    color: var(--white);
+    &::before {
+      background-image: url(../../img/alerts/icon-alert-emergency.svg);
+    }
+    a {
+      color: var(--hrsa-gray-100);
+      &:hover,
+      &:focus {
+        color: var(--white);
+      }
+    }
+    .icon-btn--dark {
+      color: var(--white);
+    }
+  }
+
+  &__body {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 1.5rem 1.5rem 2.75rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--hrsa-gray-900);
+    &::before {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 1.25rem 1.25rem;
+      height: 1.25rem;
+      width: 1.25rem;
+      content: "";
+      display: block;
+      left: 0.75rem;
+      position: absolute;
+      top: 1.5rem;
+    }
+  }
+
+  &__copy {
+    flex: 1;
+  }
+
+  &__heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.01rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    margin: 0.125rem 0 0 0;
+  }
+}

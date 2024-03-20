@@ -85,6 +85,19 @@
       color: var(--hrsa-gray-600);
     }
   }
+  //dark
+  &--dark {
+    background-color: transparent;
+    color: var(--hrsa-gray-900);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: var(--hrsa-gray-900);
+    }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.15);
+      color: var(--hrsa-gray-900);
+    }
+  }
 
   //outline btns
   //outline-primary
