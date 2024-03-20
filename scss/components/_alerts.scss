@@ -4,32 +4,32 @@
   &--info > &__body {
     background-color: var(--hrsa-alert-info);
     &::before {
-      background-image: url(../../img/alerts/icon-alert-info.svg);
+      background-image: url(../img/alerts/icon-alert-info.svg);
     }
   }
   &--warning > &__body {
     background-color: var(--hrsa-alert-warning);
     &::before {
-      background-image: url(../../img/alerts/icon-alert-warning.svg);
+      background-image: url(../img/alerts/icon-alert-warning.svg);
     }
   }
   &--success > &__body {
     background-color: var(--hrsa-alert-success);
     &::before {
-      background-image: url(../../img/alerts/icon-alert-success.svg);
+      background-image: url(../img/alerts/icon-alert-success.svg);
     }
   }
   &--error > &__body {
     background-color: var(--hrsa-alert-error);
     &::before {
-      background-image: url(../../img/alerts/icon-alert-error.svg);
+      background-image: url(../img/alerts/icon-alert-error.svg);
     }
   }
   &--emergency > &__body {
     background-color: var(--hrsa-alert-emergency);
     color: var(--white);
     &::before {
-      background-image: url(../../img/alerts/icon-alert-emergency.svg);
+      background-image: url(../img/alerts/icon-alert-emergency.svg);
     }
     a {
       color: var(--hrsa-gray-100);

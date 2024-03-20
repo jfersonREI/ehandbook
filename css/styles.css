@@ -688,32 +688,32 @@ body {
   background-color: var(--hrsa-alert-info);
 }
 .site-alert--info > .site-alert__body::before {
-  background-image: url(../../img/alerts/icon-alert-info.svg);
+  background-image: url(../img/alerts/icon-alert-info.svg);
 }
 .site-alert--warning > .site-alert__body {
   background-color: var(--hrsa-alert-warning);
 }
 .site-alert--warning > .site-alert__body::before {
-  background-image: url(../../img/alerts/icon-alert-warning.svg);
+  background-image: url(../img/alerts/icon-alert-warning.svg);
 }
 .site-alert--success > .site-alert__body {
   background-color: var(--hrsa-alert-success);
 }
 .site-alert--success > .site-alert__body::before {
-  background-image: url(../../img/alerts/icon-alert-success.svg);
+  background-image: url(../img/alerts/icon-alert-success.svg);
 }
 .site-alert--error > .site-alert__body {
   background-color: var(--hrsa-alert-error);
 }
 .site-alert--error > .site-alert__body::before {
-  background-image: url(../../img/alerts/icon-alert-error.svg);
+  background-image: url(../img/alerts/icon-alert-error.svg);
 }
 .site-alert--emergency > .site-alert__body {
   background-color: var(--hrsa-alert-emergency);
   color: var(--white);
 }
 .site-alert--emergency > .site-alert__body::before {
-  background-image: url(../../img/alerts/icon-alert-emergency.svg);
+  background-image: url(../img/alerts/icon-alert-emergency.svg);
 }
 .site-alert--emergency > .site-alert__body a {
   color: var(--hrsa-gray-100);
