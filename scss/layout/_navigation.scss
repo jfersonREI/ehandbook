@@ -9,7 +9,7 @@ $site-sidebar-mini-width: 64px;
 .foo-main {
   background-color: var(--hrsa-body-bg);
 
-  &--site-sidebar-mini-open {
+  &--sidebar-mini-open {
     padding-left: $site-sidebar-mini-width;
     background-image: linear-gradient(
       90deg,
@@ -47,9 +47,4 @@ $site-sidebar-mini-width: 64px;
     display: block;
     opacity: 1;
   }
-}
-
-.foo-footer {
-  background-color: var(--hrsa-footer-dark);
-  height: 100px;
 }

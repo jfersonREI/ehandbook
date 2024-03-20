@@ -1,5 +1,8 @@
 .site-footer {
   color: var(--white);
+  &--sidebar-mini-open {
+    padding-left: $site-sidebar-mini-width;
+  }
 
   &__nav {
     background-color: var(--hrsa-footer-dark);

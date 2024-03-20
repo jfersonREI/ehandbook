@@ -120,7 +120,7 @@ body {
 .foo-main {
   background-color: var(--hrsa-body-bg);
 }
-.foo-main--site-sidebar-mini-open {
+.foo-main--sidebar-mini-open {
   padding-left: 64px;
   background-image: linear-gradient(90deg, #fff, #fff 64px, var(--hrsa-body-bg) 64px, var(--hrsa-body-bg) 64px);
 }
@@ -151,11 +151,6 @@ body {
 .foo-sidebar-mini-to-top--show {
   display: block;
   opacity: 1;
-}
-
-.foo-footer {
-  background-color: var(--hrsa-footer-dark);
-  height: 100px;
 }
 
 .hhs-banner {
@@ -267,6 +262,9 @@ body {
 
 .site-footer {
   color: var(--white);
+}
+.site-footer--sidebar-mini-open {
+  padding-left: 64px;
 }
 .site-footer__nav {
   background-color: var(--hrsa-footer-dark);
