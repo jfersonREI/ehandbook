@@ -1,8 +1,7 @@
 .landing-btn-list {
   display: grid;
-  row-gap: 20px;
-  column-gap: 30px;
-  background-color: plum;
+  row-gap: 1.5rem;
+  column-gap: 2rem;
 
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) {
