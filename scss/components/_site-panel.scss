@@ -83,12 +83,10 @@ $panel-padding-y: 1.5rem; //top bottom
     display: flex;
     align-items: center;
   }
-  &__subheader-search {
-    display: block;
-  }
+
   &__subheader-search-input {
     background-color: var(--white);
-    border: var(--hrsa-gray-300) 1px solid;
+    border: var(--hrsa-gray-400) 1px solid;
     border-radius: 0.25rem;
     font-size: 0.875rem;
     color: var(--hrsa-gray-900);
@@ -106,5 +104,22 @@ $panel-padding-y: 1.5rem; //top bottom
   &__subheader-btns {
     padding: 0;
     margin: 0 0 0 0.5rem;
+  }
+  &__subheader-search {
+    display: block;
+    position: relative;
+
+    &--has-button {
+      .site-panel {
+        &__subheader-search-input {
+          padding: 0.25rem 2rem 0.25rem 0.5rem;
+        }
+      }
+      .icon-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
   }
 }
