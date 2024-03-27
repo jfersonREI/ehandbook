@@ -63,4 +63,48 @@ $panel-padding-y: 1.5rem; //top bottom
   &__body {
     padding: $panel-padding-y $panel-padding-x;
   }
+  //subheader
+  &__subheader {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 2rem;
+  }
+  &__subheader-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--hrsa-gray-600);
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  &__subheader-actions {
+    display: flex;
+    align-items: center;
+  }
+  &__subheader-search {
+    display: block;
+  }
+  &__subheader-search-input {
+    background-color: var(--white);
+    border: var(--hrsa-gray-300) 1px solid;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--hrsa-gray-900);
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    min-height: 2rem;
+    &::placeholder {
+      color: var(--hrsa-gray-400);
+    }
+
+    &:focus-visible {
+      outline-offset: 2px;
+    }
+  }
+  &__subheader-btns {
+    padding: 0;
+    margin: 0 0 0 0.5rem;
+  }
 }
