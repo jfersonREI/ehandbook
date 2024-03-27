@@ -1,0 +1,66 @@
+$panel-padding-x: 1rem; //left right
+$panel-padding-y: 1.5rem; //top bottom
+
+.site-panel {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 3px 4px 15px var(--hrsa-gray-300);
+  margin: 0;
+  padding: 0;
+  &__header {
+    margin: 0;
+    padding: $panel-padding-y $panel-padding-x;
+    background-color: transparent;
+    color: var(--hrsa-blue-500);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &--bordered {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: $panel-padding-x;
+        right: $panel-padding-x;
+        border-bottom: 1px solid var(--hrsa-gray-300);
+        height: 1px;
+      }
+    }
+  }
+  &__header-icon {
+    color: currentColor;
+    background-color: transparent;
+    margin: 0 0.25rem 0 0;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg,
+    img {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+    }
+  }
+  &__header-title {
+    color: currentColor;
+    margin: 0;
+    padding: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+  }
+  &__header-btns {
+    padding: 0;
+    margin: 0 0 0 1rem;
+  }
+
+  //body
+  &__body {
+    padding: $panel-padding-y $panel-padding-x;
+  }
+}
