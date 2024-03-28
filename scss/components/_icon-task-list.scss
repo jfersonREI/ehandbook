@@ -4,7 +4,7 @@
   padding: 0;
   background-color: var(--white);
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
 
   &__item {
     flex: 1;
@@ -54,15 +54,67 @@
     margin-right: 1rem;
     font-size: 1.5rem;
     line-height: 1;
-    > svg {
-      fill: currentColor;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--dashboard {
-      color: #793967;
+      color: var(--icon-dashboard);
     }
-    &--layers {
-      color: #0d3c58;
+    &--layer {
+      color: var(--icon-layer);
+    }
+    &--report {
+      color: var(--icon-report);
+    }
+    &--task {
+      color: var(--icon-task);
+    }
+    &--training {
+      color: var(--icon-training);
+    }
+    &--folder {
+      color: var(--icon-folder);
+    }
+    &--monitoring {
+      color: var(--icon-monitoring);
+    }
+    &--sitemap {
+      color: var(--icon-sitemap);
+    }
+    &--document {
+      color: var(--icon-document);
+    }
+    &--doc {
+      color: var(--icon-doc);
+    }
+    &--xls {
+      color: var(--icon-xls);
+    }
+    &--ppt {
+      color: var(--icon-ppt);
+    }
+    &--pdf {
+      color: var(--icon-pdf);
+    }
+    &--jpg {
+      color: var(--icon-jpg);
+    }
+    &--msg {
+      color: var(--icon-msg);
+    }
+    &--zip {
+      color: var(--icon-zip);
+    }
+    &--mp4 {
+      color: var(--icon-mp4);
+    }
+    &--xml {
+      color: var(--icon-xml);
+    }
+
+    > svg {
+      fill: currentColor;
     }
   }
   &__content {

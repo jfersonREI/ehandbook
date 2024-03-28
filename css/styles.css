@@ -64,6 +64,24 @@
   --disabled-dark: #adadad;
   --disabled-light: #e6e6e6;
   --disabled: #c9c9c9;
+  --icon-dashboard: #793967;
+  --icon-layer: #0d3c58;
+  --icon-report: #7567a8;
+  --icon-task: #407974;
+  --icon-training: #105e8e;
+  --icon-folder: #cf9738;
+  --icon-monitoring: #5b5e5a;
+  --icon-sitemap: #815355;
+  --icon-document: #427b8a;
+  --icon-doc: #2a8cc4;
+  --icon-xls: #5b983f;
+  --icon-ppt: #e3703f;
+  --icon-pdf: #c9424e;
+  --icon-jpg: #689ebc;
+  --icon-msg: #4d5699;
+  --icon-zip: #e0ad21;
+  --icon-mp4: #015ca3;
+  --icon-xml: #4c8562;
 }
 
 /* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
@@ -366,7 +384,7 @@ body {
   padding: 0;
   background-color: var(--white);
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
 }
 .icon-task-list__item {
   flex: 1;
@@ -411,15 +429,66 @@ body {
   margin-right: 1rem;
   font-size: 1.5rem;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-task-list__icon--dashboard {
+  color: var(--icon-dashboard);
+}
+.icon-task-list__icon--layer {
+  color: var(--icon-layer);
+}
+.icon-task-list__icon--report {
+  color: var(--icon-report);
+}
+.icon-task-list__icon--task {
+  color: var(--icon-task);
+}
+.icon-task-list__icon--training {
+  color: var(--icon-training);
+}
+.icon-task-list__icon--folder {
+  color: var(--icon-folder);
+}
+.icon-task-list__icon--monitoring {
+  color: var(--icon-monitoring);
+}
+.icon-task-list__icon--sitemap {
+  color: var(--icon-sitemap);
+}
+.icon-task-list__icon--document {
+  color: var(--icon-document);
+}
+.icon-task-list__icon--doc {
+  color: var(--icon-doc);
+}
+.icon-task-list__icon--xls {
+  color: var(--icon-xls);
+}
+.icon-task-list__icon--ppt {
+  color: var(--icon-ppt);
+}
+.icon-task-list__icon--pdf {
+  color: var(--icon-pdf);
+}
+.icon-task-list__icon--jpg {
+  color: var(--icon-jpg);
+}
+.icon-task-list__icon--msg {
+  color: var(--icon-msg);
+}
+.icon-task-list__icon--zip {
+  color: var(--icon-zip);
+}
+.icon-task-list__icon--mp4 {
+  color: var(--icon-mp4);
+}
+.icon-task-list__icon--xml {
+  color: var(--icon-xml);
 }
 .icon-task-list__icon > svg {
   fill: currentColor;
-}
-.icon-task-list__icon--dashboard {
-  color: #793967;
-}
-.icon-task-list__icon--layers {
-  color: #0d3c58;
 }
 .icon-task-list__content {
   padding: 0 1rem;
