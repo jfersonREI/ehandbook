@@ -94,6 +94,15 @@
   --icon-xml: #4c8562;
 }
 
+// Small devices (landscape phones, 576px and up)
+$hrsa-breakpoint-sm: 576px;
+
+// Medium devices (tablets, 768px and up)
+$hrsa-breakpoint-md: 768px;
+
+// Large devices (desktops, 992px and up)
+$hrsa-breakpoint-lg: 992px;
+
 /* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
 @media screen and (prefers-reduced-motion: no-preference) {
   html {
