@@ -100,6 +100,20 @@
     }
   }
 
+  //light
+  &--search {
+    background-color: transparent;
+    color: var(--hrsa-gray-400);
+    &:hover {
+      background-color: var(--hrsa-gray-300);
+      color: var(--hrsa-gray-500);
+    }
+    &:active {
+      background-color: var(--hrsa-gray-300);
+      color: var(--hrsa-gray-600);
+    }
+  }
+
   //outline btns
   //outline-primary
   &--outline-primary {
