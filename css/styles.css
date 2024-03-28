@@ -990,6 +990,11 @@ body {
   display: flex;
   align-items: center;
 }
+.site-panel__subheader-search-label {
+  color: var(--hrsa-gray-500);
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+}
 .site-panel__subheader-search-input {
   background-color: var(--white);
   border: var(--hrsa-gray-400) 1px solid;

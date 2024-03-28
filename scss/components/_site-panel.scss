@@ -83,7 +83,11 @@ $panel-padding-y: 1.5rem; //top bottom
     display: flex;
     align-items: center;
   }
-
+  &__subheader-search-label {
+    color: var(--hrsa-gray-500);
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+  }
   &__subheader-search-input {
     background-color: var(--white);
     border: var(--hrsa-gray-400) 1px solid;
