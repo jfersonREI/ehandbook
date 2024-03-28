@@ -65,7 +65,7 @@ $panel-padding-y: 1.5rem; //top bottom
   }
   //subheader
   &__subheader {
-    background-color: none;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,6 +93,7 @@ $panel-padding-y: 1.5rem; //top bottom
     margin: 0;
     padding: 0.25rem 0.5rem;
     min-height: 2rem;
+    min-width: 16rem;
     &::placeholder {
       color: var(--hrsa-gray-400);
     }
@@ -121,5 +122,10 @@ $panel-padding-y: 1.5rem; //top bottom
         right: 0;
       }
     }
+  }
+
+  //info bar
+  &__info-bar {
+    background-color: burlywood;
   }
 }
