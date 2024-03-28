@@ -388,13 +388,19 @@ body {
   background-color: var(--white);
 }
 .icon-task-list__link:hover, .icon-task-list__link:focus {
-  background-color: red;
+  background-color: var(--hrsa-gray-100);
 }
 .icon-task-list__link--1-actions {
   padding-right: 48px;
 }
 .icon-task-list__link--2-actions {
   padding-right: 84px;
+}
+.icon-task-list__link:active {
+  background-color: var(--hrsa-gray-200);
+}
+.icon-task-list__link:focus-visible {
+  outline-offset: 0px;
 }
 .icon-task-list__icon {
   padding: 0;

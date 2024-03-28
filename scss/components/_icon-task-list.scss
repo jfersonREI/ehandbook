@@ -29,13 +29,19 @@
 
     &:hover,
     &:focus {
-      background-color: red;
+      background-color: var(--hrsa-gray-100);
     }
     &--1-actions {
       padding-right: 48px;
     }
     &--2-actions {
       padding-right: 84px;
+    }
+    &:active {
+      background-color: var(--hrsa-gray-200);
+    }
+    &:focus-visible {
+      outline-offset: 0px;
     }
   }
   &__icon {
