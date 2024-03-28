@@ -70,6 +70,7 @@ $panel-padding-y: 1.5rem; //top bottom
     align-items: center;
     justify-content: space-between;
     min-height: 2rem;
+    margin: 0 0 1rem 0;
   }
   &__subheader-title {
     font-size: 1.125rem;
@@ -131,6 +132,7 @@ $panel-padding-y: 1.5rem; //top bottom
     font-size: 14px;
     font-weight: 400;
     color: var(--hrsa-gray-600);
+    margin: 0 0 1rem 0;
   }
   &__info-bar-msg {
     display: inline-flex;
