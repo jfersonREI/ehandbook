@@ -384,11 +384,14 @@ body {
   align-items: center;
   padding: 1rem;
   text-decoration: none;
-  color: var(--black);
+  color: var(--hrsa-blue-500);
   background-color: var(--white);
 }
 .icon-task-list__link:hover, .icon-task-list__link:focus {
   background-color: var(--hrsa-gray-100);
+}
+.icon-task-list__link--highlight {
+  box-shadow: inset 4px 0px 0px 0px var(--hrsa-orange-300);
 }
 .icon-task-list__link--1-actions {
   padding-right: 48px;
