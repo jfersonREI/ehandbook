@@ -1170,12 +1170,20 @@ body {
 }
 .site-panel__info-bar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-flow: column;
+  align-items: normal;
+  justify-content: normal;
   font-size: 14px;
   font-weight: 400;
   color: var(--hrsa-gray-600);
   margin: 0 0 1rem 0;
+}
+@media (min-width: 768px) {
+  .site-panel__info-bar {
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .site-panel__info-bar-msg {
   display: inline-flex;
@@ -1188,6 +1196,11 @@ body {
   color: var(--hrsa-gray-400);
 }
 .site-panel__info-bar-count {
-  margin-left: 1rem;
+  margin: 8px 0 0 18px;
   white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .site-panel__info-bar-count {
+    margin: 0 0 0 1rem;
+  }
 }
