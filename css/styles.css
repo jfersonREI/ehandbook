@@ -1263,7 +1263,12 @@ body {
 .site-tasks-favorites__all {
   grid-area: all;
   background-color: var(--white);
-  padding-right: 1rem;
+  padding: 0 0 1rem 0;
+}
+@media (min-width: 768px) {
+  .site-tasks-favorites__all {
+    padding: 0 1rem 0 0;
+  }
 }
 .site-tasks-favorites__top {
   grid-area: top;
