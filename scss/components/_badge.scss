@@ -13,7 +13,7 @@
   height: 20px;
   border-radius: 10px;
   z-index: 1;
-  background-color: var(--hrsa-gray-600);
+  background-color: var(--hrsa-gray-500);
   color: var(--white);
   top: 0px;
   right: 0px;
@@ -21,7 +21,7 @@
   transform-origin: 100% 0%;
 
   &--gray {
-    background-color: var(--hrsa-gray-600);
+    background-color: var(--hrsa-gray-500);
   }
   &--blue {
     background-color: var(--hrsa-blue-800);

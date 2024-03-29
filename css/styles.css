@@ -737,7 +737,7 @@ body {
   height: 20px;
   border-radius: 10px;
   z-index: 1;
-  background-color: var(--hrsa-gray-600);
+  background-color: var(--hrsa-gray-500);
   color: var(--white);
   top: 0px;
   right: 0px;
@@ -745,7 +745,7 @@ body {
   transform-origin: 100% 0%;
 }
 .site-badge--gray {
-  background-color: var(--hrsa-gray-600);
+  background-color: var(--hrsa-gray-500);
 }
 .site-badge--blue {
   background-color: var(--hrsa-blue-800);
