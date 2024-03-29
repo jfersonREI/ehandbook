@@ -1,0 +1,19 @@
+.site-tasks-favorites {
+  background-color: transparent;
+  display: grid;
+  grid-template-areas: "all top";
+  grid-template-columns: 1fr 35%;
+  column-gap: 0;
+
+  &__all {
+    grid-area: all;
+    background-color: var(--white);
+    padding-right: 1rem;
+  }
+
+  &__top {
+    grid-area: top;
+    background-color: var(--hrsa-gray-200);
+    padding: 1rem;
+  }
+}

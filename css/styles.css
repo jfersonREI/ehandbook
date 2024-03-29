@@ -1240,3 +1240,21 @@ body {
     margin: 0 0 0 1rem;
   }
 }
+
+.site-tasks-favorites {
+  background-color: transparent;
+  display: grid;
+  grid-template-areas: "all top";
+  grid-template-columns: 1fr 35%;
+  column-gap: 0;
+}
+.site-tasks-favorites__all {
+  grid-area: all;
+  background-color: var(--white);
+  padding-right: 1rem;
+}
+.site-tasks-favorites__top {
+  grid-area: top;
+  background-color: var(--hrsa-gray-200);
+  padding: 1rem;
+}
