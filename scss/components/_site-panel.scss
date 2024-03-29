@@ -13,8 +13,14 @@ $panel-padding-y: 1.5rem; //top bottom
     background-color: transparent;
     color: var(--hrsa-blue-500);
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    align-items: normal;
     position: relative;
+
+    @media (min-width: $hrsa-breakpoint-md) {
+      flex-flow: row;
+      align-items: center;
+    }
 
     &--bordered {
       &::after {
@@ -35,15 +41,18 @@ $panel-padding-y: 1.5rem; //top bottom
     font-size: 1.5rem;
     width: 2rem;
     height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
     svg,
     img {
       display: block;
       width: 1.5rem;
       height: 1.5rem;
       fill: currentColor;
+    }
+    @media (min-width: $hrsa-breakpoint-md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__header-title {
@@ -56,7 +65,10 @@ $panel-padding-y: 1.5rem; //top bottom
   }
   &__header-btns {
     padding: 0;
-    margin: 0 0 0 1rem;
+    margin: 1rem 0 0 0;
+    @media (min-width: $hrsa-breakpoint-md) {
+      margin: 0 0 0 1rem;
+    }
   }
 
   //body
@@ -163,5 +175,6 @@ $panel-padding-y: 1.5rem; //top bottom
   }
   &__info-bar-count {
     margin-left: 1rem;
+    white-space: nowrap;
   }
 }
