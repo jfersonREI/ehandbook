@@ -1301,10 +1301,24 @@ body {
   padding: 0;
 }
 .favorite-top-header__icon {
-  background-color: coral;
+  background-color: transparent;
   margin-right: 0.375rem;
+  color: currentColor;
+  padding: 0;
+  flex-basis: 0.875rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .favorite-top-header__count {
-  background-color: chartreuse;
-  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 0 0.5rem;
+  padding: 0;
+}
+.favorite-top-header__count-numerator, .favorite-top-header__count-slash, .favorite-top-header__count-denominator {
+  margin: 0 2px;
 }
