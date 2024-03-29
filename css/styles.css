@@ -1255,6 +1255,6 @@ body {
 }
 .site-tasks-favorites__top {
   grid-area: top;
-  background-color: var(--hrsa-gray-200);
+  background-color: var(--hrsa-gray-100);
   padding: 1rem;
 }
