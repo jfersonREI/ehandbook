@@ -1270,3 +1270,41 @@ body {
   background-color: var(--hrsa-gray-100);
   padding: 1rem;
 }
+
+.favorite-top-header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.favorite-top-header--bordered::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--hrsa-gray-300);
+  height: 1px;
+}
+.favorite-top-header__title {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+}
+.favorite-top-header__text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--hrsa-gray-600);
+  margin: 0;
+  padding: 0;
+}
+.favorite-top-header__icon {
+  background-color: coral;
+  margin-right: 0.375rem;
+}
+.favorite-top-header__count {
+  background-color: chartreuse;
+  margin-left: 0.5rem;
+}
