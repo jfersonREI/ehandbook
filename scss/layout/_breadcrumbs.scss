@@ -18,7 +18,7 @@
     &:nth-last-child(2) {
       position: static;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: $hrsa-breakpoint-sm) {
       position: static;
     }
 
@@ -33,14 +33,14 @@
       height: 0.625rem;
       width: 0.625rem;
       content: "";
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: $hrsa-breakpoint-sm) {
         display: none;
       }
     }
     &::after {
       display: none;
     }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: $hrsa-breakpoint-sm) {
       &:not(:last-child)::after {
         margin-right: 0.25rem;
         margin-left: 0.25rem;

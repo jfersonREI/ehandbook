@@ -1,0 +1,30 @@
+.icon-task-header {
+  background-color: var(--hrsa-teal-500);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  &__col {
+    padding: 0.5rem 1rem;
+
+    min-width: 5rem;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: var(--white) 1px solid;
+    color: currentColor;
+    &:first-of-type {
+      border-left: 0;
+    }
+    &:not(:first-child) {
+      display: none;
+    }
+    @media (min-width: $hrsa-breakpoint-md) {
+      &:not(:first-child) {
+        display: block;
+      }
+    }
+  }
+}
