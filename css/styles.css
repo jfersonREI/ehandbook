@@ -1140,7 +1140,7 @@ body {
 }
 .site-panel__subheader-title {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--hrsa-gray-600);
   margin: 0 0 0.5rem 0;
   padding: 0;
@@ -1274,6 +1274,12 @@ body {
   grid-area: top;
   background-color: var(--hrsa-gray-100);
   padding: 1rem;
+  box-shadow: inset 0px 1px 0 0px var(--hrsa-gray-300);
+}
+@media (min-width: 768px) {
+  .site-tasks-favorites__top {
+    box-shadow: inset 1px 0px 0 0px var(--hrsa-gray-300);
+  }
 }
 
 .favorite-top-header {

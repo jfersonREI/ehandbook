@@ -28,5 +28,10 @@
     grid-area: top;
     background-color: var(--hrsa-gray-100);
     padding: 1rem;
+    box-shadow: inset 0px 1px 0 0px var(--hrsa-gray-300);
+
+    @media (min-width: $hrsa-breakpoint-md) {
+      box-shadow: inset 1px 0px 0 0px var(--hrsa-gray-300);
+    }
   }
 }
