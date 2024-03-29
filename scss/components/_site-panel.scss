@@ -166,11 +166,12 @@ $panel-padding-y: 1.5rem; //top bottom
   }
   &__info-bar-msg {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
   }
   &__info-bar-msg-icon {
     font-size: 12px;
-    margin-right: 0.375rem;
+    margin: 2px 6px 0 0;
+    padding: 0;
     color: var(--hrsa-gray-400);
   }
   &__info-bar-count {
