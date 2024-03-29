@@ -400,7 +400,7 @@ body {
   flex: 1;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1.25rem;
   text-decoration: none;
   color: var(--hrsa-blue-500);
   background-color: var(--white);
