@@ -1070,6 +1070,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media (min-width: 1200px) {
+  .landing-btn-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
 .landing-btn {
   background-color: var(--white);
