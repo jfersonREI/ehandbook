@@ -1,5 +1,5 @@
 .breadcrumb {
-  font-size: 0.75rem;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   &__list {
@@ -23,8 +23,8 @@
     }
 
     &:nth-last-child(2) .breadcrumb__link::before {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem;
+      margin-right: 4px;
+      margin-left: 4px;
       background-color: transparent;
       background-image: url(../img/breadcrumbs/seperator-back.svg);
       background-repeat: no-repeat;
@@ -42,8 +42,8 @@
     }
     @media only screen and (min-width: $hrsa-breakpoint-sm) {
       &:not(:last-child)::after {
-        margin-right: 0.25rem;
-        margin-left: 0.25rem;
+        margin-right: 4px;
+        margin-left: 4px;
         background-color: transparent;
         background-image: url(../img/breadcrumbs/seperator.svg);
         background-repeat: no-repeat;

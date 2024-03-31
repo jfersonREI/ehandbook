@@ -18,16 +18,16 @@
   &__all {
     grid-area: all;
     background-color: var(--white);
-    padding: 0 0 1rem 0;
+    padding: 0 0 16px 0;
     @media (min-width: $hrsa-breakpoint-md) {
-      padding: 0 1rem 0 0;
+      padding: 0 16px 0 0;
     }
   }
 
   &__top {
     grid-area: top;
     background-color: var(--hrsa-gray-100);
-    padding: 1rem;
+    padding: 16px;
     box-shadow: inset 0px 1px 0 0px var(--hrsa-gray-300);
 
     @media (min-width: $hrsa-breakpoint-md) {
@@ -35,7 +35,7 @@
     }
   }
   &__top-content {
-    padding: 1rem 0;
+    padding: 16px 0;
     margin: 0;
   }
   &__empty {

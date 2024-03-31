@@ -2,7 +2,7 @@
   background-color: var(--white);
   display: flex;
   flex-flow: column nowrap;
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  padding: 24px 24px 32px 24px;
   margin: 0;
   border: var(--hrsa-gray-300) 1px solid;
   border-top: 10px solid currentColor;
@@ -28,8 +28,8 @@
     display: flex;
     margin: 0 auto;
     width: 100%;
-    margin: 0 0 2rem 0;
-    height: 6rem;
+    margin: 0 0 32px 0;
+    height: 96px;
     align-items: center;
     justify-content: center;
 
@@ -42,14 +42,14 @@
     }
   }
   &__title {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
     color: currentColor;
   }
   &__desc {
     color: var(--hrsa-gray-600);
     font-weight: 400;
-    font-size: 0.8125rem;
+    font-size: 13px;
     margin: 0;
     padding: 0;
   }

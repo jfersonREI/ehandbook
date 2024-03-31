@@ -4,12 +4,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 14px;
   margin-bottom: 4px;
   &__col {
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
 
-    min-width: 5rem;
+    min-width: 80px;
     background-color: transparent;
     border-top: 0;
     border-right: 0;

@@ -1,5 +1,5 @@
-$panel-padding-x: 1rem; //left right
-$panel-padding-y: 1.5rem; //top bottom
+$panel-padding-x: 16px; //left right
+$panel-padding-y: 24px; //top bottom
 
 .site-panel {
   background-color: var(--white);
@@ -37,16 +37,16 @@ $panel-padding-y: 1.5rem; //top bottom
   &__header-icon {
     color: currentColor;
     background-color: transparent;
-    margin: 0 0.25rem 0 0;
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
+    margin: 0 4px 0 0;
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
     display: none;
     svg,
     img {
       display: block;
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 24px;
+      height: 24px;
       fill: currentColor;
     }
     @media (min-width: $hrsa-breakpoint-md) {
@@ -59,15 +59,15 @@ $panel-padding-y: 1.5rem; //top bottom
     color: currentColor;
     margin: 0;
     padding: 0;
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 600;
     letter-spacing: -0.03rem;
   }
   &__header-btns {
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 16px 0 0 0;
     @media (min-width: $hrsa-breakpoint-md) {
-      margin: 0 0 0 1rem;
+      margin: 0 0 0 16px;
     }
   }
 
@@ -80,8 +80,8 @@ $panel-padding-y: 1.5rem; //top bottom
     background-color: transparent;
     display: flex;
     flex-flow: column;
-    margin: 0 0 1rem 0;
-    min-height: 2rem;
+    margin: 0 0 16px 0;
+    min-height: 32px;
     align-items: normal;
     justify-content: space-between;
 
@@ -95,7 +95,7 @@ $panel-padding-y: 1.5rem; //top bottom
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--hrsa-gray-600);
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 8px 0;
     padding: 0;
     @media (min-width: $hrsa-breakpoint-md) {
       margin: 0;
@@ -107,18 +107,18 @@ $panel-padding-y: 1.5rem; //top bottom
   }
   &__subheader-search-label {
     color: var(--hrsa-gray-500);
-    margin-right: 0.5rem;
-    font-size: 0.875rem;
+    margin-right: 8px;
+    font-size: 14px;
   }
   &__subheader-search-input {
     background-color: var(--white);
     border: var(--hrsa-gray-400) 1px solid;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
+    border-radius: 4px;
+    font-size: 14px;
     color: var(--hrsa-gray-900);
     margin: 0;
-    padding: 0.25rem 0.5rem;
-    min-height: 2rem;
+    padding: 4px 8px;
+    min-height: 32px;
     min-width: 100%;
     @media (min-width: $hrsa-breakpoint-md) {
       min-width: 16rem;
@@ -133,7 +133,7 @@ $panel-padding-y: 1.5rem; //top bottom
   }
   &__subheader-btns {
     padding: 0;
-    margin: 0 0 0 0.5rem;
+    margin: 0 0 0 8px;
   }
   &__subheader-search {
     display: block;
@@ -143,7 +143,7 @@ $panel-padding-y: 1.5rem; //top bottom
     &--has-button {
       .site-panel {
         &__subheader-search-input {
-          padding: 0.25rem 2rem 0.25rem 0.5rem;
+          padding: 4px 32px 4px 8px;
         }
       }
       .icon-btn {
@@ -163,7 +163,7 @@ $panel-padding-y: 1.5rem; //top bottom
     font-size: 14px;
     font-weight: 400;
     color: var(--hrsa-gray-600);
-    margin: 0 0 1rem 0;
+    margin: 0 0 16px 0;
 
     @media (min-width: $hrsa-breakpoint-md) {
       flex-flow: row;
@@ -189,7 +189,7 @@ $panel-padding-y: 1.5rem; //top bottom
     margin: 8px 0 0 0;
     white-space: nowrap;
     @media (min-width: $hrsa-breakpoint-md) {
-      margin: 0 0 0 1rem;
+      margin: 0 0 0 16px;
     }
   }
 }

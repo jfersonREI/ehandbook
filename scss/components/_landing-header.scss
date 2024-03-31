@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0.75rem 0;
+  padding: 12px 0;
   min-height: 50px;
   //background-image: linear-gradient(var(--hrsa-blue-400), var(--hrsa-blue-500));
   @media (min-width: $hrsa-breakpoint-md) {
@@ -15,8 +15,8 @@
   }
 
   &__logo {
-    margin: 0 0.75rem 0 0;
-    padding: 0 0.75rem 0 0;
+    margin: 0 12px 0 0;
+    padding: 0 12px 0 0;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
   }
   &__logo-mobile {
