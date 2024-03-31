@@ -1,3 +1,60 @@
 .landing-header {
-  background-color: lightblue;
+  background-color: var(--hrsa-blue-500);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0.75rem 0;
+  background-image: linear-gradient(var(--hrsa-blue-400), var(--hrsa-blue-500));
+  &__logo {
+    background-color: pink;
+    margin: 0 1rem 0 0;
+    padding: 0;
+  }
+  &__logo-mobile {
+    background-color: navajowhite;
+    display: block;
+    @media (min-width: $hrsa-breakpoint-md) {
+      display: none;
+    }
+  }
+  &__logo-desktop {
+    background-color: burlywood;
+    display: none;
+    @media (min-width: $hrsa-breakpoint-md) {
+      display: block;
+    }
+  }
+
+  &__title {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  &__heading-mobile {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: currentColor;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    @media (min-width: $hrsa-breakpoint-md) {
+      display: none;
+    }
+  }
+  &__heading-desktop {
+    display: none;
+    margin: 0;
+    padding: 0;
+    color: currentColor;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    @media (min-width: $hrsa-breakpoint-md) {
+      display: block;
+    }
+  }
 }
