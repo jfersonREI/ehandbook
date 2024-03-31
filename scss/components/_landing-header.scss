@@ -1,26 +1,39 @@
+.landing-header-group {
+  background-color: #0b4778;
+}
 .landing-header {
-  background-color: var(--hrsa-blue-500);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0.75rem 0;
-  background-image: linear-gradient(var(--hrsa-blue-400), var(--hrsa-blue-500));
+  min-height: 50px;
+  //background-image: linear-gradient(var(--hrsa-blue-400), var(--hrsa-blue-500));
+  @media (min-width: $hrsa-breakpoint-md) {
+    justify-content: flex-start;
+  }
+
   &__logo {
-    background-color: pink;
-    margin: 0 1rem 0 0;
-    padding: 0;
+    margin: 0 0.75rem 0 0;
+    padding: 0 0.75rem 0 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
   }
   &__logo-mobile {
-    background-color: navajowhite;
-    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+
     @media (min-width: $hrsa-breakpoint-md) {
       display: none;
     }
   }
   &__logo-desktop {
-    background-color: burlywood;
     display: none;
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+
     @media (min-width: $hrsa-breakpoint-md) {
       display: block;
     }
@@ -29,7 +42,7 @@
   &__title {
     background-color: transparent;
     color: var(--white);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1;
   }
