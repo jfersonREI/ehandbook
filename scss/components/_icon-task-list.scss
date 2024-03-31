@@ -16,6 +16,25 @@
     &:last-of-type {
       border-bottom: 0;
     }
+    &--favorite {
+      margin-bottom: 4px;
+      border: var(--hrsa-gray-300) 1px solid;
+      border-radius: 4px;
+      overflow: hidden;
+      &:last-of-type {
+        margin-bottom: 0;
+        border-bottom: var(--hrsa-gray-300) 1px solid;
+      }
+
+      .icon-task-list {
+        &__link {
+          &:hover,
+          &:focus {
+            background-color: var(--hrsa-gray-200);
+          }
+        }
+      }
+    }
   }
 
   &__link {

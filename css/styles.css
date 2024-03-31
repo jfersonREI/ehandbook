@@ -396,6 +396,19 @@ body {
 .icon-task-list__item:last-of-type {
   border-bottom: 0;
 }
+.icon-task-list__item--favorite {
+  margin-bottom: 4px;
+  border: var(--hrsa-gray-300) 1px solid;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.icon-task-list__item--favorite:last-of-type {
+  margin-bottom: 0;
+  border-bottom: var(--hrsa-gray-300) 1px solid;
+}
+.icon-task-list__item--favorite .icon-task-list__link:hover, .icon-task-list__item--favorite .icon-task-list__link:focus {
+  background-color: var(--hrsa-gray-200);
+}
 .icon-task-list__link {
   flex: 1;
   display: flex;
@@ -1290,7 +1303,7 @@ body {
   color: var(--hrsa-gray-500);
 }
 .site-tasks-favorites__list {
-  background-color: plum;
+  background-color: transparent;
 }
 
 .favorite-top-header {
