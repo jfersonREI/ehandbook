@@ -21,6 +21,7 @@
   &:active {
     background-color: var(--hrsa-gray-50);
     box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.16);
+    transform: scale(1);
   }
   &__img {
     background-color: transparent;

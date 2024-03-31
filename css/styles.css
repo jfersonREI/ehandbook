@@ -1016,6 +1016,7 @@ body {
 .landing-btn:active {
   background-color: var(--hrsa-gray-50);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+  transform: scale(1);
 }
 .landing-btn__img {
   background-color: transparent;
