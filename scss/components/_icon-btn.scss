@@ -7,7 +7,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--hrsa-gray-600);
+  color: var(--hrsa-gray-500);
   font-size: 1.125rem;
   min-width: 2.5rem;
   min-height: 2.5rem;
@@ -21,11 +21,11 @@
   }
   &:hover {
     background-color: transparent;
-    color: red;
+    color: var(--hrsa-gray-700);
   }
   &:active {
     background-color: transparent;
-    color: red;
+    color: var(--hrsa-gray-900);
   }
   &:disabled {
     background-color: var(--disabled);
@@ -34,7 +34,7 @@
   }
   &--sm {
     padding: 0.4375rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
     min-width: 2rem;
     min-height: 2rem;
     svg,
