@@ -382,7 +382,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: var(--white);
+  background-color: transparent;
   display: flex;
   flex-flow: column;
 }
@@ -1280,6 +1280,17 @@ body {
   .site-tasks-favorites__top {
     box-shadow: inset 1px 0px 0 0px var(--hrsa-gray-300);
   }
+}
+.site-tasks-favorites__top-content {
+  padding: 1rem 0;
+  margin: 0;
+}
+.site-tasks-favorites__empty {
+  font-size: 14px;
+  color: var(--hrsa-gray-500);
+}
+.site-tasks-favorites__list {
+  background-color: plum;
 }
 
 .favorite-top-header {

@@ -34,4 +34,15 @@
       box-shadow: inset 1px 0px 0 0px var(--hrsa-gray-300);
     }
   }
+  &__top-content {
+    padding: 1rem 0;
+    margin: 0;
+  }
+  &__empty {
+    font-size: 14px;
+    color: var(--hrsa-gray-500);
+  }
+  &__list {
+    background-color: plum;
+  }
 }
