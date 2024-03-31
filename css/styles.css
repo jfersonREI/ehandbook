@@ -575,6 +575,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
+  margin-bottom: 4px;
 }
 .icon-task-header__col {
   padding: 0.5rem 1rem;
@@ -676,7 +677,7 @@ body {
   color: var(--hrsa-gray-400);
 }
 .icon-btn--light:hover {
-  background-color: var(--hrsa-gray-300);
+  background-color: var(--hrsa-gray-200);
   color: var(--hrsa-gray-500);
 }
 .icon-btn--light:active {
