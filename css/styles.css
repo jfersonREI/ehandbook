@@ -998,7 +998,7 @@ body {
   background-color: var(--white);
   display: flex;
   flex-flow: column nowrap;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
   margin: 0;
   border: var(--hrsa-gray-300) 1px solid;
   border-top: 10px solid currentColor;
@@ -1041,7 +1041,7 @@ body {
   color: currentColor;
 }
 .landing-btn__desc {
-  color: var(--hrsa-gray-900);
+  color: var(--hrsa-gray-600);
   font-weight: 400;
   font-size: 0.8125rem;
   margin: 0;
