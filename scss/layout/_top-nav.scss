@@ -5,8 +5,8 @@
   align-items: center;
   flex-flow: row wrap;
   &__logo {
-    background-color: cadetblue;
     color: var(--white);
+    max-width: 144px;
     img,
     svg {
       width: 100%;

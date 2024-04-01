@@ -213,8 +213,8 @@ body {
   flex-flow: row wrap;
 }
 .site-top-nav__logo {
-  background-color: cadetblue;
   color: var(--white);
+  max-width: 144px;
 }
 .site-top-nav__logo img,
 .site-top-nav__logo svg {
