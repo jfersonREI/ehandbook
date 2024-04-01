@@ -1,12 +1,14 @@
 .site-header {
   background-color: var(--hrsa-blue-500);
-  padding: 10px;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   &__logo {
     color: var(--white);
     max-width: 144px;
+    margin-right: 1rem;
     img,
     svg {
       width: 100%;

@@ -1,0 +1,37 @@
+.site-top-nav {
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  &__item {
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+  }
+  &__link {
+    padding: 1.5rem 0.75rem;
+    background-color: transparent;
+    display: inline-flex;
+    color: currentColor;
+    text-decoration: none;
+    position: relative;
+    &:hover,
+    &:focus {
+      background-color: var(--hrsa-gray-800);
+    }
+    &--selected {
+      &::after {
+        content: "";
+        height: 2px;
+        background-color: darkorange;
+        position: absolute;
+        bottom: 16px;
+        left: 12px;
+        right: 12px;
+      }
+    }
+  }
+}
