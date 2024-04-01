@@ -21,6 +21,7 @@
     text-decoration: none;
     position: relative;
     white-space: nowrap;
+    min-height: 100%;
     &:hover,
     &:focus {
       background-color: var(--hrsa-gray-800);
