@@ -1,19 +1,30 @@
 .site-top-user-btn {
-  background-color: blue;
+  background-color: transparent;
   display: flex;
   align-items: center;
   font-size: 14px;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0.75rem;
   border: 0;
+  &:hover,
+  &:focus {
+    background-color: var(--hrsa-gray-800);
+  }
+  &__arrow {
+    font-size: 18px;
+    line-height: 1;
+    color: var(--white);
+    margin-right: 1.5rem;
+  }
   &__text {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
-    text-align: left;
+    text-align: right;
     max-width: 144px;
     font-size: inherit;
     margin-right: 8px;
+    line-height: 1;
   }
   &__name {
     white-space: nowrap;
@@ -21,11 +32,12 @@
     text-overflow: ellipsis;
     width: 100%;
     color: var(--white);
-    font-weight: 600;
+    font-weight: 500;
   }
   &__timestamp {
     font-size: 12px;
     color: var(--hrsa-gray-300);
+    margin-top: 4px;
   }
   &__icon {
     font-size: 24px;

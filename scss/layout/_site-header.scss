@@ -1,5 +1,5 @@
 .site-header-group {
-  background-color: var(--hrsa-blue-500);
+  background-color: var(--hrsa-blue-600);
 }
 
 .site-header {
@@ -31,10 +31,10 @@
     margin-right: 1rem;
   }
   &__user {
-    background-color: magenta;
+    background-color: transparent;
   }
   &__navicon {
-    background-color: blue;
+    background-color: transparent;
     display: none;
   }
 }

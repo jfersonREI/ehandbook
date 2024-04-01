@@ -206,7 +206,7 @@ body {
 }
 
 .site-header-group {
-  background-color: var(--hrsa-blue-500);
+  background-color: var(--hrsa-blue-600);
 }
 
 .site-header {
@@ -239,16 +239,16 @@ body {
   margin-right: 1rem;
 }
 .site-header__user {
-  background-color: magenta;
+  background-color: transparent;
 }
 .site-header__navicon {
-  background-color: blue;
+  background-color: transparent;
   display: none;
 }
 
 .site-top-nav {
   list-style: none;
-  background-color: navy;
+  background-color: transparent;
   margin: 0;
   padding: 0;
   display: flex;
@@ -309,22 +309,32 @@ body {
 }
 
 .site-top-user-btn {
-  background-color: blue;
+  background-color: transparent;
   display: flex;
   align-items: center;
   font-size: 14px;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0.75rem;
   border: 0;
+}
+.site-top-user-btn:hover, .site-top-user-btn:focus {
+  background-color: var(--hrsa-gray-800);
+}
+.site-top-user-btn__arrow {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--white);
+  margin-right: 1.5rem;
 }
 .site-top-user-btn__text {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  text-align: left;
+  text-align: right;
   max-width: 144px;
   font-size: inherit;
   margin-right: 8px;
+  line-height: 1;
 }
 .site-top-user-btn__name {
   white-space: nowrap;
@@ -332,11 +342,12 @@ body {
   text-overflow: ellipsis;
   width: 100%;
   color: var(--white);
-  font-weight: 600;
+  font-weight: 500;
 }
 .site-top-user-btn__timestamp {
   font-size: 12px;
   color: var(--hrsa-gray-300);
+  margin-top: 4px;
 }
 .site-top-user-btn__icon {
   font-size: 24px;
