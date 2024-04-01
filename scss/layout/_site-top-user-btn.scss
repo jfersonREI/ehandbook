@@ -6,6 +6,9 @@
   margin: 0;
   padding: 1rem 0.75rem;
   border: 0;
+  position: relative;
+  min-height: $site-header-height;
+
   &:hover,
   &:focus {
     background-color: var(--hrsa-gray-800);
