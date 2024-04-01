@@ -227,7 +227,6 @@ body {
   display: block;
 }
 .site-top-nav__nav {
-  background-color: palegoldenrod;
   flex: 1;
 }
 .site-top-nav__search {
@@ -669,6 +668,19 @@ body {
   color: #fff;
   pointer-events: none;
 }
+.icon-btn--xs {
+  padding: 4px;
+  font-size: 12px;
+  min-width: 24px;
+  min-height: 24px;
+}
+.icon-btn--xs svg,
+.icon-btn--xs img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
 .icon-btn--sm {
   padding: 7px;
   font-size: 14px;
@@ -682,17 +694,17 @@ body {
   height: 18px;
   fill: currentColor;
 }
-.icon-btn--xs {
-  padding: 4px;
-  font-size: 12px;
-  min-width: 24px;
-  min-height: 24px;
+.icon-btn--md {
+  padding: 8px;
+  font-size: 16px;
+  min-width: 40px;
+  min-height: 40px;
 }
-.icon-btn--xs svg,
-.icon-btn--xs img {
+.icon-btn--md svg,
+.icon-btn--md img {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 .icon-btn--primary {
