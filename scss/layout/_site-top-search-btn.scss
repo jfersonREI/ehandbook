@@ -1,0 +1,25 @@
+.site-top-search-btn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 1.5rem 0.75rem;
+  margin: 0;
+  color: var(--white);
+  font-size: 14px;
+  &:hover,
+  &:focus {
+    background-color: var(--hrsa-gray-800);
+  }
+
+  &__text {
+    margin-right: 8px;
+    color: currentColor;
+    line-height: inherit;
+  }
+  &__icon {
+    color: currentColor;
+    line-height: inherit;
+  }
+}

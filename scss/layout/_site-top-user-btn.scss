@@ -1,0 +1,35 @@
+.site-top-user-btn {
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  &__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    text-align: left;
+    max-width: 144px;
+    font-size: inherit;
+    margin-right: 8px;
+  }
+  &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: var(--white);
+    font-weight: 600;
+  }
+  &__timestamp {
+    font-size: 12px;
+    color: var(--hrsa-gray-300);
+  }
+  &__icon {
+    font-size: 24px;
+    line-height: 1;
+    color: var(--white);
+  }
+}

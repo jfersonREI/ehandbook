@@ -1,6 +1,6 @@
 .site-top-nav {
   list-style: none;
-  background-color: transparent;
+  background-color: navy;
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,9 +15,12 @@
     padding: 1.5rem 0.75rem;
     background-color: transparent;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: currentColor;
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
     &:hover,
     &:focus {
       background-color: var(--hrsa-gray-800);
@@ -26,7 +29,7 @@
       &::after {
         content: "";
         height: 2px;
-        background-color: darkorange;
+        background-color: var(--hrsa-orange-400);
         position: absolute;
         bottom: 16px;
         left: 12px;
