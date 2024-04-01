@@ -1,0 +1,34 @@
+.site-top-nav {
+  background-color: var(--hrsa-blue-500);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  &__logo {
+    background-color: cadetblue;
+    color: var(--white);
+    img,
+    svg {
+      width: 100%;
+      height: auto;
+      fill: currentColor;
+    }
+  }
+  &__logo-link {
+    text-decoration: none;
+    display: block;
+  }
+  &__nav {
+    background-color: palegoldenrod;
+    flex: 1;
+  }
+  &__search {
+    background-color: coral;
+  }
+  &__user {
+    background-color: magenta;
+  }
+  &__navicon {
+    background-color: blue;
+  }
+}
