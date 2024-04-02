@@ -186,18 +186,18 @@ body {
   padding: 8px 0;
 }
 .hhs-banner__logo {
-  margin-right: 10px;
-  margin-top: -2px;
-  max-width: 22px;
+  margin-right: 8px;
+  max-width: 20px;
   height: auto;
 }
 .hhs-banner__link {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   padding: 0;
   text-decoration: none;
+  letter-spacing: -0.03px;
 }
 .hhs-banner__link:hover, .hhs-banner__link:focus {
   text-decoration: underline;
@@ -207,6 +207,9 @@ body {
 
 .site-header-group {
   background-color: var(--hrsa-blue-600);
+  background-image: url(../img/navigation/top-nav-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .site-header {
@@ -219,7 +222,7 @@ body {
 .site-header__logo {
   color: var(--white);
   max-width: 128px;
-  min-width: 96px;
+  min-width: 128px;
   margin: 0;
   display: flex;
   align-items: center;
