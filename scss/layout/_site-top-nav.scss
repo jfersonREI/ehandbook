@@ -12,7 +12,7 @@
     color: var(--white);
   }
   &__link {
-    padding: 1.5rem 0.75rem;
+    padding: 1rem 0.75rem;
     background-color: transparent;
     display: inline-flex;
     justify-content: center;
@@ -21,10 +21,10 @@
     text-decoration: none;
     position: relative;
     white-space: nowrap;
-    min-height: 100%;
+    min-height: $site-header-height;
     &:hover,
     &:focus {
-      background-color: var(--hrsa-gray-800);
+      background-color: rgba(var(--hrsa-gray-900), 0.5);
     }
     &--selected {
       &::after {

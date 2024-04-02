@@ -254,7 +254,7 @@ body {
 }
 .site-header__search {
   background-color: transparent;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .site-header__user {
   background-color: transparent;
@@ -290,7 +290,7 @@ body {
   color: var(--white);
 }
 .site-top-nav__link {
-  padding: 1.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   background-color: transparent;
   display: inline-flex;
   justify-content: center;
@@ -299,10 +299,10 @@ body {
   text-decoration: none;
   position: relative;
   white-space: nowrap;
-  min-height: 100%;
+  min-height: 70px;
 }
 .site-top-nav__link:hover, .site-top-nav__link:focus {
-  background-color: var(--hrsa-gray-800);
+  background-color: rgba(var(--hrsa-gray-900), 0.5);
 }
 .site-top-nav__link--selected::after {
   content: "";
@@ -320,10 +320,11 @@ body {
   align-items: center;
   justify-content: center;
   border: 0;
-  padding: 1.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   margin: 0;
   color: var(--white);
   font-size: 14px;
+  min-height: 70px;
 }
 .site-top-search-btn:hover, .site-top-search-btn:focus {
   background-color: var(--hrsa-gray-800);

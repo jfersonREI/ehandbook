@@ -4,10 +4,11 @@
   align-items: center;
   justify-content: center;
   border: 0;
-  padding: 1.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   margin: 0;
   color: var(--white);
   font-size: 14px;
+  min-height: $site-header-height;
   &:hover,
   &:focus {
     background-color: var(--hrsa-gray-800);
