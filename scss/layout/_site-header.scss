@@ -1,8 +1,8 @@
 $site-header-height: 70px;
 
 .site-header-group {
-  background-color: var(--hrsa-blue-700);
-  background-image: url(../img/navigation/top-nav-bg.jpg);
+  background-color: var(--hrsa-blue-800);
+  //background-image: url(../img/navigation/top-nav-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -21,7 +21,7 @@ $site-header-height: 70px;
     display: flex;
     align-items: center;
     padding: 0;
-    margin-right: 1rem;
+    margin-right: 12px;
     position: relative;
     min-height: $site-header-height;
 
@@ -50,7 +50,7 @@ $site-header-height: 70px;
   }
   &__search {
     background-color: transparent;
-    margin-right: 0.5rem;
+    margin-right: 8px;
   }
   &__user {
     background-color: transparent;
@@ -68,6 +68,11 @@ $site-header-height: 70px;
   }
   &__navicon {
     background-color: transparent;
-    display: none;
+    min-height: $site-header-height;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
   }
 }

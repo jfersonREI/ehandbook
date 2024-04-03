@@ -1,6 +1,6 @@
 .hhs-banner {
   width: 100%;
-  background-color: #272727;
+  background-color: var(--hrsa-gray-900);
 
   &__content {
     display: flex;
@@ -21,6 +21,10 @@
     padding: 0;
     text-decoration: none;
     letter-spacing: -0.03px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 
     &:hover,
     &:focus {

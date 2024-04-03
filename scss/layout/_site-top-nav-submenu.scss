@@ -1,8 +1,8 @@
 //submenu
 .site-top-nav-submenu {
   background-color: var(--hrsa-gray-900);
-  padding: 0.75rem;
-  min-width: 16rem;
+  padding: 12px;
+  min-width: 256px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -19,7 +19,7 @@
   padding: 0;
   list-style: none;
   &__item {
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 400;
   }
   &__header {
@@ -47,7 +47,7 @@
   &__link {
     padding: 8px;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
     color: var(--white);
     text-decoration: none;

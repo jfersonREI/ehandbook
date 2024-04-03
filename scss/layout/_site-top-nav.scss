@@ -47,8 +47,8 @@
     &.show {
       background-color: var(--hrsa-gray-900);
       &::before {
-        //display: none;
-        background: var(--hrsa-blue-400);
+        display: none;
+        //background: var(--hrsa-blue-400);
       }
 
       &::after {
