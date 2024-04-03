@@ -10,9 +10,27 @@
   font-size: 14px;
   min-height: $site-header-height;
   cursor: pointer;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 20px;
+    height: 0;
+    transition: height 0.15s ease-in-out;
+    background: var(--hrsa-orange-400);
+    border-radius: 6px;
+  }
+
   &:hover,
   &:focus {
-    background-color: var(--hrsa-gray-800);
+    background-color: transparent;
+    color: var(--white);
+    &::before {
+      height: 2px;
+    }
   }
 
   &__text {

@@ -275,7 +275,6 @@ body {
 }
 .site-header__search {
   background-color: transparent;
-  margin-right: 8px;
 }
 .site-header__user {
   background-color: transparent;
@@ -386,9 +385,26 @@ body {
   font-size: 14px;
   min-height: 70px;
   cursor: pointer;
+  position: relative;
+}
+.site-top-search-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 20px;
+  height: 0;
+  transition: height 0.15s ease-in-out;
+  background: var(--hrsa-orange-400);
+  border-radius: 6px;
 }
 .site-top-search-btn:hover, .site-top-search-btn:focus {
-  background-color: var(--hrsa-gray-800);
+  background-color: transparent;
+  color: var(--white);
+}
+.site-top-search-btn:hover::before, .site-top-search-btn:focus::before {
+  height: 2px;
 }
 .site-top-search-btn__text {
   margin-right: 8px;
@@ -418,7 +434,7 @@ body {
   font-size: 14px;
   line-height: 1;
   color: var(--white);
-  margin-right: 16px;
+  margin-right: 8px;
 }
 .site-top-user-btn__text {
   display: flex;
