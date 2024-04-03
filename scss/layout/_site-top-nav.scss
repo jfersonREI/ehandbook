@@ -10,6 +10,7 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--white);
+    position: relative;
   }
   &__link {
     padding: 1rem 0.75rem;
@@ -22,19 +23,38 @@
     position: relative;
     white-space: nowrap;
     min-height: $site-header-height;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0.75rem;
+      right: 0.75rem;
+      bottom: 20px;
+      height: 0;
+      transition: height 0.15s ease-in-out;
+      background: var(--hrsa-orange-400);
+    }
+
     &:hover,
     &:focus {
-      background-color: var(--hrsa-gray-900);
+      background-color: transparent;
+      color: var(--white);
+      &::after {
+        height: 2px;
+      }
     }
+    &.show {
+      background-color: var(--hrsa-gray-900);
+      &::after {
+        //display: none;
+        background: var(--hrsa-blue-400);
+      }
+    }
+
     &--selected {
       &::after {
         content: "";
         height: 2px;
-        background-color: var(--hrsa-orange-400);
-        position: absolute;
-        bottom: 16px;
-        left: 12px;
-        right: 12px;
       }
     }
   }

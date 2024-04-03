@@ -1,9 +1,9 @@
-.hrsa-btn {
+.site-btn {
   display: inline-flex;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  color: $base-darkest;
+  color: var(--hrsa-gray-900);
   align-items: center;
   text-align: center;
   text-decoration: none;
@@ -12,36 +12,32 @@
   user-select: none;
   background-color: transparent;
   border: 0;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.25rem;
+  padding: 12px 20px;
+  border-radius: 4px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 100%;
 
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $hrsa-breakpoint-sm) {
     width: auto;
   }
 
-  &--focus {
-    outline: 0.25rem solid #2491ff;
-    outline-offset: 0;
-  }
   &:not([disabled]).fdx-btn--focus,
   &:not([disabled]):focus {
-    outline-offset: 0.25rem;
+    outline-offset: 2px;
   }
   &:hover {
-    color: $base-darkest;
+    color: var(--hrsa-gray-900);
   }
   &:disabled {
-    background-color: $disabled;
+    background-color: var(--hrsa-gray-400);
     color: #fff;
     pointer-events: none;
   }
   //large button
   &--large {
-    font-size: 1.375rem;
-    padding: 1rem 1.5rem;
+    font-size: 22px;
+    padding: 16px 24px;
   }
 
   &--unstyled {
@@ -51,141 +47,87 @@
     box-shadow: none;
     text-decoration: underline;
     font-weight: 400;
-    color: $primary;
+    color: var(--hrsa-blue-500);
     &:hover {
-      color: $primary-dark;
+      color: var(--hrsa-blue-700);
     }
     &:active {
-      color: $primary-darker;
+      color: var(--hrsa-blue-900);
     }
   }
 
   &--primary {
-    background-color: $primary;
+    background-color: var(--hrsa-blue-500);
     color: #fff;
     &:hover {
-      background-color: $primary-dark;
+      background-color: var(--hrsa-blue-700);
       color: #fff;
     }
     &:active {
-      background-color: $primary-darker;
+      background-color: var(--hrsa-blue-900);
       color: #fff;
     }
   }
   //secondary
   &--secondary {
-    background-color: $secondary;
+    background-color: var(--hrsa-teal-500);
     color: #fff;
     &:hover {
-      background-color: $secondary-dark;
+      background-color: var(--hrsa-teal-700);
       color: #fff;
     }
     &:active {
-      background-color: $secondary-darker;
-      color: #fff;
-    }
-  }
-
-  //accent-cool
-  &--accent-cool {
-    background-color: $accent-cool;
-    color: $base-darkest;
-    &:hover {
-      background-color: $accent-cool-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $accent-cool-darker;
-      color: #fff;
-    }
-  }
-  //accent-warm
-  &--accent-warm {
-    background-color: $accent-warm;
-    color: #fff;
-    &:hover {
-      background-color: $accent-warm-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $accent-warm-darker;
+      background-color: var(--hrsa-teal-900);
       color: #fff;
     }
   }
 
   //base
   &--base {
-    background-color: $base;
+    background-color: var(--hrsa-gray-500);
     color: #fff;
     &:hover {
-      background-color: $base-dark;
+      background-color: var(--hrsa-gray-700);
       color: #fff;
     }
     &:active {
-      background-color: $base-darker;
+      background-color: var(--hrsa-gray-900);
       color: #fff;
     }
   }
 
   //error
   &--error {
-    background-color: $error;
+    background-color: var(--hrsa-red-500);
     color: #fff;
     &:hover {
-      background-color: $error-dark;
+      background-color: var(--hrsa-red-700);
       color: #fff;
     }
     &:active {
-      background-color: $error-darker;
+      background-color: var(--hrsa-red-900);
       color: #fff;
-    }
-  }
-  //success
-  &--success {
-    background-color: $success;
-    color: $base-darkest;
-    &:hover {
-      background-color: $success-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $success-darker;
-      color: #fff;
-    }
-  }
-
-  //inverse
-  &--inverse {
-    background-color: $base-lighter;
-    color: $base-darkest;
-    &:hover {
-      background-color: $base-lightest;
-      color: $base-darkest;
-    }
-    &:active {
-      background-color: #fff;
-      color: $base-darkest;
     }
   }
 
   &--outline {
     background-color: transparent;
-    box-shadow: inset 0 0 0 2px $primary;
-    color: $primary;
+    box-shadow: inset 0 0 0 2px var(--hrsa-blue-500);
+    color: var(--hrsa-blue-500);
     &:disabled {
       background-color: transparent;
-      box-shadow: inset 0 0 0 2px $disabled;
-      color: $disabled;
+      box-shadow: inset 0 0 0 2px var(--hrsa-gray-400);
+      color: var(--hrsa-gray-400);
     }
     &:hover {
       background-color: transparent;
-      box-shadow: inset 0 0 0 2px $primary-dark;
-      color: $primary-dark;
+      box-shadow: inset 0 0 0 2px var(--hrsa-blue-700);
+      color: var(--hrsa-blue-700);
     }
     &:active {
       background-color: transparent;
-      box-shadow: inset 0 0 0 2px $primary-darker;
-      color: $primary-darker;
+      box-shadow: inset 0 0 0 2px var(--hrsa-blue-800);
+      color: var(--hrsa-blue-800);
     }
   }
 }

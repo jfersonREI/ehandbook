@@ -43,6 +43,7 @@
         </div>
         <!-- /.container -->
       </div>
+      <!-- /.hhs-banner -->
 
       <div class="site-header-group">
         <div class="container-fluid">
@@ -60,17 +61,42 @@
                 <div class="site-header__nav">
                   <ul class="site-top-nav">
                     <li class="site-top-nav__item">
-                      <a
-                        href="javascript:void(0);"
-                        class="site-top-nav__link site-top-nav__link--selected"
+                      <a href="javascript:void(0);" class="site-top-nav__link"
                         ><i class="fa-solid fa-house" aria-label="Home"></i
                         ><span class="sr-only">Home</span></a
                       >
                     </li>
                     <li class="site-top-nav__item">
-                      <a href="javascript:void(0);" class="site-top-nav__link"
+                      <a
+                        href="javascript:void(0);"
+                        class="site-top-nav__link"
+                        id="dropdownDataProdMenu"
+                        data-bs-toggle="dropdown"
+                        data-bs-display="static"
+                        aria-expanded="false"
                         >Tasks</a
                       >
+                      <div
+                        class="app-nav-submenu dropdown-menu animate fadeIn"
+                        aria-labelledby="dropdownDataProdMenu"
+                      >
+                        <ul class="app-submenu-list">
+                          <li class="app-submenu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="app-submenu-list__link"
+                              >Browse Data Products</a
+                            >
+                          </li>
+                          <li class="app-submenu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="app-submenu-list__link"
+                              >Request to Share Data Products</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="site-top-nav__item">
                       <a href="javascript:void(0);" class="site-top-nav__link"
@@ -162,21 +188,15 @@
 
     <!-- Bootstrap JS-->
     <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
