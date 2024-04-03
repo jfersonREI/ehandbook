@@ -14,7 +14,7 @@
     margin-top: 0;
   }
 }
-.app-submenu-list {
+.site-top-nav-submenu-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,12 +22,34 @@
     font-size: 0.875rem;
     font-weight: 400;
   }
-  &__link {
-    padding: 0.5rem;
+  &__header {
+    background-color: transparent;
+    color: var(--hrsa-orange-300);
+
     display: flex;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    padding: 8px;
+    margin: 0 0 8px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 8px;
+      right: 8px;
+      bottom: 0;
+      height: 1px;
+      background: var(--hrsa-orange-400);
+    }
+  }
+  &__link {
+    padding: 8px;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    color: #fff;
+    justify-content: flex-start;
+    color: var(--white);
     text-decoration: none;
     background: transparent;
     border: 0;
@@ -36,18 +58,18 @@
     font-weight: inherit;
     text-align: left;
     &:hover {
-      color: rgba(255, 255, 255, 0.6);
+      color: var(--hrsa-orange-300);
+      text-decoration: none;
       background-color: transparent;
     }
-    &--sublevel-1 {
-      //padding-left: 3rem;
-      justify-content: flex-start;
-      align-items: flex-start;
-      font-size: 0.9375rem;
-      &::before {
-        content: "\2014";
-        padding-right: 0.5rem;
-        font-weight: 300;
+
+    &--is-external {
+      &::after {
+        content: "\f08e";
+        padding-left: 8px;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+        font-size: 12px;
       }
     }
   }
