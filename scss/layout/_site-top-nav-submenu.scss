@@ -1,5 +1,5 @@
 //submenu
-.app-nav-submenu {
+.site-top-nav-submenu {
   background-color: var(--hrsa-gray-900);
   padding: 0.75rem;
   min-width: 16rem;
@@ -9,7 +9,10 @@
   border-radius: 0;
   border: 0;
   box-shadow: none;
-  margin-top: 0 !important; //bs override
+
+  &[data-bs-popper] {
+    margin-top: 0;
+  }
 }
 .app-submenu-list {
   margin: 0;

@@ -330,6 +330,7 @@ body {
   height: 0;
   transition: height 0.15s ease-in-out;
   background: var(--hrsa-orange-400);
+  border-radius: 6px;
 }
 .site-top-nav__link:hover, .site-top-nav__link:focus {
   background-color: transparent;
@@ -441,7 +442,7 @@ body {
   margin-left: 6px;
 }
 
-.app-nav-submenu {
+.site-top-nav-submenu {
   background-color: var(--hrsa-gray-900);
   padding: 0.75rem;
   min-width: 16rem;
@@ -451,7 +452,9 @@ body {
   border-radius: 0;
   border: 0;
   box-shadow: none;
-  margin-top: 0 !important;
+}
+.site-top-nav-submenu[data-bs-popper] {
+  margin-top: 0;
 }
 
 .app-submenu-list {
