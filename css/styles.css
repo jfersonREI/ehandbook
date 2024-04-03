@@ -224,7 +224,7 @@ body {
 }
 
 .site-header-group {
-  background-color: var(--hrsa-blue-600);
+  background-color: var(--hrsa-blue-700);
   background-image: url(../img/navigation/top-nav-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -408,10 +408,11 @@ body {
   background-color: var(--hrsa-gray-800);
 }
 .site-top-user-btn__arrow {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   color: var(--white);
   margin-right: 1rem;
+  margin-top: -1rem;
 }
 .site-top-user-btn__text {
   display: flex;

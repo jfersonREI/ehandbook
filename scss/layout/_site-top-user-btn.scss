@@ -14,10 +14,11 @@
     background-color: var(--hrsa-gray-800);
   }
   &__arrow {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     color: var(--white);
     margin-right: 1rem;
+    margin-top: -1rem;
   }
   &__text {
     display: flex;
