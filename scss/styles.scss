@@ -117,6 +117,8 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+@import "helpers/animations.scss";
+
 @import "layout/skipnav.scss";
 @import "layout/main.scss";
 @import "layout/navigation.scss";

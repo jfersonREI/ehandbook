@@ -96,6 +96,23 @@ body {
   font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.animate {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
 .site-skipnav {
   font-size: 16px;
   line-height: 1.5;
@@ -303,7 +320,7 @@ body {
   white-space: nowrap;
   min-height: 70px;
 }
-.site-top-nav__link::after {
+.site-top-nav__link::before {
   content: "";
   position: absolute;
   display: block;
@@ -318,18 +335,34 @@ body {
   background-color: transparent;
   color: var(--white);
 }
-.site-top-nav__link:hover::after, .site-top-nav__link:focus::after {
+.site-top-nav__link:hover::before, .site-top-nav__link:focus::before {
   height: 2px;
 }
 .site-top-nav__link.show {
   background-color: var(--hrsa-gray-900);
 }
-.site-top-nav__link.show::after {
+.site-top-nav__link.show::before {
   background: var(--hrsa-blue-400);
 }
-.site-top-nav__link--selected::after {
+.site-top-nav__link.show::after {
+  transform: rotate(180deg);
+}
+.site-top-nav__link--selected::before {
   content: "";
   height: 2px;
+}
+.site-top-nav__link--has-menu::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  margin-left: 6px;
+  background: transparent;
+  background-image: url(../img/navigation/has-menu-indicator.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: currentColor;
+  color: currentColor;
 }
 
 .site-top-search-btn {
