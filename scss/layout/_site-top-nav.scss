@@ -24,7 +24,7 @@
     min-height: $site-header-height;
     &:hover,
     &:focus {
-      background-color: rgba(var(--hrsa-gray-900), 0.5);
+      background-color: var(--hrsa-gray-900);
     }
     &--selected {
       &::after {

@@ -27,7 +27,7 @@ $site-header-height: 70px;
     &::after {
       content: "";
       width: 1px;
-      background-color: var(--hrsa-blue-200);
+      background-color: var(--hrsa-blue-300);
       position: absolute;
       top: 16px;
       bottom: 16px;
@@ -58,10 +58,10 @@ $site-header-height: 70px;
     &::after {
       content: "";
       width: 1px;
-      background-color: var(--hrsa-blue-200);
+      background-color: var(--hrsa-blue-400);
       position: absolute;
-      top: 16px;
-      bottom: 16px;
+      top: 0px;
+      bottom: 0px;
       left: 0;
     }
   }
