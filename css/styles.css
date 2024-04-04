@@ -283,7 +283,6 @@ body {
 }
 @media (min-width: 992px) {
   .site-header__user::after {
-    content: "";
     width: 1px;
     background-color: var(--hrsa-blue-300);
     position: absolute;
@@ -298,7 +297,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 -10px 0 0;
   padding: 0;
 }
 @media (min-width: 992px) {
@@ -1532,7 +1531,7 @@ body {
 }
 
 .landing-header-group {
-  background-color: #0b4778;
+  background-color: var(--hrsa-blue-800);
 }
 
 .landing-header {

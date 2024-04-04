@@ -58,7 +58,7 @@ $site-header-height: 70px;
 
     @media (min-width: $hrsa-breakpoint-lg) {
       &::after {
-        content: "";
+        //content: "";
         width: 1px;
         background-color: var(--hrsa-blue-300);
         position: absolute;
@@ -74,7 +74,7 @@ $site-header-height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0 -10px 0 0;
     padding: 0;
     @media (min-width: $hrsa-breakpoint-lg) {
       display: none;
