@@ -312,8 +312,13 @@ body {
   background-color: transparent;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-flow: row nowrap;
+  display: none;
+}
+@media (min-width: 992px) {
+  .site-top-nav {
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }
 .site-top-nav__item {
   background-color: transparent;
