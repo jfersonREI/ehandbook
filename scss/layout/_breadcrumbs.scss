@@ -24,15 +24,17 @@
 
     &:nth-last-child(2) .breadcrumb__link::before {
       margin-right: 4px;
-      margin-left: 4px;
+      margin-left: 0;
       background-color: transparent;
-      background-image: url(../img/breadcrumbs/seperator-back.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
       display: inline-flex;
-      height: 0.625rem;
-      width: 0.625rem;
-      content: "";
+      content: "\f053";
+      padding: 0;
+      font-weight: 900;
+      font-family: "Font Awesome 6 Free";
+      font-size: 12px;
+      line-height: 1;
+      color: var(--hrsa-gray-400);
+
       @media only screen and (min-width: $hrsa-breakpoint-sm) {
         display: none;
       }
@@ -42,16 +44,17 @@
     }
     @media only screen and (min-width: $hrsa-breakpoint-sm) {
       &:not(:last-child)::after {
-        margin-right: 4px;
+        margin-right: 0px;
         margin-left: 4px;
         background-color: transparent;
-        background-image: url(../img/breadcrumbs/seperator.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
         display: inline-flex;
-        height: 0.625rem;
-        width: 0.625rem;
-        content: "";
+        content: "\f101";
+        padding: 0;
+        font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+        font-size: 9px;
+        line-height: 1;
+        color: var(--hrsa-gray-400);
       }
     }
   }
