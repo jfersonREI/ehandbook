@@ -722,7 +722,7 @@ body {
 }
 .site-footer__copyright {
   background-color: var(--hrsa-footer-darker);
-  padding: 16px;
+  padding: 16px 0;
 }
 .site-footer__copyright-group {
   display: flex;
@@ -740,7 +740,7 @@ body {
   flex: 1;
 }
 .site-footer__hhs-logo {
-  max-width: 48px;
+  max-width: 32px;
   width: 100%;
   height: auto;
   margin-right: 16px;
