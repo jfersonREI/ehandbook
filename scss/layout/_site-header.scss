@@ -15,8 +15,8 @@ $site-header-height: 70px;
   flex-flow: row nowrap;
   &__logo {
     color: var(--white);
-    max-width: 112px;
-    min-width: 112px;
+    max-width: 110px;
+    min-width: 110px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ $site-header-height: 70px;
     &::after {
       content: "";
       width: 1px;
-      background-color: var(--hrsa-blue-400);
+      background-color: var(--hrsa-blue-500);
       position: absolute;
       top: 0px;
       bottom: 0px;
@@ -69,9 +69,11 @@ $site-header-height: 70px;
     background-color: transparent;
     min-height: $site-header-height;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-left: 16px;
+    @media (min-width: $hrsa-breakpoint-md) {
+      display: none;
+    }
   }
 }

@@ -1,7 +1,7 @@
 //submenu
 .site-top-nav-submenu {
   background-color: var(--hrsa-gray-900);
-  padding: 12px;
+  padding: 8px;
   min-width: 256px;
   position: absolute;
   top: 100%;
@@ -25,14 +25,13 @@
   &__header {
     background-color: transparent;
     color: var(--hrsa-orange-300);
-
     display: flex;
     border: 0;
     font-size: 14px;
     font-weight: 600;
     position: relative;
     padding: 8px;
-    margin: 0 0 8px 0;
+    margin: -8px 0 8px 0;
     &::after {
       content: "";
       position: absolute;
