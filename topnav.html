@@ -135,14 +135,28 @@
                 </div>
                 <!-- /.site-header__nav -->
                 <div class="site-header__search">
-                  <button class="site-top-search-btn">
+                  <button
+                    class="site-top-search-btn"
+                    id="dropdownSearchMenu"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-expanded="false"
+                  >
                     <span class="site-top-search-btn__text">Search</span>
                     <span class="site-top-search-btn__icon"
                       ><i class="fa-solid fa-magnifying-glass"></i
                     ></span>
                   </button>
+                  <div
+                    class="dropdown-menu animate fadeIn site-top-nav-submenu site-top-nav-submenu--search"
+                    aria-labelledby="dropdownSearchMenu"
+                  >
+                    <select name="" id=""></select
+                    ><input type="search" name="" id="" />
+                  </div>
                 </div>
                 <!-- /.site-header__search -->
+
                 <div class="site-header__user">
                   <button class="site-top-user-btn">
                     <span class="site-top-user-btn__arrow"

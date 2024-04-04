@@ -13,6 +13,11 @@
   &[data-bs-popper] {
     margin-top: 0;
   }
+  &--search,
+  &--search.dropdown-menu[data-bs-popper] {
+    top: 102px;
+    width: 100%;
+  }
 }
 .site-top-nav-submenu-list {
   margin: 0;
