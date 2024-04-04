@@ -523,6 +523,18 @@ body {
   background-color: var(--hrsa-gray-800);
 }
 
+.site-top-search-form {
+  background-color: seagreen;
+  display: flex;
+  align-items: center;
+}
+.site-top-search-form__select {
+  border: red 2px solid;
+}
+.site-top-search-form__input {
+  background-color: lightseagreen;
+}
+
 .site-top-nav-submenu {
   background-color: var(--hrsa-gray-900);
   padding: 8px;

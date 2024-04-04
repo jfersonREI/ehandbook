@@ -1,0 +1,11 @@
+.site-top-search-form {
+  background-color: seagreen;
+  display: flex;
+  align-items: center;
+  &__select {
+    border: red 2px solid;
+  }
+  &__input {
+    background-color: lightseagreen;
+  }
+}

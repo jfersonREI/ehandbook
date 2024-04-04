@@ -117,40 +117,41 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-@import "helpers/animations.scss";
+@import "helpers/animations";
 
-@import "layout/skipnav.scss";
-@import "layout/main.scss";
-@import "layout/navigation.scss";
+@import "layout/skipnav";
+@import "layout/main";
+@import "layout/navigation";
 
-@import "layout/hhs-banner.scss";
-@import "layout/site-header.scss";
-@import "layout/site-top-nav.scss";
-@import "layout/site-top-search-btn.scss";
-@import "layout/site-top-user-btn.scss";
-@import "layout/site-top-navicon.scss";
+@import "layout/hhs-banner";
+@import "layout/site-header";
+@import "layout/site-top-nav";
+@import "layout/site-top-search-btn";
+@import "layout/site-top-user-btn";
+@import "layout/site-top-navicon";
+@import "layout/site-top-search-form";
 
-@import "layout/site-top-nav-submenu.scss";
+@import "layout/site-top-nav-submenu";
 
-@import "layout/breadcrumbs.scss";
-@import "layout/nav-crumb.scss";
-@import "layout/footer.scss";
+@import "layout/breadcrumbs";
+@import "layout/nav-crumb";
+@import "layout/footer";
 
-@import "components/icon-task-list.scss";
-@import "components/icon-task-header.scss";
-@import "components/icon-btn.scss";
-@import "components/icon-btn-list.scss";
-@import "components/badge.scss";
-@import "components/sidebar-top-btn.scss";
-@import "components/sidebar-menu.scss";
-@import "components/alerts.scss";
-@import "components/button-group.scss";
-@import "components/buttons.scss";
+@import "components/icon-task-list";
+@import "components/icon-task-header";
+@import "components/icon-btn";
+@import "components/icon-btn-list";
+@import "components/badge";
+@import "components/sidebar-top-btn";
+@import "components/sidebar-menu";
+@import "components/alerts";
+@import "components/button-group";
+@import "components/buttons";
 
-@import "components/landing-header.scss";
-@import "components/landing-btn-list.scss";
-@import "components/landing-btn.scss";
+@import "components/landing-header";
+@import "components/landing-btn-list";
+@import "components/landing-btn";
 
-@import "components/site-panel.scss";
-@import "components/site-tasks-favorites.scss";
-@import "components/favorite-top-header.scss";
+@import "components/site-panel";
+@import "components/site-tasks-favorites";
+@import "components/favorite-top-header";
