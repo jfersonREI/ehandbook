@@ -11,25 +11,18 @@
   min-height: $site-header-height;
   cursor: pointer;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 12px;
-    right: 12px;
-    bottom: 20px;
-    height: 0;
-    transition: height 0.15s ease-in-out;
-    background: var(--hrsa-orange-400);
-    border-radius: 6px;
-  }
 
   &:hover,
   &:focus {
-    background-color: transparent;
+    background-color: var(--hrsa-gray-800);
     color: var(--white);
-    &::before {
-      height: 2px;
+  }
+
+  @media (min-width: $hrsa-breakpoint-lg) {
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--hrsa-orange-300);
     }
   }
 
@@ -37,9 +30,20 @@
     margin-right: 8px;
     color: currentColor;
     line-height: inherit;
+    display: none;
+    @media (min-width: $hrsa-breakpoint-lg) {
+      display: inline-flex;
+    }
   }
   &__icon {
     color: currentColor;
     line-height: inherit;
+    font-size: 24px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: transparent;
+    @media (min-width: $hrsa-breakpoint-lg) {
+      font-size: 16px;
+    }
   }
 }

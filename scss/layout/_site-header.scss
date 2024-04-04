@@ -55,14 +55,17 @@ $site-header-height: 70px;
     background-color: transparent;
     position: relative;
     min-height: $site-header-height;
-    &::after {
-      content: "";
-      width: 1px;
-      background-color: var(--hrsa-blue-500);
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0;
+
+    @media (min-width: $hrsa-breakpoint-lg) {
+      &::after {
+        content: "";
+        width: 1px;
+        background-color: var(--hrsa-blue-300);
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+      }
     }
   }
   &__navicon {
@@ -71,8 +74,9 @@ $site-header-height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 16px;
-    @media (min-width: $hrsa-breakpoint-md) {
+    margin: 0;
+    padding: 0;
+    @media (min-width: $hrsa-breakpoint-lg) {
       display: none;
     }
   }

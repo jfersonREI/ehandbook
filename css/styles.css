@@ -200,7 +200,7 @@ body {
 .hhs-banner__content {
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 6px 0;
 }
 .hhs-banner__logo {
   margin-right: 8px;
@@ -281,14 +281,16 @@ body {
   position: relative;
   min-height: 70px;
 }
-.site-header__user::after {
-  content: "";
-  width: 1px;
-  background-color: var(--hrsa-blue-500);
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0;
+@media (min-width: 992px) {
+  .site-header__user::after {
+    content: "";
+    width: 1px;
+    background-color: var(--hrsa-blue-300);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+  }
 }
 .site-header__navicon {
   background-color: transparent;
@@ -296,9 +298,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 16px;
+  margin: 0;
+  padding: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .site-header__navicon {
     display: none;
   }
@@ -393,33 +396,39 @@ body {
   cursor: pointer;
   position: relative;
 }
-.site-top-search-btn::before {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 12px;
-  right: 12px;
-  bottom: 20px;
-  height: 0;
-  transition: height 0.15s ease-in-out;
-  background: var(--hrsa-orange-400);
-  border-radius: 6px;
-}
 .site-top-search-btn:hover, .site-top-search-btn:focus {
-  background-color: transparent;
+  background-color: var(--hrsa-gray-800);
   color: var(--white);
 }
-.site-top-search-btn:hover::before, .site-top-search-btn:focus::before {
-  height: 2px;
+@media (min-width: 992px) {
+  .site-top-search-btn:hover, .site-top-search-btn:focus {
+    background-color: transparent;
+    color: var(--hrsa-orange-300);
+  }
 }
 .site-top-search-btn__text {
   margin-right: 8px;
   color: currentColor;
   line-height: inherit;
+  display: none;
+}
+@media (min-width: 992px) {
+  .site-top-search-btn__text {
+    display: inline-flex;
+  }
 }
 .site-top-search-btn__icon {
   color: currentColor;
   line-height: inherit;
+  font-size: 24px;
+  display: inline-flex;
+  justify-content: center;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  .site-top-search-btn__icon {
+    font-size: 16px;
+  }
 }
 
 .site-top-user-btn {
@@ -427,8 +436,8 @@ body {
   display: flex;
   align-items: center;
   font-size: 14px;
-  margin: 0 -15px 0 0;
-  padding: 16px 16px;
+  margin: 0 0 0 0;
+  padding: 16px 12px;
   border: 0;
   position: relative;
   min-height: 70px;
@@ -440,17 +449,23 @@ body {
   font-size: 12px;
   line-height: 1;
   color: var(--white);
-  margin-left: 8px;
+  margin-right: 6px;
+  display: none;
 }
 .site-top-user-btn__text {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  text-align: left;
+  display: none;
+  text-align: right;
   max-width: 136px;
   font-size: inherit;
   margin-right: 8px;
   line-height: 1;
+}
+@media (min-width: 992px) {
+  .site-top-user-btn__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+  }
 }
 .site-top-user-btn__name {
   white-space: nowrap;
@@ -462,14 +477,21 @@ body {
 }
 .site-top-user-btn__timestamp {
   font-size: 11px;
+  line-height: inherit;
   color: var(--hrsa-gray-300);
-  margin-top: 4px;
+  margin-top: 6px;
+  white-space: nowrap;
 }
 .site-top-user-btn__icon {
   font-size: 24px;
   line-height: 1;
   color: var(--white);
-  margin-left: 2px;
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .site-top-user-btn__icon {
+    margin-left: 6px;
+  }
 }
 
 .site-top-navicon {
@@ -479,8 +501,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
+  min-height: 70px;
+  min-width: 48px;
   color: var(--white);
 }
 .site-top-navicon::before {
@@ -488,12 +510,13 @@ body {
   padding: 0;
   font-weight: 900;
   font-family: "Font Awesome 6 Free";
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1;
   color: currentColor;
 }
 .site-top-navicon:hover, .site-top-navicon:focus {
-  color: var(--hrsa-orange-300);
+  color: var(--white);
+  background-color: var(--hrsa-gray-800);
 }
 
 .site-top-nav-submenu {
