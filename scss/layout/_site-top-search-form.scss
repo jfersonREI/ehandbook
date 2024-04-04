@@ -1,11 +1,68 @@
 .site-top-search-form {
-  background-color: seagreen;
-  display: flex;
-  align-items: center;
+  //background-color: seagreen;
+  display: grid;
+  grid-template-areas: "filters field submit";
+  grid-template-columns: 180px 1fr 40px;
+  column-gap: 0;
+  margin: 0 auto;
+
+  &__filters {
+    //background-color: darkgoldenrod;
+    grid-area: filters;
+    select {
+      width: 100%;
+    }
+  }
+  &__field {
+    //background-color: lightseagreen;
+    grid-area: field;
+    input {
+      width: 100%;
+    }
+  }
+  &__submit {
+    //background-color: turquoise;
+    grid-area: submit;
+  }
+
+  &__btn {
+    background-color: var(--white);
+    border: 0;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    color: var(--hrsa-gray-500);
+    &::before {
+      content: "\f002";
+      padding: 0;
+      font-weight: 900;
+      font-family: "Font Awesome 6 Free";
+      font-size: 16px;
+      line-height: 1;
+      color: currentColor;
+    }
+    &:hover,
+    &:focus {
+      color: var(--hrsa-gray-900);
+      background-color: var(--hrsa-gray-200);
+    }
+    &:active {
+      background-color: var(--hrsa-gray-400);
+    }
+  }
   &__select {
-    border: red 2px solid;
+    background-color: var(--hrsa-gray-400);
+    border: 0;
+    padding: 8px;
+    min-height: 40px;
   }
   &__input {
-    background-color: lightseagreen;
+    background-color: #fff;
+    border: 0;
+    padding: 8px;
+    min-height: 40px;
   }
 }

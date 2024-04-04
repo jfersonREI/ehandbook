@@ -17,6 +17,8 @@
   &--search.dropdown-menu[data-bs-popper] {
     top: 102px;
     width: 100%;
+    padding: 16px 16px;
+    background-color: var(--hrsa-gray-300);
   }
 }
 .site-top-nav-submenu-list {

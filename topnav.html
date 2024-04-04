@@ -140,6 +140,7 @@
                     id="dropdownSearchMenu"
                     data-bs-toggle="dropdown"
                     data-bs-display="static"
+                    data-bs-auto-close="outside"
                     aria-expanded="false"
                   >
                     <span class="site-top-search-btn__text">Search</span>
@@ -152,18 +153,35 @@
                     aria-labelledby="dropdownSearchMenu"
                   >
                     <div class="site-top-search-form">
-                      <select
-                        name=""
-                        id=""
-                        class="site-top-search-form__select"
-                      ></select
-                      ><input
-                        type="search"
-                        name=""
-                        id=""
-                        class="site-top-search-form__input"
-                      />
-                      <button>go</button>
+                      <span class="site-top-search-form__filters">
+                        <label for="topSearchFIlters">Filters</label>
+                        <select
+                          name=""
+                          id="topSearchFIlters"
+                          class="site-top-search-form__select"
+                        >
+                          <option value="">Default Searches</option>
+                          <option value="">Site Map</option>
+                          <option value="">Reports</option>
+                          <option value="">Grant Folder</option>
+                          <option value="">Training</option>
+                          <option value="">BPMH Reports</option>
+                          <option value="">Documents</option>
+                        </select></span
+                      >
+                      <span class="site-top-search-form__field">
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          placeholder="Search"
+                          class="site-top-search-form__input"
+                      /></span>
+                      <span class="site-top-search-form__submit">
+                        <button class="site-top-search-form__btn">
+                          <span class="sr-only">Submit</span>
+                        </button></span
+                      >
                     </div>
                     <!-- /.site-top-search-form -->
                   </div>

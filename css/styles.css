@@ -501,7 +501,6 @@ body {
 .site-top-navicon {
   background-color: transparent;
   border: 0;
-  color: green;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -524,15 +523,65 @@ body {
 }
 
 .site-top-search-form {
-  background-color: seagreen;
-  display: flex;
+  display: grid;
+  grid-template-areas: "filters field submit";
+  grid-template-columns: 180px 1fr 40px;
+  column-gap: 0;
+  margin: 0 auto;
+}
+.site-top-search-form__filters {
+  grid-area: filters;
+}
+.site-top-search-form__filters select {
+  width: 100%;
+}
+.site-top-search-form__field {
+  grid-area: field;
+}
+.site-top-search-form__field input {
+  width: 100%;
+}
+.site-top-search-form__submit {
+  grid-area: submit;
+}
+.site-top-search-form__btn {
+  background-color: var(--white);
+  border: 0;
+  border-radius: 0;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  color: var(--hrsa-gray-500);
+}
+.site-top-search-form__btn::before {
+  content: "\f002";
+  padding: 0;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 16px;
+  line-height: 1;
+  color: currentColor;
+}
+.site-top-search-form__btn:hover, .site-top-search-form__btn:focus {
+  color: var(--hrsa-gray-900);
+  background-color: var(--hrsa-gray-200);
+}
+.site-top-search-form__btn:active {
+  background-color: var(--hrsa-gray-400);
 }
 .site-top-search-form__select {
-  border: red 2px solid;
+  background-color: var(--hrsa-gray-400);
+  border: 0;
+  padding: 8px;
+  min-height: 40px;
 }
 .site-top-search-form__input {
-  background-color: lightseagreen;
+  background-color: #fff;
+  border: 0;
+  padding: 8px;
+  min-height: 40px;
 }
 
 .site-top-nav-submenu {
@@ -552,6 +601,8 @@ body {
 .site-top-nav-submenu--search, .site-top-nav-submenu--search.dropdown-menu[data-bs-popper] {
   top: 102px;
   width: 100%;
+  padding: 16px 16px;
+  background-color: var(--hrsa-gray-300);
 }
 
 .site-top-nav-submenu-list {
