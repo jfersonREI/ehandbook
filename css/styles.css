@@ -630,6 +630,21 @@ body {
   min-height: 40px;
   font-size: 14px;
 }
+.site-top-search-form__input[type=search]::-webkit-search-cancel-button {
+  /* Remove default */
+  -webkit-appearance: none;
+  /* Now your own custom styles */
+  height: 18px;
+  width: 18px;
+  background: transparent;
+  /* Will place small red box on the right of input (positioning carries over) */
+  background-image: url(../img/navigation/search-cancel-button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .site-top-nav-submenu {
   background-color: var(--hrsa-gray-900);
