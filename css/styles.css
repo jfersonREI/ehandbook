@@ -566,6 +566,11 @@ body {
   min-width: 40px;
   color: var(--hrsa-gray-500);
 }
+@media (min-width: 576px) {
+  .site-top-search-form__btn {
+    border-radius: 0 6px 6px 0;
+  }
+}
 .site-top-search-form__btn::before {
   content: "\f002";
   padding: 0;
@@ -582,17 +587,48 @@ body {
 .site-top-search-form__btn:active {
   background-color: var(--hrsa-gray-400);
 }
+.site-top-search-form__select-wrap {
+  position: relative;
+}
+.site-top-search-form__select-wrap::after {
+  content: "\f0d7";
+  padding: 0;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  line-height: 1;
+  color: var(--hrsa-gray-900);
+  position: absolute;
+  right: 4px;
+  top: calc(50% - 12px);
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
 .site-top-search-form__select {
-  background-color: var(--hrsa-gray-400);
+  background-color: var(--hrsa-gray-200);
   border: 0;
-  padding: 8px;
+  padding: 8px 12px;
   min-height: 40px;
+  appearance: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+@media (min-width: 576px) {
+  .site-top-search-form__select {
+    border-radius: 6px 0 0 6px;
+  }
 }
 .site-top-search-form__input {
   background-color: #fff;
   border: 0;
-  padding: 8px;
+  padding: 8px 12px;
   min-height: 40px;
+  font-size: 14px;
 }
 
 .site-top-nav-submenu {

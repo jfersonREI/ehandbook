@@ -47,6 +47,10 @@
     min-height: 40px;
     min-width: 40px;
     color: var(--hrsa-gray-500);
+
+    @media (min-width: $hrsa-breakpoint-sm) {
+      border-radius: 0 6px 6px 0;
+    }
     &::before {
       content: "\f002";
       padding: 0;
@@ -65,16 +69,45 @@
       background-color: var(--hrsa-gray-400);
     }
   }
+  &__select-wrap {
+    position: relative;
+    &::after {
+      content: "\f0d7";
+      padding: 0;
+      font-weight: 900;
+      font-family: "Font Awesome 6 Free";
+      font-size: 12px;
+      line-height: 1;
+      color: var(--hrsa-gray-900);
+      position: absolute;
+      right: 4px;
+      top: calc(50% - 12px);
+      background: transparent;
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+    }
+  }
   &__select {
-    background-color: var(--hrsa-gray-400);
+    background-color: var(--hrsa-gray-200);
     border: 0;
-    padding: 8px;
+    padding: 8px 12px;
     min-height: 40px;
+    appearance: none;
+    font-size: 14px;
+    border-radius: 0;
+    @media (min-width: $hrsa-breakpoint-sm) {
+      border-radius: 6px 0 0 6px;
+    }
   }
   &__input {
     background-color: #fff;
     border: 0;
-    padding: 8px;
+    padding: 8px 12px;
     min-height: 40px;
+    font-size: 14px;
   }
 }
