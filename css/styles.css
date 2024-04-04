@@ -241,8 +241,8 @@ body {
 }
 .site-header__logo {
   color: var(--white);
-  max-width: 110px;
-  min-width: 110px;
+  max-width: 100px;
+  min-width: 100px;
   margin: 0;
   display: flex;
   align-items: center;
