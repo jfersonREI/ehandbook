@@ -537,6 +537,10 @@ body {
 .site-top-nav-submenu[data-bs-popper] {
   margin-top: 0;
 }
+.site-top-nav-submenu--search, .site-top-nav-submenu--search.dropdown-menu[data-bs-popper] {
+  top: 102px;
+  width: 100%;
+}
 
 .site-top-nav-submenu-list {
   margin: 0;
@@ -1102,15 +1106,15 @@ body {
   background-color: rgba(0, 0, 0, 0.15);
   color: var(--hrsa-gray-900);
 }
-.icon-btn--search {
+.icon-btn--light {
   background-color: transparent;
   color: var(--hrsa-gray-400);
 }
-.icon-btn--search:hover {
+.icon-btn--light:hover {
   background-color: var(--hrsa-gray-300);
   color: var(--hrsa-gray-500);
 }
-.icon-btn--search:active {
+.icon-btn--light:active {
   background-color: var(--hrsa-gray-300);
   color: var(--hrsa-gray-600);
 }
