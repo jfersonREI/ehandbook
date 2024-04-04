@@ -1,10 +1,22 @@
 .site-top-search-form {
   //background-color: seagreen;
   display: grid;
-  grid-template-areas: "filters field submit";
-  grid-template-columns: 180px 1fr 40px;
   column-gap: 0;
+  display: grid;
+  grid-template-areas:
+    "filters filters"
+    "field submit";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0;
+  row-gap: 8px;
   margin: 0 auto;
+
+  @media (min-width: $hrsa-breakpoint-sm) {
+    grid-template-areas: "filters field submit";
+    grid-template-columns: 180px 1fr 40px;
+    row-gap: 0;
+  }
 
   &__filters {
     //background-color: darkgoldenrod;

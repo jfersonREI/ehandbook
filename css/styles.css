@@ -524,10 +524,21 @@ body {
 
 .site-top-search-form {
   display: grid;
-  grid-template-areas: "filters field submit";
-  grid-template-columns: 180px 1fr 40px;
   column-gap: 0;
+  display: grid;
+  grid-template-areas: "filters filters" "field submit";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0;
+  row-gap: 8px;
   margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .site-top-search-form {
+    grid-template-areas: "filters field submit";
+    grid-template-columns: 180px 1fr 40px;
+    row-gap: 0;
+  }
 }
 .site-top-search-form__filters {
   grid-area: filters;
