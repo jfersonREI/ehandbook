@@ -229,6 +229,7 @@ body {
 
 .site-header-group {
   background-color: var(--hrsa-blue-800);
+  background-image: url(../img/navigation/top-nav-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
