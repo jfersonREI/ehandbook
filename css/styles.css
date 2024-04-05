@@ -660,10 +660,10 @@ body {
 .site-top-nav-submenu--user, .site-top-nav-submenu--user.dropdown-menu[data-bs-popper] {
   top: 112px;
   width: 100%;
-  max-width: 440px;
+  max-width: 320px;
   right: 0;
   left: auto;
-  padding: 16px 16px;
+  padding: 12px;
   background-color: var(--white);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
 }
@@ -723,6 +723,108 @@ body {
   font-weight: 900;
   font-family: "Font Awesome 6 Free";
   font-size: 12px;
+}
+
+.site-user-menu {
+  background-color: transparent;
+}
+.site-user-menu__header {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  margin-bottom: 8px;
+}
+.site-user-menu__header-icon {
+  font-size: 32px;
+  margin-right: 16px;
+  color: var(--hrsa-blue-700);
+}
+.site-user-menu__header-text {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+}
+.site-user-menu__header-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.site-user-menu__header-timestamp {
+  font-size: 12px;
+  font-weight: 400;
+}
+.site-user-menu__nav {
+  background-color: transparent;
+}
+.site-user-menu__section-header {
+  background-color: var(--hrsa-gray-100);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px;
+}
+.site-user-menu__logout {
+  position: relative;
+  padding-top: 8px;
+  margin: 8px 0 0 0;
+}
+.site-user-menu__logout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  right: -12px;
+  height: 1px;
+  background-color: var(--hrsa-gray-300);
+}
+.site-user-menu__logout-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--hrsa-red-500);
+}
+.site-user-menu__logout-link:hover, .site-user-menu__logout-link:focus {
+  background-color: var(--hrsa-blue-500);
+  color: var(--white);
+}
+.site-user-menu__logout-link::after {
+  content: "\f2f5";
+  padding: 0;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  line-height: 1;
+  color: currentColor;
+}
+
+.site-user-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-user-menu-list__item {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.site-user-menu-list__link {
+  font-size: inherit;
+  color: var(--hrsa-gray-900);
+  text-decoration: none;
+  padding: 8px 8px;
+  display: block;
+}
+.site-user-menu-list__link:hover, .site-user-menu-list__link:focus {
+  background-color: var(--hrsa-blue-500);
+  color: var(--white);
 }
 
 .breadcrumb {

@@ -27,10 +27,10 @@
   &--user.dropdown-menu[data-bs-popper] {
     top: calc($site-header-height + $hhs-banner-height);
     width: 100%;
-    max-width: 440px;
+    max-width: 320px;
     right: 0;
     left: auto;
-    padding: 16px 16px;
+    padding: 12px;
     background-color: var(--white);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05),
       0px 1px 0px 0px rgba(0, 0, 0, 0.2);
