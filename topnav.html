@@ -193,15 +193,22 @@
                 <!-- /.site-header__search -->
 
                 <div class="site-header__user">
-                  <button class="site-top-user-btn">
+                  <button
+                    class="site-top-user-btn"
+                    id="dropdownUserMenu"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
                     <span class="site-top-user-btn__arrow"
                       ><i class="fa-solid fa-chevron-down"></i
                     ></span>
 
                     <span class="site-top-user-btn__text">
                       <span class="site-top-user-btn__name"
-                        >K.Stadnik Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Vero, possimus.</span
+                        >K.Stadnikloremipsumdolor sit amet consectetur
+                        adipisicing elit vero possimus</span
                       >
                       <span class="site-top-user-btn__timestamp"
                         >Apr 01, 2024, 03:58:10 PM</span
@@ -210,6 +217,12 @@
                       ><i class="fa-solid fa-circle-user"></i
                     ></span>
                   </button>
+                  <div
+                    class="dropdown-menu animate fadeIn site-top-nav-submenu site-top-nav-submenu--user"
+                    aria-labelledby="dropdownUserMenu"
+                  >
+                    USER MENU
+                  </div>
                   <!-- /.site-top-user-btn -->
                 </div>
                 <!-- /.site-header__user -->

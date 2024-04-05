@@ -1,6 +1,7 @@
 .hhs-banner {
   width: 100%;
   background-color: var(--hrsa-gray-900);
+  height: $hhs-banner-height;
 
   &__content {
     display: flex;
@@ -24,7 +25,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
+    width: auto;
 
     &:hover,
     &:focus {

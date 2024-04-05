@@ -1,5 +1,3 @@
-$site-header-height: 70px;
-
 .site-header-group {
   background-color: var(--hrsa-blue-800);
   //background-image: url(../img/navigation/top-nav-bg.jpg);
@@ -53,20 +51,7 @@ $site-header-height: 70px;
   }
   &__user {
     background-color: transparent;
-    position: relative;
     min-height: $site-header-height;
-
-    @media (min-width: $hrsa-breakpoint-lg) {
-      &::after {
-        //content: "";
-        width: 1px;
-        background-color: var(--hrsa-blue-300);
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0;
-      }
-    }
   }
   &__navicon {
     background-color: transparent;
