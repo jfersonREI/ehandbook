@@ -683,7 +683,7 @@ body {
 .site-top-nav-submenu__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 32px;
+  column-gap: 24px;
 }
 .site-top-nav-submenu__grid-column {
   background: transparent;
