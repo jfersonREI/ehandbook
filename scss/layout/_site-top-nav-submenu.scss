@@ -39,8 +39,7 @@
     left: auto;
     padding: 12px;
     background-color: var(--white);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.03),
-      0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.03);
     @media (min-width: $hrsa-breakpoint-sm) {
       max-width: 320px;
     }
