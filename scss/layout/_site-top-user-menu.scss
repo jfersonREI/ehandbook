@@ -41,7 +41,6 @@
   &__logout {
     position: relative;
     padding-top: 8px;
-
     margin: 8px 0 0 0;
     &::before {
       content: "";
@@ -91,7 +90,8 @@
     font-size: 14px;
     font-weight: 400;
   }
-  &__link {
+  &__link,
+  &__link:visited {
     font-size: inherit;
     color: var(--hrsa-gray-900);
     text-decoration: none;

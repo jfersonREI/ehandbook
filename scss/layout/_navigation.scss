@@ -1,9 +1,9 @@
-$site-header-height: 80px;
+$foo-site-header-height: 80px;
 $site-sidebar-mini-width: 64px;
 
 .foo-header {
   background-color: var(--hrsa-blue-500);
-  height: $site-header-height;
+  height: $foo-site-header-height;
 }
 
 .foo-main {
@@ -23,7 +23,7 @@ $site-sidebar-mini-width: 64px;
 .foo-sidebar-mini {
   background-color: white;
   position: fixed;
-  top: $site-header-height;
+  top: $foo-site-header-height;
   bottom: 0;
   left: 0;
   width: $site-sidebar-mini-width;
@@ -34,7 +34,7 @@ $site-sidebar-mini-width: 64px;
   background-color: var(--hrsa-blue-800);
   color: var(--white);
   width: $site-sidebar-mini-width;
-  height: $site-header-height;
+  height: $foo-site-header-height;
   position: fixed;
   top: 0;
   left: 0;

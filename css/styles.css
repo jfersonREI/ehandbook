@@ -251,7 +251,7 @@ body {
   padding: 0;
   margin-right: 12px;
   position: relative;
-  min-height: 80px;
+  min-height: 70px;
   /*&::after {
     content: "";
     width: 1px;
@@ -280,11 +280,11 @@ body {
 }
 .site-header__user {
   background-color: transparent;
-  min-height: 80px;
+  min-height: 70px;
 }
 .site-header__navicon {
   background-color: transparent;
-  min-height: 80px;
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,7 +330,7 @@ body {
   text-decoration: none;
   position: relative;
   white-space: nowrap;
-  min-height: 80px;
+  min-height: 70px;
 }
 .site-top-nav__link::before {
   content: "";
@@ -390,7 +390,7 @@ body {
   margin: 0;
   color: var(--white);
   font-size: 14px;
-  min-height: 80px;
+  min-height: 70px;
   cursor: pointer;
   position: relative;
 }
@@ -438,7 +438,7 @@ body {
   padding: 16px 12px;
   border: 0;
   position: relative;
-  min-height: 80px;
+  min-height: 70px;
 }
 .site-top-user-btn:hover, .site-top-user-btn:focus {
   background-color: var(--hrsa-gray-800);
@@ -498,7 +498,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 80px;
+  min-height: 70px;
   min-width: 48px;
   color: var(--white);
 }
@@ -656,18 +656,18 @@ body {
   margin-top: 0;
 }
 .site-top-nav-submenu--megamenu, .site-top-nav-submenu--megamenu.dropdown-menu[data-bs-popper] {
-  top: 112px;
+  top: 102px;
   width: 100%;
   padding: 16px 16px;
 }
 .site-top-nav-submenu--search, .site-top-nav-submenu--search.dropdown-menu[data-bs-popper] {
-  top: 112px;
+  top: 102px;
   width: 100%;
   padding: 16px 16px;
   background-color: var(--hrsa-gray-300);
 }
 .site-top-nav-submenu--user, .site-top-nav-submenu--user.dropdown-menu[data-bs-popper] {
-  top: 112px;
+  top: 102px;
   width: 100%;
   right: 0;
   left: auto;
@@ -841,14 +841,14 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.site-user-menu-list__link {
+.site-user-menu-list__link, .site-user-menu-list__link:visited {
   font-size: inherit;
   color: var(--hrsa-gray-900);
   text-decoration: none;
   padding: 8px 8px;
   display: block;
 }
-.site-user-menu-list__link:hover, .site-user-menu-list__link:focus {
+.site-user-menu-list__link:hover, .site-user-menu-list__link:focus, .site-user-menu-list__link:visited:hover, .site-user-menu-list__link:visited:focus {
   background-color: var(--hrsa-blue-500);
   color: var(--white);
 }
@@ -1476,7 +1476,7 @@ body {
   justify-content: center;
   font-size: 1.55rem;
   min-width: 64px;
-  min-height: 80px;
+  min-height: 70px;
   cursor: pointer;
 }
 .sidebar-top-btn svg,
