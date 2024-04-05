@@ -453,7 +453,7 @@ body {
 .site-top-user-btn__text {
   display: none;
   text-align: right;
-  max-width: 136px;
+  max-width: 130px;
   font-size: inherit;
   margin-right: 8px;
   line-height: 1;
@@ -682,7 +682,7 @@ body {
 }
 .site-top-nav-submenu__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
 }
 .site-top-nav-submenu__grid-column {
@@ -1883,17 +1883,17 @@ body {
 }
 @media (min-width: 768px) {
   .landing-btn-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {
   .landing-btn-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1200px) {
   .landing-btn-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

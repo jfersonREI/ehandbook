@@ -8,13 +8,13 @@
   }
 
   @media (min-width: $hrsa-breakpoint-md) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $hrsa-breakpoint-lg) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: $hrsa-breakpoint-xl) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
