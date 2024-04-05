@@ -30,7 +30,7 @@
       content: "\f053";
       padding: 0;
       font-weight: 900;
-      font-family: "Font Awesome 6 Free";
+      font-family: $icon-font-family;
       font-size: 12px;
       line-height: 1;
       color: var(--hrsa-gray-400);
@@ -51,7 +51,7 @@
         content: "\f101";
         padding: 0;
         font-weight: 900;
-        font-family: "Font Awesome 6 Free";
+        font-family: $icon-font-family;
         font-size: 9px;
         line-height: 1;
         color: var(--hrsa-gray-400);
