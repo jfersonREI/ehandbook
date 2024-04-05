@@ -6,7 +6,6 @@
   margin: 0 0 0 0;
   padding: 16px 12px;
   border: 0;
-  position: relative;
   min-height: $site-header-height;
 
   &:hover,
@@ -17,13 +16,13 @@
     font-size: 12px;
     line-height: 1;
     color: var(--white);
-    margin-right: 6px;
+    margin-right: 4px;
     display: none;
   }
   &__text {
     display: none;
     text-align: right;
-    max-width: 130px;
+    max-width: 144px;
     font-size: inherit;
     margin-right: 8px;
     line-height: 1;

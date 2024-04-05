@@ -252,15 +252,6 @@ body {
   margin-right: 12px;
   position: relative;
   min-height: 70px;
-  /*&::after {
-    content: "";
-    width: 1px;
-    background-color: var(--hrsa-blue-300);
-    position: absolute;
-    top: 16px;
-    bottom: 16px;
-    right: 0;
-  }*/
 }
 .site-header__logo img,
 .site-header__logo svg {
@@ -281,6 +272,12 @@ body {
 .site-header__user {
   background-color: transparent;
   min-height: 70px;
+}
+@media (min-width: 992px) {
+  .site-header__user {
+    border-left: var(--hrsa-gray-500) 1px solid;
+    margin-right: -12px;
+  }
 }
 .site-header__navicon {
   background-color: transparent;
@@ -437,7 +434,6 @@ body {
   margin: 0 0 0 0;
   padding: 16px 12px;
   border: 0;
-  position: relative;
   min-height: 70px;
 }
 .site-top-user-btn:hover, .site-top-user-btn:focus {
@@ -447,13 +443,13 @@ body {
   font-size: 12px;
   line-height: 1;
   color: var(--white);
-  margin-right: 6px;
+  margin-right: 4px;
   display: none;
 }
 .site-top-user-btn__text {
   display: none;
   text-align: right;
-  max-width: 130px;
+  max-width: 144px;
   font-size: inherit;
   margin-right: 8px;
   line-height: 1;

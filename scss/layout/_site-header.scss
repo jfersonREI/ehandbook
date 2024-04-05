@@ -23,15 +23,6 @@
     position: relative;
     min-height: $site-header-height;
 
-    /*&::after {
-      content: "";
-      width: 1px;
-      background-color: var(--hrsa-blue-300);
-      position: absolute;
-      top: 16px;
-      bottom: 16px;
-      right: 0;
-    }*/
     img,
     svg {
       width: 100%;
@@ -52,6 +43,10 @@
   &__user {
     background-color: transparent;
     min-height: $site-header-height;
+    @media (min-width: $hrsa-breakpoint-lg) {
+      border-left: var(--hrsa-gray-500) 1px solid;
+      margin-right: -12px;
+    }
   }
   &__navicon {
     background-color: transparent;
