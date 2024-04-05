@@ -468,6 +468,7 @@ body {
   width: 100%;
   color: var(--white);
   font-weight: 500;
+  font-size: 13px;
 }
 .site-top-user-btn__timestamp {
   font-size: 11px;
@@ -546,7 +547,7 @@ body {
   grid-area: submit;
 }
 .site-top-search-form__btn {
-  background-color: var(--white);
+  background-color: var(--hrsa-gray-300);
   border: 0;
   border-radius: 0;
   display: inline-flex;
@@ -572,10 +573,10 @@ body {
 }
 .site-top-search-form__btn:hover, .site-top-search-form__btn:focus {
   color: var(--hrsa-gray-900);
-  background-color: var(--hrsa-gray-200);
+  background-color: var(--hrsa-gray-400);
 }
 .site-top-search-form__btn:active {
-  background-color: var(--hrsa-gray-400);
+  background-color: var(--hrsa-gray-500);
 }
 .site-top-search-form__select-wrap {
   position: relative;
@@ -587,7 +588,7 @@ body {
   font-family: "Font Awesome 6 Free";
   font-size: 12px;
   line-height: 1;
-  color: var(--hrsa-gray-900);
+  color: var(--hrsa-blue-100);
   position: absolute;
   right: 4px;
   top: calc(50% - 12px);
@@ -600,7 +601,8 @@ body {
   pointer-events: none;
 }
 .site-top-search-form__select {
-  background-color: var(--hrsa-gray-200);
+  background-color: var(--hrsa-blue-500);
+  color: var(--white);
   border: 0;
   padding: 8px 12px;
   min-height: 40px;
@@ -614,7 +616,7 @@ body {
   }
 }
 .site-top-search-form__input {
-  background-color: #fff;
+  background-color: var(--hrsa-gray-300);
   border: 0;
   padding: 8px 12px;
   min-height: 40px;
@@ -660,7 +662,7 @@ body {
   top: 102px;
   width: 100%;
   padding: 16px 16px;
-  background-color: var(--hrsa-gray-300);
+  background-color: var(--white);
 }
 .site-top-nav-submenu--user, .site-top-nav-submenu--user.dropdown-menu[data-bs-popper] {
   top: 102px;

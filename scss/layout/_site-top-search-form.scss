@@ -38,7 +38,7 @@
   }
 
   &__btn {
-    background-color: var(--white);
+    background-color: var(--hrsa-gray-300);
     border: 0;
     border-radius: 0;
     display: inline-flex;
@@ -63,14 +63,15 @@
     &:hover,
     &:focus {
       color: var(--hrsa-gray-900);
-      background-color: var(--hrsa-gray-200);
+      background-color: var(--hrsa-gray-400);
     }
     &:active {
-      background-color: var(--hrsa-gray-400);
+      background-color: var(--hrsa-gray-500);
     }
   }
   &__select-wrap {
     position: relative;
+
     &::after {
       content: "\f0d7";
       padding: 0;
@@ -78,7 +79,7 @@
       font-family: $icon-font-family;
       font-size: 12px;
       line-height: 1;
-      color: var(--hrsa-gray-900);
+      color: var(--hrsa-blue-100);
       position: absolute;
       right: 4px;
       top: calc(50% - 12px);
@@ -92,7 +93,8 @@
     }
   }
   &__select {
-    background-color: var(--hrsa-gray-200);
+    background-color: var(--hrsa-blue-500);
+    color: var(--white);
     border: 0;
     padding: 8px 12px;
     min-height: 40px;
@@ -104,7 +106,7 @@
     }
   }
   &__input {
-    background-color: #fff;
+    background-color: var(--hrsa-gray-300);
     border: 0;
     padding: 8px 12px;
     min-height: 40px;
