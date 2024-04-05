@@ -790,6 +790,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   padding: 8px;
+  color: var(--hrsa-gray-500);
 }
 .site-user-menu__logout {
   position: relative;
