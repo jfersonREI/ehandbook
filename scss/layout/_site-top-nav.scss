@@ -15,6 +15,9 @@
     font-weight: 400;
     color: var(--white);
     position: relative;
+    &--unset {
+      position: unset;
+    }
   }
   &__link {
     padding: 16px 10px;
