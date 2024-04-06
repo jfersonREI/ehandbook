@@ -13,12 +13,24 @@
     background-color: var(--hrsa-gray-800);
   }
   &__arrow {
-    font-size: 12px;
+    align-self: flex-start;
+    margin-top: 4px;
+    font-size: 14px;
     line-height: 1;
     color: var(--white);
-    margin-right: 4px;
-    display: none;
+    margin-right: 8px;
+    display: block;
+    transform: rotate(0deg);
   }
+
+  &.show {
+    .site-top-user-btn {
+      &__arrow {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
   &__text {
     display: none;
     text-align: right;

@@ -440,11 +440,17 @@ body {
   background-color: var(--hrsa-gray-800);
 }
 .site-top-user-btn__arrow {
-  font-size: 12px;
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: 14px;
   line-height: 1;
   color: var(--white);
-  margin-right: 4px;
-  display: none;
+  margin-right: 8px;
+  display: block;
+  transform: rotate(0deg);
+}
+.site-top-user-btn.show .site-top-user-btn__arrow {
+  transform: rotate(180deg);
 }
 .site-top-user-btn__text {
   display: none;
@@ -547,7 +553,7 @@ body {
   grid-area: submit;
 }
 .site-top-search-form__btn {
-  background-color: var(--hrsa-gray-200);
+  background-color: var(--hrsa-gray-300);
   border: 0;
   border-radius: 0;
   display: inline-flex;
@@ -555,7 +561,7 @@ body {
   justify-content: center;
   min-height: 40px;
   min-width: 40px;
-  color: var(--hrsa-gray-800);
+  color: var(--hrsa-gray-900);
 }
 @media (min-width: 576px) {
   .site-top-search-form__btn {
@@ -572,7 +578,7 @@ body {
   color: currentColor;
 }
 .site-top-search-form__btn:hover, .site-top-search-form__btn:focus {
-  color: var(--hrsa-gray-900);
+  color: var(--hrsa-gray-950);
   background-color: var(--hrsa-gray-400);
 }
 .site-top-search-form__btn:active {
@@ -588,7 +594,7 @@ body {
   font-family: "Font Awesome 6 Free";
   font-size: 12px;
   line-height: 1;
-  color: var(--hrsa-gray-900);
+  color: var(--hrsa-blue-100);
   position: absolute;
   right: 4px;
   top: calc(50% - 12px);
@@ -601,8 +607,8 @@ body {
   pointer-events: none;
 }
 .site-top-search-form__select {
-  background-color: var(--hrsa-gray-300);
-  color: var(--hrsa-gray-900);
+  background-color: var(--hrsa-blue-600);
+  color: var(--white);
   border: 0;
   padding: 8px 12px;
   min-height: 40px;
@@ -616,20 +622,20 @@ body {
   }
 }
 .site-top-search-form__input {
-  background-color: var(--hrsa-gray-200);
+  background-color: var(--hrsa-gray-300);
   border: 0;
   padding: 8px 12px;
   min-height: 40px;
   font-size: 14px;
 }
+.site-top-search-form__input:focus {
+  background-color: var(--hrsa-gray-200);
+}
 .site-top-search-form__input[type=search]::-webkit-search-cancel-button {
-  /* Remove default */
   -webkit-appearance: none;
-  /* Now your own custom styles */
   height: 18px;
   width: 18px;
   background: transparent;
-  /* Will place small red box on the right of input (positioning carries over) */
   background-image: url(../img/navigation/search-cancel-button.svg);
   background-repeat: no-repeat;
   background-size: contain;

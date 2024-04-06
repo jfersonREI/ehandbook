@@ -1,5 +1,4 @@
 .site-top-search-form {
-  //background-color: seagreen;
   display: grid;
   column-gap: 0;
   display: grid;
@@ -19,26 +18,23 @@
   }
 
   &__filters {
-    //background-color: darkgoldenrod;
     grid-area: filters;
     select {
       width: 100%;
     }
   }
   &__field {
-    //background-color: lightseagreen;
     grid-area: field;
     input {
       width: 100%;
     }
   }
   &__submit {
-    //background-color: turquoise;
     grid-area: submit;
   }
 
   &__btn {
-    background-color: var(--hrsa-gray-200);
+    background-color: var(--hrsa-gray-300);
     border: 0;
     border-radius: 0;
     display: inline-flex;
@@ -46,7 +42,7 @@
     justify-content: center;
     min-height: 40px;
     min-width: 40px;
-    color: var(--hrsa-gray-800);
+    color: var(--hrsa-gray-900);
 
     @media (min-width: $hrsa-breakpoint-sm) {
       border-radius: 0 6px 6px 0;
@@ -62,7 +58,7 @@
     }
     &:hover,
     &:focus {
-      color: var(--hrsa-gray-900);
+      color: var(--hrsa-gray-950);
       background-color: var(--hrsa-gray-400);
     }
     &:active {
@@ -79,7 +75,7 @@
       font-family: $icon-font-family;
       font-size: 12px;
       line-height: 1;
-      color: var(--hrsa-gray-900);
+      color: var(--hrsa-blue-100);
       position: absolute;
       right: 4px;
       top: calc(50% - 12px);
@@ -93,8 +89,8 @@
     }
   }
   &__select {
-    background-color: var(--hrsa-gray-300);
-    color: var(--hrsa-gray-900);
+    background-color: var(--hrsa-blue-600);
+    color: var(--white);
     border: 0;
     padding: 8px 12px;
     min-height: 40px;
@@ -106,26 +102,23 @@
     }
   }
   &__input {
-    background-color: var(--hrsa-gray-200);
+    background-color: var(--hrsa-gray-300);
     border: 0;
     padding: 8px 12px;
     min-height: 40px;
     font-size: 14px;
+    &:focus {
+      background-color: var(--hrsa-gray-200);
+    }
 
     &[type="search"]::-webkit-search-cancel-button {
-      /* Remove default */
       -webkit-appearance: none;
-
-      /* Now your own custom styles */
       height: 18px;
       width: 18px;
       background: transparent;
-
-      /* Will place small red box on the right of input (positioning carries over) */
       background-image: url(../img/navigation/search-cancel-button.svg);
       background-repeat: no-repeat;
       background-size: contain;
-
       display: flex;
       justify-content: center;
       align-items: center;
