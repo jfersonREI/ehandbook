@@ -62,7 +62,7 @@ body[noscroll] {
   height: $app-header-height-sm;
   z-index: 1;
   position: relative;
-  padding: 1rem;
+  padding: 16px;
 }
 
 //wrapper for nav should handle scrolling
@@ -82,11 +82,11 @@ body[noscroll] {
   padding: 0;
   &__item {
     border-bottom: var(--hrsa-gray-400) 1px solid;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
   }
   &__link {
-    padding: 1rem;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,11 +114,11 @@ body[noscroll] {
     min-width: 0; //need for text truncation
   }
   &__icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 0.25rem;
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
     display: inline-flex;
-    flex: 0 0 1.5rem;
+    flex: 0 0 24px;
     svg,
     img {
       width: 100%;
@@ -126,19 +126,19 @@ body[noscroll] {
       fill: currentColor;
     }
     &--sm {
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 20px;
+      height: 20px;
     }
     &--avatar {
-      margin-right: 0.5rem;
+      margin-right: 8px;
       margin-left: 0;
     }
   }
   &__expand {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
     display: inline-flex;
-    flex: 0 0 1.5rem;
+    flex: 0 0 24px;
     transform: rotate(180deg);
     svg,
     img {
@@ -157,12 +157,12 @@ body[noscroll] {
   padding: 0;
   list-style: none;
   &__item {
-    border-top: gray 1px solid;
-    font-size: 1rem;
+    border-top: var(--hrsa-gray-400) 1px solid;
+    font-size: 16px;
     font-weight: 400;
   }
   &__link {
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 16px 16px 16px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,10 +181,10 @@ body[noscroll] {
     &--sublevel-1 {
       justify-content: flex-start;
       align-items: flex-start;
-      font-size: 0.9375rem;
+      font-size: 15px;
       &::before {
         content: "\2014";
-        padding-right: 0.5rem;
+        padding-right: 8px;
         font-weight: 300;
       }
     }
@@ -206,7 +206,7 @@ body[noscroll] {
     }
   }
   a:focus {
-    outline-offset: 0.25rem;
+    outline-offset: 4px;
   }
 }
 
@@ -217,15 +217,15 @@ body[noscroll] {
 .app-mobile-close-btn {
   background-color: transparent;
   border: 0;
-  padding: 0.5rem;
+  padding: 8px;
   color: var(--white);
   &:hover {
     color: var(--hrsa-blue-100);
   }
   img,
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
     fill: currentColor;
   }
 }

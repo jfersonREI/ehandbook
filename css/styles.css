@@ -941,7 +941,7 @@ body[noscroll] {
   height: 64px;
   z-index: 1;
   position: relative;
-  padding: 1rem;
+  padding: 16px;
 }
 
 .app-mobile-nav-list-group {
@@ -961,11 +961,11 @@ body[noscroll] {
 }
 .app-mobile-nav-list__item {
   border-bottom: var(--hrsa-gray-400) 1px solid;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
 }
 .app-mobile-nav-list__link {
-  padding: 1rem;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -991,11 +991,11 @@ body[noscroll] {
   min-width: 0;
 }
 .app-mobile-nav-list__icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-left: 0.25rem;
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
   display: inline-flex;
-  flex: 0 0 1.5rem;
+  flex: 0 0 24px;
 }
 .app-mobile-nav-list__icon svg,
 .app-mobile-nav-list__icon img {
@@ -1004,18 +1004,18 @@ body[noscroll] {
   fill: currentColor;
 }
 .app-mobile-nav-list__icon--sm {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
 }
 .app-mobile-nav-list__icon--avatar {
-  margin-right: 0.5rem;
+  margin-right: 8px;
   margin-left: 0;
 }
 .app-mobile-nav-list__expand {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   display: inline-flex;
-  flex: 0 0 1.5rem;
+  flex: 0 0 24px;
   transform: rotate(180deg);
 }
 .app-mobile-nav-list__expand svg,
@@ -1035,12 +1035,12 @@ body[noscroll] {
   list-style: none;
 }
 .app-mobile-nav-submenu-list__item {
-  border-top: gray 1px solid;
-  font-size: 1rem;
+  border-top: var(--hrsa-gray-400) 1px solid;
+  font-size: 16px;
   font-weight: 400;
 }
 .app-mobile-nav-submenu-list__link {
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 16px 16px 16px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1060,11 +1060,11 @@ body[noscroll] {
 .app-mobile-nav-submenu-list__link--sublevel-1 {
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 0.9375rem;
+  font-size: 15px;
 }
 .app-mobile-nav-submenu-list__link--sublevel-1::before {
   content: "—";
-  padding-right: 0.5rem;
+  padding-right: 8px;
   font-weight: 300;
 }
 
@@ -1082,7 +1082,7 @@ body[noscroll] {
   height: auto;
 }
 .app-mobile-logo a:focus {
-  outline-offset: 0.25rem;
+  outline-offset: 4px;
 }
 
 .app-mobile-close {
@@ -1092,7 +1092,7 @@ body[noscroll] {
 .app-mobile-close-btn {
   background-color: transparent;
   border: 0;
-  padding: 0.5rem;
+  padding: 8px;
   color: var(--white);
 }
 .app-mobile-close-btn:hover {
@@ -1100,8 +1100,8 @@ body[noscroll] {
 }
 .app-mobile-close-btn img,
 .app-mobile-close-btn svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
