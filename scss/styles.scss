@@ -94,13 +94,9 @@
   --icon-xml: #4c8562;
 }
 
-// Small devices (landscape phones, 576px and up)
+// breakpoints
 $hrsa-breakpoint-sm: 576px;
-
-// Medium devices (tablets, 768px and up)
 $hrsa-breakpoint-md: 768px;
-
-// Large devices (desktops, 992px and up)
 $hrsa-breakpoint-lg: 992px;
 $hrsa-breakpoint-xl: 1200px;
 
@@ -108,8 +104,20 @@ $hrsa-breakpoint-xl: 1200px;
 $hhs-banner-height: 32px;
 $site-header-height: 70px;
 
-//icon font family
+//mobile-variables
+$app-header-bg: #fff;
+$app-header-height-sm: 64px;
+$app-header-height-lg: 88px;
+$app-topbar-height: 52px;
+
+$app-sidebar-width: 320px;
+$app-guide-bg-color: #fff;
+$app-guide-header-bg: var(--hrsa-blue-700);
+$app-guide-transition-duration: 0.3s;
+
+//font families
 $icon-font-family: "Font Awesome 6 Free";
+$base-font-family: Helvetica, Arial, sans-serif;
 
 /* Smooth scrolling IF user doesn't have a preference due to motion sensitivities */
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -120,8 +128,7 @@ $icon-font-family: "Font Awesome 6 Free";
 
 body {
   background-color: var(--hrsa-body-bg);
-  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-font-family;
 }
 
 @import "helpers/animations";
@@ -140,6 +147,9 @@ body {
 
 @import "layout/site-top-nav-submenu";
 @import "layout/site-top-user-menu";
+
+@import "layout/app-mobile-scrim";
+@import "layout/app-mobile-nav";
 
 @import "layout/breadcrumbs";
 @import "layout/nav-crumb";

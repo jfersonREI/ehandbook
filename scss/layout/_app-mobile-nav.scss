@@ -1,0 +1,322 @@
+//stop scrolling of body
+body[noscroll] {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  /* Other browsers */
+  overscroll-behavior: none;
+}
+
+//nav holder
+.app-mobile-nav-group {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  z-index: 2;
+  &[opened] {
+    z-index: 3;
+    width: 100%;
+
+    .app-mobile-nav-group-inner {
+      width: 100%;
+      @media (min-width: $hrsa-breakpoint-sm) {
+        width: $app-sidebar-width;
+      }
+    }
+  }
+}
+
+//wrap for the nav
+.app-mobile-nav-group-inner {
+  background-color: $app-guide-bg-color;
+  width: $app-sidebar-width;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition-property: transform;
+  //transform: translate3d(-100%, 0, 0);
+  //visibility: hidden;
+  transition-duration: $app-guide-transition-duration;
+
+  &[opened] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &[no-transition] {
+    transition: none;
+  }
+}
+
+//header
+.app-mobile-header {
+  background-color: $app-guide-header-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  height: $app-header-height-sm;
+  z-index: 1;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0px 1px 0px 0px gray;
+}
+
+//wrapper for nav should handle scrolling
+.app-mobile-nav-list-group {
+  background: $app-guide-bg-color;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: $app-header-height-sm;
+  overflow: auto;
+}
+
+.app-mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    border-bottom: gray 1px solid;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  &__link {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: brown;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: left;
+    &:hover {
+      color: blue;
+      background-color: yellow;
+    }
+    &.collapsed {
+      .app-mobile-nav-list__expand {
+        transform: rotate(0deg);
+      }
+    }
+    &--login {
+      color: blue;
+      &:hover {
+        color: blue-dark;
+      }
+    }
+  }
+  &__icon-text {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0; //need for text truncation
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.25rem;
+    display: inline-flex;
+    flex: 0 0 1.5rem;
+    svg,
+    img {
+      width: 100%;
+      height: auto;
+      fill: currentColor;
+    }
+    &--sm {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    &--avatar {
+      margin-right: 0.5rem;
+      margin-left: 0;
+    }
+  }
+  &__expand {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    flex: 0 0 1.5rem;
+    transform: rotate(180deg);
+    svg,
+    img {
+      width: 100%;
+      height: auto;
+      fill: currentColor;
+    }
+  }
+  &__username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0.5rem;
+  }
+  &__login {
+    text-transform: uppercase;
+  }
+}
+//submenu
+.app-mobile-nav-submenu {
+  background-color: transparent;
+}
+.app-mobile-nav-submenu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item {
+    border-top: gray 1px solid;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  &__link {
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: brown;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: left;
+    &:hover {
+      color: blue;
+      background-color: yellow;
+    }
+    &--sublevel-1 {
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 0.9375rem;
+      &::before {
+        content: "\2014";
+        padding-right: 0.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+//////search box
+.app-mobile-nav-search {
+  padding: 1rem 1rem 1rem 1rem;
+  border-top: gray 1px solid;
+  &__search-form {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__form-control {
+    margin: 0 0 0rem 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &--full {
+      flex: 1;
+    }
+  }
+  &__input {
+    width: 100%;
+    border: 1px seagreen solid;
+    border-style: solid;
+    appearance: none;
+    border-radius: 0;
+    color: darkblue;
+    display: block;
+    height: 2.5rem;
+    padding: 0.5rem;
+  }
+  &__select {
+    width: 100%;
+  }
+  &__btn {
+    width: 100%;
+    display: block;
+    height: 2.5rem;
+    background-color: blue;
+    color: #fff;
+    border: 0;
+    border-radius: 0 0.25rem 0.25rem 0;
+    font-weight: 700;
+    padding: 0.5rem;
+    svg {
+      fill: currentColor;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+/////////////////////////////////////////////////////////
+//logo
+.app-mobile-logo {
+  background: none;
+  width: 112px;
+  &__image {
+    display: block;
+    fill: currentColor;
+    img,
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  a:focus {
+    outline-offset: 0.25rem;
+  }
+}
+
+//close btn
+.app-mobile-close {
+  background-color: transparent;
+}
+.app-mobile-close-btn {
+  background-color: transparent;
+  border: 0;
+  padding: 0.5rem;
+  color: var(--white);
+  &:hover {
+    color: var(--hrsa-blue-100);
+  }
+  img,
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+  }
+}
+//wrap for the nav
+.app-mobile-nav-group-inner {
+  background-color: $app-guide-bg-color;
+  width: $app-sidebar-width;
+  transform: translate3d(-100%, 0, 0);
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition-property: transform;
+  transition-duration: $app-guide-transition-duration;
+
+  &[opened] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &[no-transition] {
+    transition: none;
+  }
+}

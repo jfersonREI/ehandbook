@@ -416,11 +416,269 @@
                 </div>
                 <!-- /.site-header__user -->
                 <div class="site-header__navicon">
-                  <button class="site-top-navicon" aria-label="Menu">
+                  <button
+                    class="site-top-navicon"
+                    aria-label="Menu"
+                    id="appMobileNavToggle"
+                  >
                     <span class="sr-only">Menu</span>
                   </button>
                 </div>
                 <!-- /.site-header__navicon -->
+
+                <!-- START MOBILE NAV -->
+                <div class="app-mobile-nav-group">
+                  <div class="app-mobile-scrim"></div>
+                  <div class="app-mobile-nav-group-inner">
+                    <div class="app-mobile-header">
+                      <div class="app-mobile-logo">
+                        <span class="app-mobile-logo__image">
+                          <a href="javascript:void(0);" aria-label="HRSA">
+                            <img
+                              src="../img/navigation/hrsa-ebooks-logo-white.svg"
+                              alt="HRSA"
+                              width="188"
+                              height="30"
+                            />
+                          </a>
+                        </span>
+                        <!-- /.app-logo-image -->
+                      </div>
+                      <div class="app-mobile-close">
+                        <button
+                          class="app-mobile-close-btn"
+                          aria-label="Close Menu"
+                          aria-expanded="false"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M4.92896 17.6567 17.65688206 4.92877794l1.41421356 1.41421356L6.34317356 19.07091356z"
+                            />
+                            <path
+                              d="M17.6569 19.071 4.92897794 6.34307794 6.3431915 4.92886438l12.72792206 12.72792206z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <!-- /.app-mobile-close -->
+                      <!-- /.app-mobile-logo -->
+                    </div>
+                    <!-- /.app-mobile-header -->
+                    <div class="app-mobile-nav-list-group">
+                      <ul class="app-mobile-nav-list">
+                        <li class="app-mobile-nav-list__item">
+                          <div
+                            class="app-mobile-nav-search"
+                            id="appMobileNavSearch"
+                          >
+                            <div class="app-mobile-nav-search__search-form">
+                              <div
+                                class="app-mobile-nav-search__form-control app-mobile-nav-search__form-control--full"
+                              >
+                                <label
+                                  for="appMobileSearchInput"
+                                  class="visually-hidden"
+                                  >Enter search term</label
+                                >
+                                <input
+                                  type="text"
+                                  class="app-mobile-nav-search__input"
+                                  id="appMobileSearchInput"
+                                  placeholder="Search Data Products"
+                                />
+                              </div>
+
+                              <div class="app-mobile-nav-search__form-control">
+                                <button
+                                  class="app-mobile-nav-search__btn"
+                                  aria-label="Search"
+                                >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5Zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z"
+                                      clip-rule="evenodd"
+                                    />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.app-mobile-nav-search -->
+                        </li>
+
+                        <li class="app-mobile-nav-list__item">
+                          <button
+                            class="app-mobile-nav-list__link app-mobile-nav-list__link--login"
+                          >
+                            <span class="app-mobile-nav-list__icon-text">
+                              <span class="app-mobile-nav-list__login"
+                                >Login</span
+                              ></span
+                            >
+                          </button>
+                        </li>
+
+                        <li class="app-mobile-nav-list__item">
+                          <button
+                            class="app-mobile-nav-list__link collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#appMobileNavWorkspaces"
+                            aria-expanded="false"
+                            aria-controls="appMobileNavWorkspaces"
+                          >
+                            Workspaces
+                            <span class="app-mobile-nav-list__expand">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M16.59 8.59009 12 13.1701 7.41 8.59009 6 10.0001l6 6 6-6-1.41-1.41001Z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </button>
+                          <div
+                            class="app-mobile-nav-submenu collapse"
+                            id="appMobileNavWorkspaces"
+                          >
+                            <ul class="app-mobile-nav-submenu-list">
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >What are Workspaces?</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >My Workspaces</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link app-mobile-nav-submenu-list__link--sublevel-1"
+                                  >RAD Workspace</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link app-mobile-nav-submenu-list__link--sublevel-1"
+                                  >Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Workspace</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Request a Workspace</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.app-mobile-nav-submenu -->
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <button
+                            class="app-mobile-nav-list__link collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#appMobileNavDataProducts"
+                            aria-expanded="false"
+                            aria-controls="appMobileNavDataProducts"
+                          >
+                            Data Products
+                            <span class="app-mobile-nav-list__expand">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M16.59 8.59009 12 13.1701 7.41 8.59009 6 10.0001l6 6 6-6-1.41-1.41001Z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </button>
+                          <div
+                            class="app-mobile-nav-submenu collapse"
+                            id="appMobileNavDataProducts"
+                          >
+                            <ul class="app-mobile-nav-submenu-list">
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Browse Data Products</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Request to Share Data Products</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Review Data Products</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.app-mobile-nav-submenu -->
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <button class="app-mobile-nav-list__link collapsed">
+                            Portals<span class="app-mobile-nav-list__expand">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M16.59 8.59009 12 13.1701 7.41 8.59009 6 10.0001l6 6 6-6-1.41-1.41001Z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </button>
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="app-mobile-nav-list__link"
+                            >Resources</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.app-nav-list-group -->
+                  </div>
+                  <!-- /.app-mobile-nav-group-inner -->
+                </div>
+                <!-- END MOBILE NAV -->
               </div>
               <!-- /.site-header -->
             </div>
@@ -447,5 +705,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/script.js"></script>
+    <script src="../js/app-mobile-nav.js"></script>
   </body>
 </html>
