@@ -970,7 +970,7 @@ body[noscroll] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: brown;
+  color: var(--hrsa-gray-900);
   text-decoration: none;
   background: transparent;
   border: 0;
@@ -980,17 +980,11 @@ body[noscroll] {
   text-align: left;
 }
 .app-mobile-nav-list__link:hover {
-  color: blue;
-  background-color: yellow;
+  color: var(--hrsa-blue-700);
+  background-color: var(--hrsa-gray-200);
 }
 .app-mobile-nav-list__link.collapsed .app-mobile-nav-list__expand {
   transform: rotate(0deg);
-}
-.app-mobile-nav-list__link--login {
-  color: blue;
-}
-.app-mobile-nav-list__link--login:hover {
-  color: blue-dark;
 }
 .app-mobile-nav-list__icon-text {
   display: inline-flex;
@@ -1060,7 +1054,7 @@ body[noscroll] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: brown;
+  color: var(--hrsa-gray-900);
   text-decoration: none;
   background: transparent;
   border: 0;
@@ -1070,8 +1064,8 @@ body[noscroll] {
   text-align: left;
 }
 .app-mobile-nav-submenu-list__link:hover {
-  color: blue;
-  background-color: yellow;
+  color: var(--hrsa-blue-700);
+  background-color: var(--hrsa-gray-200);
 }
 .app-mobile-nav-submenu-list__link--sublevel-1 {
   justify-content: flex-start;

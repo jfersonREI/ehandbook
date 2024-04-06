@@ -94,7 +94,7 @@ body[noscroll] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: brown;
+    color: var(--hrsa-gray-900);
     text-decoration: none;
     background: transparent;
     border: 0;
@@ -103,18 +103,12 @@ body[noscroll] {
     font-weight: inherit;
     text-align: left;
     &:hover {
-      color: blue;
-      background-color: yellow;
+      color: var(--hrsa-blue-700);
+      background-color: var(--hrsa-gray-200);
     }
     &.collapsed {
       .app-mobile-nav-list__expand {
         transform: rotate(0deg);
-      }
-    }
-    &--login {
-      color: blue;
-      &:hover {
-        color: blue-dark;
       }
     }
   }
@@ -185,7 +179,7 @@ body[noscroll] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: brown;
+    color: var(--hrsa-gray-900);
     text-decoration: none;
     background: transparent;
     border: 0;
@@ -194,8 +188,8 @@ body[noscroll] {
     font-weight: inherit;
     text-align: left;
     &:hover {
-      color: blue;
-      background-color: yellow;
+      color: var(--hrsa-blue-700);
+      background-color: var(--hrsa-gray-200);
     }
     &--sublevel-1 {
       justify-content: flex-start;
