@@ -36,14 +36,11 @@ body[noscroll] {
   width: $app-sidebar-width;
   transform: translate3d(-100%, 0, 0);
   visibility: visible;
-
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   transition-property: transform;
-  //transform: translate3d(-100%, 0, 0);
-  //visibility: hidden;
   transition-duration: $app-guide-transition-duration;
 
   &[opened] {
@@ -66,7 +63,6 @@ body[noscroll] {
   z-index: 1;
   position: relative;
   padding: 1rem;
-  box-shadow: 0px 1px 0px 0px gray;
 }
 
 //wrapper for nav should handle scrolling
@@ -85,7 +81,7 @@ body[noscroll] {
   margin: 0;
   padding: 0;
   &__item {
-    border-bottom: gray 1px solid;
+    border-bottom: var(--hrsa-gray-400) 1px solid;
     font-size: 1rem;
     font-weight: 600;
   }
@@ -151,15 +147,6 @@ body[noscroll] {
       fill: currentColor;
     }
   }
-  &__username {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-right: 0.5rem;
-  }
-  &__login {
-    text-transform: uppercase;
-  }
 }
 //submenu
 .app-mobile-nav-submenu {
@@ -204,57 +191,6 @@ body[noscroll] {
   }
 }
 
-//////search box
-.app-mobile-nav-search {
-  padding: 1rem 1rem 1rem 1rem;
-  border-top: gray 1px solid;
-  &__search-form {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  &__form-control {
-    margin: 0 0 0rem 0;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-    &--full {
-      flex: 1;
-    }
-  }
-  &__input {
-    width: 100%;
-    border: 1px seagreen solid;
-    border-style: solid;
-    appearance: none;
-    border-radius: 0;
-    color: darkblue;
-    display: block;
-    height: 2.5rem;
-    padding: 0.5rem;
-  }
-  &__select {
-    width: 100%;
-  }
-  &__btn {
-    width: 100%;
-    display: block;
-    height: 2.5rem;
-    background-color: blue;
-    color: #fff;
-    border: 0;
-    border-radius: 0 0.25rem 0.25rem 0;
-    font-weight: 700;
-    padding: 0.5rem;
-    svg {
-      fill: currentColor;
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-  }
-}
 /////////////////////////////////////////////////////////
 //logo
 .app-mobile-logo {

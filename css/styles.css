@@ -942,7 +942,6 @@ body[noscroll] {
   z-index: 1;
   position: relative;
   padding: 1rem;
-  box-shadow: 0px 1px 0px 0px gray;
 }
 
 .app-mobile-nav-list-group {
@@ -961,7 +960,7 @@ body[noscroll] {
   padding: 0;
 }
 .app-mobile-nav-list__item {
-  border-bottom: gray 1px solid;
+  border-bottom: var(--hrsa-gray-400) 1px solid;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -1025,15 +1024,6 @@ body[noscroll] {
   height: auto;
   fill: currentColor;
 }
-.app-mobile-nav-list__username {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: 0.5rem;
-}
-.app-mobile-nav-list__login {
-  text-transform: uppercase;
-}
 
 .app-mobile-nav-submenu {
   background-color: transparent;
@@ -1076,57 +1066,6 @@ body[noscroll] {
   content: "—";
   padding-right: 0.5rem;
   font-weight: 300;
-}
-
-.app-mobile-nav-search {
-  padding: 1rem 1rem 1rem 1rem;
-  border-top: gray 1px solid;
-}
-.app-mobile-nav-search__search-form {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-}
-.app-mobile-nav-search__form-control {
-  margin: 0 0 0rem 0;
-}
-.app-mobile-nav-search__form-control:last-of-type {
-  margin-bottom: 0;
-}
-.app-mobile-nav-search__form-control--full {
-  flex: 1;
-}
-.app-mobile-nav-search__input {
-  width: 100%;
-  border: 1px seagreen solid;
-  border-style: solid;
-  appearance: none;
-  border-radius: 0;
-  color: darkblue;
-  display: block;
-  height: 2.5rem;
-  padding: 0.5rem;
-}
-.app-mobile-nav-search__select {
-  width: 100%;
-}
-.app-mobile-nav-search__btn {
-  width: 100%;
-  display: block;
-  height: 2.5rem;
-  background-color: blue;
-  color: #fff;
-  border: 0;
-  border-radius: 0 0.25rem 0.25rem 0;
-  font-weight: 700;
-  padding: 0.5rem;
-}
-.app-mobile-nav-search__btn svg {
-  fill: currentColor;
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .app-mobile-logo {
