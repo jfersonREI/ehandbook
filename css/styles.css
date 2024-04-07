@@ -1015,6 +1015,10 @@ body[noscroll] {
   width: 24px;
   height: 24px;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
   flex: 0 0 24px;
   transform: rotate(180deg);
 }
@@ -1094,6 +1098,13 @@ body[noscroll] {
   border: 0;
   padding: 8px;
   color: var(--white);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 .app-mobile-close-btn:hover {
   color: var(--hrsa-blue-100);
