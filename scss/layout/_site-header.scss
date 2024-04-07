@@ -43,7 +43,7 @@
   &__user {
     background-color: transparent;
     min-height: $site-header-height;
-    @media (min-width: $hrsa-breakpoint-lg) {
+    @media (min-width: $hrsa-breakpoint-xl) {
       border-left: var(--hrsa-gray-500) 1px solid;
       margin-right: -12px;
     }

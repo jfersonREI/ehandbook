@@ -21,7 +21,7 @@
     margin-right: 8px;
     display: none;
     transform: rotate(0deg);
-    @media (min-width: $hrsa-breakpoint-lg) {
+    @media (min-width: $hrsa-breakpoint-xl) {
       display: block;
     }
   }
@@ -41,7 +41,7 @@
     font-size: inherit;
     margin-right: 8px;
     line-height: 1;
-    @media (min-width: $hrsa-breakpoint-lg) {
+    @media (min-width: $hrsa-breakpoint-xl) {
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-end;
@@ -68,7 +68,7 @@
     line-height: 1;
     color: var(--white);
     margin-left: 0;
-    @media (min-width: $hrsa-breakpoint-lg) {
+    @media (min-width: $hrsa-breakpoint-xl) {
       margin-left: 6px;
     }
   }

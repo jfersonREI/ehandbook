@@ -31,7 +31,7 @@
     color: currentColor;
     line-height: inherit;
     display: none;
-    @media (min-width: $hrsa-breakpoint-lg) {
+    @media (min-width: $hrsa-breakpoint-xl) {
       display: inline-flex;
     }
   }
@@ -42,7 +42,7 @@
     display: inline-flex;
     justify-content: center;
     background-color: transparent;
-    @media (min-width: $hrsa-breakpoint-lg) {
+    @media (min-width: $hrsa-breakpoint-xl) {
       font-size: 16px;
     }
   }
