@@ -62,7 +62,7 @@ body[noscroll] {
   height: $app-header-height-sm;
   z-index: 1;
   position: relative;
-  padding: 16px;
+  padding: 16px 8px 16px 12px;
 }
 
 //wrapper for nav should handle scrolling
