@@ -1038,6 +1038,14 @@ body[noscroll] {
   padding: 0;
   list-style: none;
 }
+.app-mobile-nav-submenu-list__header {
+  border-top: var(--hrsa-gray-400) 1px solid;
+  background-color: var(--hrsa-blue-50);
+  color: var(--hrsa-blue-400);
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
 .app-mobile-nav-submenu-list__item {
   border-top: var(--hrsa-gray-400) 1px solid;
   font-size: 16px;
@@ -1047,7 +1055,7 @@ body[noscroll] {
   padding: 16px 16px 16px 32px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: initial;
   color: var(--hrsa-gray-900);
   text-decoration: none;
   background: transparent;
@@ -1060,6 +1068,14 @@ body[noscroll] {
 .app-mobile-nav-submenu-list__link:hover {
   color: var(--hrsa-blue-700);
   background-color: var(--hrsa-gray-200);
+}
+.app-mobile-nav-submenu-list__link--is-external::after {
+  content: "\f08e";
+  padding-left: 8px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  line-height: 1;
 }
 .app-mobile-nav-submenu-list__link--sublevel-1 {
   justify-content: flex-start;
