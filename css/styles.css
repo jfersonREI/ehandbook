@@ -692,8 +692,17 @@ body {
 }
 .site-top-nav-submenu__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
+}
+.site-top-nav-submenu__grid--1-col {
+  grid-template-columns: 1fr;
+}
+.site-top-nav-submenu__grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+  min-width: 512px;
+}
+.site-top-nav-submenu__grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
 }
 .site-top-nav-submenu__grid-column {
   background: transparent;

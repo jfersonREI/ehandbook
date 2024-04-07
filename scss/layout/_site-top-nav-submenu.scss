@@ -46,8 +46,17 @@
   }
   &__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
+    &--1-col {
+      grid-template-columns: 1fr;
+    }
+    &--2-col {
+      grid-template-columns: repeat(2, 1fr);
+      min-width: 512px;
+    }
+    &--3-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
   &__grid-column {
     background: transparent;
