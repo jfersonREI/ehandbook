@@ -1307,16 +1307,24 @@ body[noscroll] {
 .site-footer__nav-list__item i {
   margin-right: 12px;
 }
-.site-footer__nav-list__item > a {
+.site-footer__nav-list__link {
   color: #f2f2f2;
   text-decoration: none;
 }
-.site-footer__nav-list__item > a:hover, .site-footer__nav-list__item > a:focus {
+.site-footer__nav-list__link:hover, .site-footer__nav-list__link:focus {
   color: var(--white);
   text-decoration: none;
 }
-.site-footer__nav-list__item > a:hover span, .site-footer__nav-list__item > a:focus span {
+.site-footer__nav-list__link:hover span, .site-footer__nav-list__link:focus span {
   border-bottom: #fff 1px solid;
+}
+.site-footer__nav-list__link--is-external::after {
+  content: "\f08e";
+  padding-left: 8px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  line-height: 1;
 }
 .site-footer__copyright {
   background-color: var(--hrsa-footer-darker);
