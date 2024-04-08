@@ -843,7 +843,7 @@ body {
   left: -12px;
   right: -12px;
   height: 1px;
-  background-color: var(--hrsa-gray-300);
+  background-color: var(--hrsa-gray-200);
 }
 .site-user-menu__logout-link {
   display: flex;
