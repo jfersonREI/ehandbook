@@ -223,6 +223,7 @@ body {
   width: auto;
   display: inline-flex;
   align-items: center;
+  min-height: 20px;
 }
 .hhs-banner__link::before {
   content: "";
@@ -230,7 +231,7 @@ body {
   background-image: url(../img/hhs-logo-white-lg.webp);
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
+  display: inline-flex;
   width: 20px;
   height: 20px;
   margin: 0 8px 0 0;
