@@ -1367,7 +1367,7 @@ body[noscroll] {
   font-size: 1rem;
   line-height: 1.4;
   color: #fff;
-  background-color: var(--black);
+  background-color: #1b1b1b;
   padding-bottom: 1rem;
 }
 
@@ -1425,17 +1425,17 @@ body[noscroll] {
 }
 
 .site-identifier__identity-domain {
-  color: var(--hrsa-gray-400);
+  color: #adadad;
 }
 
 .site-identifier__identity-disclaimer {
   font-weight: 700;
 }
 .site-identifier__identity-disclaimer a {
-  color: var(--hrsa-gray-400);
+  color: #e6e6e6;
 }
 .site-identifier__identity-disclaimer a:hover {
-  color: var(--hrsa-gray-200);
+  color: #f0f0f0;
 }
 
 @media (min-width: 576px) {
@@ -1485,25 +1485,25 @@ body[noscroll] {
 
 .site-identifier__required-link,
 .site-identifier__required-link.site-link {
-  color: var(--hrsa-gray-400);
+  color: #adadad;
   display: inline-block;
 }
 .site-identifier__required-link:hover,
 .site-identifier__required-link.site-link:hover {
-  color: var(--hrsa-gray-200);
+  color: #e6e6e6;
 }
 
 .site-identifier__section--usagov {
   font-size: 14px;
 }
 .site-identifier__section--usagov a {
-  color: var(--hrsa-gray-400);
+  color: #e6e6e6;
   font-weight: 700;
   display: inline-block;
   margin-top: 0.5rem;
 }
 .site-identifier__section--usagov a:hover {
-  color: var(--hrsa-gray-200);
+  color: #f0f0f0;
 }
 @media (min-width: 576px) {
   .site-identifier__section--usagov a {

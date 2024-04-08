@@ -2,7 +2,7 @@
   font-size: 1rem;
   line-height: 1.4;
   color: #fff;
-  background-color: var(--black);
+  background-color: #1b1b1b;
   padding-bottom: 1rem;
 }
 
@@ -61,16 +61,16 @@
 }
 
 .site-identifier__identity-domain {
-  color: var(--hrsa-gray-400);
+  color: #adadad;
 }
 
 .site-identifier__identity-disclaimer {
   font-weight: 700;
 
   a {
-    color: var(--hrsa-gray-400);
+    color: #e6e6e6;
     &:hover {
-      color: var(--hrsa-gray-200);
+      color: #f0f0f0;
     }
   }
 }
@@ -118,22 +118,22 @@
 
 .site-identifier__required-link,
 .site-identifier__required-link.site-link {
-  color: var(--hrsa-gray-400);
+  color: #adadad;
   display: inline-block;
   &:hover {
-    color: var(--hrsa-gray-200);
+    color: #e6e6e6;
   }
 }
 .site-identifier__section--usagov {
   font-size: 14px;
   a {
-    color: var(--hrsa-gray-400);
+    color: #e6e6e6;
     font-weight: 700;
     display: inline-block;
     margin-top: 0.5rem;
 
     &:hover {
-      color: var(--hrsa-gray-200);
+      color: #f0f0f0;
     }
 
     @media (min-width: $hrsa-breakpoint-sm) {
