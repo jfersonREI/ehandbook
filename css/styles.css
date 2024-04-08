@@ -789,6 +789,7 @@ body {
   flex-flow: column wrap;
   margin: 0;
   padding: 0;
+  min-width: 70px;
 }
 .site-user-menu__header-name {
   font-size: 14px;
@@ -796,6 +797,10 @@ body {
   font-weight: 600;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .site-user-menu__header-timestamp {
   font-size: 12px;
