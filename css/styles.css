@@ -1363,6 +1363,160 @@ body[noscroll] {
   margin: 0;
 }
 
+.site-identifier {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff;
+  background-color: var(--hrsa-gray-950);
+  padding-bottom: 1rem;
+}
+
+.site-identifier__section {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .site-identifier__section--masthead .site-identifier__container {
+    align-items: center;
+    display: flex;
+  }
+}
+
+/**/
+.site-identifier__logos {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.site-identifier__logo {
+  text-decoration: none;
+  height: 3rem;
+  display: block;
+}
+.site-identifier__logo + .site-identifier__logo {
+  margin-left: 0.5rem;
+}
+.site-identifier__logo svg {
+  height: 100%;
+  width: auto;
+}
+
+.site-identifier__logo-img {
+  height: 100%;
+  width: auto;
+}
+
+.site-identifier__identity {
+  flex: 1 1 0%;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .site-identifier__identity {
+    margin-top: 0;
+  }
+}
+
+.site-identifier__identity-domain,
+.site-identifier__identity-disclaimer {
+  margin: 0;
+  padding: 0;
+}
+
+.site-identifier__identity-domain {
+  color: var(--hrsa-gray-400);
+}
+
+.site-identifier__identity-disclaimer {
+  font-weight: 700;
+}
+.site-identifier__identity-disclaimer a {
+  color: var(--hrsa-gray-400);
+}
+.site-identifier__identity-disclaimer a:hover {
+  color: var(--hrsa-gray-200);
+}
+
+@media (min-width: 576px) {
+  .site-identifier__section--required-links {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .site-identifier__section--required-links {
+    font-size: 14px;
+  }
+}
+
+.site-identifier__required-links-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (min-width: 576px) {
+  .site-identifier__required-links-list {
+    column-count: 2;
+    column-gap: 2rem;
+    column-fill: balance;
+  }
+}
+@media (min-width: 768px) {
+  .site-identifier__required-links-list {
+    column-count: 4;
+  }
+}
+
+.site-identifier__required-links-item {
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+}
+.site-identifier__required-links-item:last-child {
+  margin-bottom: 0rem;
+}
+@media (min-width: 768px) {
+  .site-identifier__required-links-item {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.site-identifier__required-link,
+.site-identifier__required-link.site-link {
+  color: var(--hrsa-gray-400);
+  display: inline-block;
+}
+.site-identifier__required-link:hover,
+.site-identifier__required-link.site-link:hover {
+  color: var(--hrsa-gray-200);
+}
+
+.site-identifier__section--usagov {
+  font-size: 14px;
+}
+.site-identifier__section--usagov a {
+  color: var(--hrsa-gray-400);
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.site-identifier__section--usagov a:hover {
+  color: var(--hrsa-gray-200);
+}
+@media (min-width: 576px) {
+  .site-identifier__section--usagov a {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .site-identifier__usagov-description {
+    display: inline-flex;
+  }
+}
+
 .icon-task-list {
   list-style: none;
   margin: 0;
