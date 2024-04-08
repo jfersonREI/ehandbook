@@ -2101,7 +2101,7 @@ body[noscroll] {
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px 24px 24px 2.75rem;
+  padding: 24px 24px 24px 44px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -2112,9 +2112,9 @@ body[noscroll] {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 1.25rem 1.25rem;
-  height: 1.25rem;
-  width: 1.25rem;
+  background-size: 20px 20px;
+  height: 20px;
+  width: 20px;
   content: "";
   display: block;
   left: 12px;
@@ -2125,9 +2125,9 @@ body[noscroll] {
   flex: 1;
 }
 .site-alert__heading {
-  font-size: 1.125rem;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.01rem;
+  letter-spacing: -0.1px;
   margin: 0;
   padding: 0;
 }
