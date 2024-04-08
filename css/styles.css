@@ -235,6 +235,7 @@ body {
   width: 20px;
   height: 20px;
   margin: 0 8px 0 0;
+  min-width: 20px;
 }
 .hhs-banner__link:hover, .hhs-banner__link:focus {
   text-decoration: underline;
