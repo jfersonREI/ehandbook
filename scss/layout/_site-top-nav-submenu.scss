@@ -17,14 +17,12 @@
   }
   &--megamenu,
   &--megamenu.dropdown-menu[data-bs-popper] {
-    top: calc($site-header-height + $hhs-banner-height);
     width: 100%;
     padding: 16px 16px;
   }
 
   &--search,
   &--search.dropdown-menu[data-bs-popper] {
-    top: calc($site-header-height + $hhs-banner-height);
     width: 100%;
     padding: 16px 16px;
     background-color: var(--white);
@@ -32,7 +30,6 @@
 
   &--user,
   &--user.dropdown-menu[data-bs-popper] {
-    top: calc($site-header-height + $hhs-banner-height);
     width: 100%;
 
     right: 0;
