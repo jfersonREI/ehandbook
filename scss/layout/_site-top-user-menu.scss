@@ -96,13 +96,23 @@
     font-size: 14px;
     font-weight: 400;
   }
-  &__link,
-  &__link:visited {
+  &__link {
     font-size: inherit;
     color: var(--hrsa-gray-900);
     text-decoration: none;
     padding: 8px 8px;
     display: block;
+
+    &--is-external {
+      &::after {
+        content: "\f08e";
+        padding-left: 8px;
+        font-weight: 900;
+        font-family: $icon-font-family;
+        font-size: 12px;
+        line-height: 1;
+      }
+    }
     &:hover,
     &:focus {
       background-color: var(--hrsa-blue-500);

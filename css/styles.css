@@ -880,14 +880,22 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.site-user-menu-list__link, .site-user-menu-list__link:visited {
+.site-user-menu-list__link {
   font-size: inherit;
   color: var(--hrsa-gray-900);
   text-decoration: none;
   padding: 8px 8px;
   display: block;
 }
-.site-user-menu-list__link:hover, .site-user-menu-list__link:focus, .site-user-menu-list__link:visited:hover, .site-user-menu-list__link:visited:focus {
+.site-user-menu-list__link--is-external::after {
+  content: "\f08e";
+  padding-left: 8px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 12px;
+  line-height: 1;
+}
+.site-user-menu-list__link:hover, .site-user-menu-list__link:focus {
   background-color: var(--hrsa-blue-500);
   color: var(--white);
 }
