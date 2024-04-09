@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+
+    <title>HRSA - Top nav</title>
+  </head>
+  <body>
+    <!-- SKIPNAV -->
+    <a class="site-skipnav" href="#main-content">Skip to main content</a>
+    <!-- END SKIPNAV -->
+
+    <div class="site-alert site-alert--warning" id="siteAlert">
+      <div class="site-alert__body">
+        <div class="site-alert__copy">
+          <h4 class="site-alert__heading">Warning status</h4>
+          <span class="site-alert__text site-alert__text--bulleted">
+            Important Announcement - Electronic Handbook Knowledge base (Help)
+            is not accessible. Technical teams are aware of the issue and
+            working towards to resolve this.
+          </span>
+
+          <span class="site-alert__text site-alert__text--bulleted">
+            Reminder: Recipients expending 1750,000 or more in federal awards
+            during their fiscal years must have audits completed in accordance
+            with 45 CFR Part 75, Subpart F and submit the related audit reports
+            to the Federal Audit Clearinghouse within the earlier of 30 days
+            after receipt from the auditors or nine months after the end of the
+            audit periods. On Thursday, April 21, 2022, from 8:00 PM to 9:00 PM
+            EST, HRSA OIT will perform maintenance activities to reconfigure
+            External Production Tableau servers. During this maintenance window
+            (8:00 PM to 9:00 PM, April 21), HRSA EHBs Dashboard Service will be
+            unavailable ONLY for external grantees to access through HRSA EHBs.
+            Internal Tableau Access will not be impacted.
+          </span>
+
+          <span class="site-alert__text site-alert__text--bulleted">
+            As of Oct. 1, 2020, HRSA began using the new standard HHS Page 1
+            format for all HRSA Notices of Award (NoA). All HHS agencies will
+            use the new format to provide universal, streamlined data. Please
+            visit
+            <a href="javascript:void(0);"
+              >https://www.hrsa.gov/grants/news-announcements.html</a
+            >
+            for more information.
+          </span>
+
+          <span class="site-alert__text site-alert__text--bulleted">
+            On Thursday, October 27, 2022, from 7:00 PM to 9:00 PM EDT, HRSA
+            Office of Information Technology (OIT) will be performing
+            maintenance on the EHBs system. Users may experience intermittent
+            connectivity issues during the maintenance.
+          </span>
+        </div>
+        <!-- /.site-alert__copy -->
+
+        <button
+          class="icon-btn icon-btn--sm icon-btn--dark"
+          aria-label="Button Action"
+          id="closeAlert"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <!-- ALERT WARNING -->
+
+    <header>
+      <div class="hhs-banner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="hhs-banner__content">
+                <a
+                  class="hhs-banner__link"
+                  href="https://www.hhs.gov/"
+                  target="_blank"
+                  >Health Resources &amp; Services Administration</a
+                >
+              </div>
+              <!-- /.hhs-banner__content -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.hhs-banner -->
+
+      <div class="site-header-group">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="site-header">
+                <div class="site-header__logo">
+                  <a href="javascript:void(0);" class="site-header__logo-link">
+                    <img
+                      src="img/navigation/hrsa-ebooks-logo-white.svg"
+                      alt="HRSA Electronic Handbooks"
+                  /></a>
+                </div>
+                <!-- /.site-header__logo -->
+                <div class="site-header__nav">
+                  <ul class="site-top-nav">
+                    <li class="site-top-nav__item">
+                      <a href="javascript:void(0);" class="site-top-nav__link"
+                        ><i class="fa-solid fa-house" aria-label="Home"></i
+                        ><span class="sr-only">Home</span></a
+                      >
+                    </li>
+                    <li class="site-top-nav__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="site-top-nav__link site-top-nav__link--has-menu"
+                        id="dropdownTasksMenu"
+                        data-bs-toggle="dropdown"
+                        data-bs-display="static"
+                        aria-expanded="false"
+                        >Tasks</a
+                      >
+                      <div
+                        class="dropdown-menu animate fadeIn site-top-nav-submenu"
+                        aria-labelledby="dropdownTasksMenu"
+                      >
+                        <ul class="site-top-nav-submenu-list">
+                          <li class="site-top-nav-submenu-list__item">
+                            <span class="site-top-nav-submenu-list__header"
+                              >Header</span
+                            >
+                            <a
+                              href="javascript:void(0);"
+                              class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                              >Link external</a
+                            >
+                          </li>
+                          <li class="site-top-nav-submenu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="site-top-nav-submenu-list__link"
+                              >Link internal</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="site-top-nav__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="site-top-nav__link site-top-nav__link--has-menu"
+                        id="dropdownOrganizationMenu"
+                        data-bs-toggle="dropdown"
+                        data-bs-display="static"
+                        aria-expanded="false"
+                        >Organization</a
+                      >
+                      <div
+                        class="dropdown-menu animate fadeIn site-top-nav-submenu"
+                        aria-labelledby="dropdownOrganizationMenu"
+                      >
+                        <div
+                          class="site-top-nav-submenu__grid site-top-nav-submenu__grid--2-col"
+                        >
+                          <div class="site-top-nav-submenu__grid-column">
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.site-top-nav-submenu__grid-column -->
+                          <div class="site-top-nav-submenu__grid-column">
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >2Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.site-top-nav-submenu__grid-column -->
+                        </div>
+                        <!-- /.site-top-nav-submenu__grid -->
+                      </div>
+                    </li>
+                    <li class="site-top-nav__item site-top-nav__item--unset">
+                      <a
+                        href="javascript:void(0);"
+                        class="site-top-nav__link site-top-nav__link--has-menu"
+                        id="dropdownGrantsMenu"
+                        data-bs-toggle="dropdown"
+                        data-bs-display="static"
+                        aria-expanded="false"
+                        >Grants</a
+                      >
+                      <div
+                        class="dropdown-menu animate fadeIn site-top-nav-submenu site-top-nav-submenu--megamenu"
+                        aria-labelledby="dropdownGrantssMenu"
+                      >
+                        <div
+                          class="site-top-nav-submenu__grid site-top-nav-submenu__grid--3-col"
+                        >
+                          <div class="site-top-nav-submenu__grid-column">
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.site-top-nav-submenu__grid-column -->
+                          <div class="site-top-nav-submenu__grid-column">
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >2Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.site-top-nav-submenu__grid-column -->
+                          <div class="site-top-nav-submenu__grid-column">
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >3Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >3Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                            <ul class="site-top-nav-submenu-list">
+                              <li class="site-top-nav-submenu-list__item">
+                                <span class="site-top-nav-submenu-list__header"
+                                  >3Header
+                                </span>
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link site-top-nav-submenu-list__link--is-external"
+                                  >1111</a
+                                >
+                              </li>
+                              <li class="site-top-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="site-top-nav-submenu-list__link"
+                                  >2222</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.site-top-nav-submenu__grid-column -->
+                        </div>
+                        <!-- /.site-top-nav-submenu__grid -->
+                      </div>
+                    </li>
+                    <li class="site-top-nav__item">
+                      <a href="javascript:void(0);" class="site-top-nav__link"
+                        >Free Clinics</a
+                      >
+                    </li>
+                    <li class="site-top-nav__item">
+                      <a href="javascript:void(0);" class="site-top-nav__link"
+                        >FQHC-LALs</a
+                      >
+                    </li>
+                    <li class="site-top-nav__item">
+                      <a href="javascript:void(0);" class="site-top-nav__link"
+                        >Dashboards</a
+                      >
+                    </li>
+                    <li class="site-top-nav__item">
+                      <a href="javascript:void(0);" class="site-top-nav__link"
+                        >Resources</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.site-header__nav -->
+                <div class="site-header__search">
+                  <button
+                    class="site-top-search-btn"
+                    id="dropdownSearchMenu"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <span class="site-top-search-btn__text">Search</span>
+                    <span class="site-top-search-btn__icon"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                  </button>
+                  <div
+                    class="dropdown-menu animate fadeIn site-top-nav-submenu site-top-nav-submenu--search"
+                    aria-labelledby="dropdownSearchMenu"
+                  >
+                    <div class="site-top-search-form">
+                      <span class="site-top-search-form__filters">
+                        <label for="topSearchFIlters" class="sr-only"
+                          >Filters</label
+                        >
+                        <span class="site-top-search-form__select-wrap">
+                          <select
+                            name=""
+                            id="topSearchFIlters"
+                            class="site-top-search-form__select"
+                          >
+                            <option value="">All</option>
+                            <option value="">Default Searches</option>
+                            <option value="">Site Map</option>
+                            <option value="">Reports</option>
+                            <option value="">Grant Folder</option>
+                            <option value="">Training</option>
+                            <option value="">BPMH Reports</option>
+                            <option value="">Documents</option>
+                          </select></span
+                        ></span
+                      >
+                      <span class="site-top-search-form__field">
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          placeholder="Search..."
+                          class="site-top-search-form__input"
+                      /></span>
+                      <span class="site-top-search-form__submit">
+                        <button class="site-top-search-form__btn">
+                          <span class="sr-only">Submit</span>
+                        </button></span
+                      >
+                    </div>
+                    <!-- /.site-top-search-form -->
+                  </div>
+                </div>
+                <!-- /.site-header__search -->
+
+                <div class="site-header__user">
+                  <button
+                    class="site-top-user-btn"
+                    id="dropdownUserMenu"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <span class="site-top-user-btn__arrow"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+
+                    <span class="site-top-user-btn__text">
+                      <span class="site-top-user-btn__name"
+                        >K.Stadnikloremipsumdolor sit amet consectetur
+                        adipisicing elit vero possimus</span
+                      >
+                      <span class="site-top-user-btn__timestamp"
+                        >Apr 01, 2024, 03:58:10 PM</span
+                      ></span
+                    ><span class="site-top-user-btn__icon"
+                      ><i class="fa-solid fa-circle-user"></i
+                    ></span>
+                  </button>
+                  <div
+                    class="dropdown-menu animate fadeIn site-top-nav-submenu site-top-nav-submenu--user"
+                    aria-labelledby="dropdownUserMenu"
+                  >
+                    <div class="site-user-menu">
+                      <div class="site-user-menu__header">
+                        <span class="site-user-menu__header-icon">
+                          <i class="fa-solid fa-circle-user"></i
+                        ></span>
+                        <span class="site-user-menu__header-text">
+                          <span class="site-user-menu__header-name"
+                            >Korbinian Stadnik</span
+                          >
+                          <span class="site-user-menu__header-timestamp"
+                            >Apr 01, 2024, 03:58:10 PM</span
+                          >
+                        </span>
+                      </div>
+                      <!-- /.site-user-menu__header -->
+                      <div class="site-user-menu__nav">
+                        <div class="site-user-menu__section-header">Manage</div>
+
+                        <ul class="site-user-menu-list">
+                          <li class="site-user-menu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="site-user-menu-list__link"
+                              >View/Update Profile</a
+                            >
+                          </li>
+                          <li class="site-user-menu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="site-user-menu-list__link"
+                              >Manage Favorites</a
+                            >
+                          </li>
+                          <li class="site-user-menu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="site-user-menu-list__link"
+                              >View Recently Accessed</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="site-user-menu__section-header">
+                          Support
+                        </div>
+
+                        <ul class="site-user-menu-list">
+                          <li class="site-user-menu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="site-user-menu-list__link"
+                              >Contact us</a
+                            >
+                          </li>
+                          <li class="site-user-menu-list__item">
+                            <a
+                              href="javascript:void(0);"
+                              class="site-user-menu-list__link site-user-menu-list__link--is-external"
+                              >EHB Help</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="site-user-menu__logout">
+                          <a href="" class="site-user-menu__logout-link"
+                            >Logout</a
+                          >
+                        </div>
+                        <!-- /.site-user-menu__logout -->
+                      </div>
+                      <!-- /.site-user-menu__nav -->
+                    </div>
+                    <!-- /.site-user-menu -->
+                  </div>
+                  <!-- /.site-top-user-btn -->
+                </div>
+                <!-- /.site-header__user -->
+                <div class="site-header__navicon">
+                  <button
+                    class="site-top-navicon"
+                    aria-label="Menu"
+                    id="appMobileNavToggle"
+                  >
+                    <span class="sr-only">Menu</span>
+                  </button>
+                </div>
+                <!-- /.site-header__navicon -->
+
+                <!-- START MOBILE NAV -->
+                <div class="app-mobile-nav-group">
+                  <div class="app-mobile-scrim"></div>
+                  <div class="app-mobile-nav-group-inner">
+                    <div class="app-mobile-header">
+                      <div class="app-mobile-logo">
+                        <span class="app-mobile-logo__image">
+                          <a href="javascript:void(0);" aria-label="HRSA">
+                            <img
+                              src="img/navigation/hrsa-ebooks-logo-white.svg"
+                              alt="HRSA"
+                              width="112"
+                              height="40"
+                            />
+                          </a>
+                        </span>
+                        <!-- /.app-logo-image -->
+                      </div>
+                      <div class="app-mobile-close">
+                        <button
+                          class="app-mobile-close-btn"
+                          aria-label="Close Menu"
+                          aria-expanded="false"
+                        >
+                          <i class="fa-solid fa-xmark"></i>
+                        </button>
+                      </div>
+                      <!-- /.app-mobile-close -->
+                      <!-- /.app-mobile-logo -->
+                    </div>
+                    <!-- /.app-mobile-header -->
+                    <div class="app-mobile-nav-list-group">
+                      <ul class="app-mobile-nav-list">
+                        <li class="app-mobile-nav-list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="app-mobile-nav-list__link"
+                            >Home</a
+                          >
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <button
+                            class="app-mobile-nav-list__link collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#appMobileNavWorkspaces"
+                            aria-expanded="false"
+                            aria-controls="appMobileNavWorkspaces"
+                          >
+                            Tasks
+                            <span class="app-mobile-nav-list__expand">
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                          </button>
+                          <div
+                            class="app-mobile-nav-submenu collapse"
+                            id="appMobileNavWorkspaces"
+                          >
+                            <ul class="app-mobile-nav-submenu-list">
+                              <li class="app-mobile-nav-submenu-list__header">
+                                Header
+                              </li>
+                              <!-- /.app-mobile-nav-submenu-list__header -->
+
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Link internal</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link app-mobile-nav-submenu-list__link--is-external"
+                                  >Link external</a
+                                >
+                              </li>
+
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link app-mobile-nav-submenu-list__link--sublevel-1"
+                                  >Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Workspace</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Dolor sit amet consectetur, adipisicing elit.
+                                  Fuga, modi.</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.app-mobile-nav-submenu -->
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <button
+                            class="app-mobile-nav-list__link collapsed"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#appMobileNavDataProducts"
+                            aria-expanded="false"
+                            aria-controls="appMobileNavDataProducts"
+                          >
+                            Organization
+                            <span class="app-mobile-nav-list__expand">
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                          </button>
+                          <div
+                            class="app-mobile-nav-submenu collapse"
+                            id="appMobileNavDataProducts"
+                          >
+                            <ul class="app-mobile-nav-submenu-list">
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Browse Data Products</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Request to Share Data Products</a
+                                >
+                              </li>
+                              <li class="app-mobile-nav-submenu-list__item">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="app-mobile-nav-submenu-list__link"
+                                  >Review Data Products</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.app-mobile-nav-submenu -->
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <button class="app-mobile-nav-list__link collapsed">
+                            Grants
+                            <span class="app-mobile-nav-list__expand">
+                              <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                          </button>
+                        </li>
+                        <li class="app-mobile-nav-list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="app-mobile-nav-list__link"
+                            >Free Clinics</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.app-nav-list-group -->
+                  </div>
+                  <!-- /.app-mobile-nav-group-inner -->
+                </div>
+                <!-- END MOBILE NAV -->
+              </div>
+              <!-- /.site-header -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+      <!-- /.site-header-group -->
+    </header>
+
+    <main class="site-main">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </main>
+
+    <!-- Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/app-mobile-nav.js"></script>
+
+    <script>
+      const btn = document.getElementById("closeAlert");
+      const alert = document.getElementById("siteAlert");
+
+      btn.addEventListener("click", () => {
+        alert.remove();
+      });
+    </script>
+  </body>
+</html>

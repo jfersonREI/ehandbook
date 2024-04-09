@@ -1,6 +1,6 @@
 .site-alert {
   background-color: #f0f0f0;
-  color: #1b1b1b;
+  color: var(--black);
   &--info > &__body {
     background-color: var(--hrsa-alert-info);
     &::before {
@@ -11,6 +11,13 @@
     background-color: var(--hrsa-alert-warning);
     &::before {
       background-image: url(../img/alerts/icon-alert-warning.svg);
+    }
+    a {
+      color: var(--black);
+      &:hover,
+      &:focus {
+        color: var(--hrsa-gray-800);
+      }
     }
   }
   &--success > &__body {
@@ -82,6 +89,30 @@
   }
 
   &__text {
-    margin: 2px 0 0 0;
+    margin: 4px 0 0 0;
+    display: block;
+    &--bulleted {
+      margin: 4px 0 0 16px;
+      position: relative;
+      &:first-of-type {
+        margin-top: 12px;
+      }
+      &::before {
+        display: inline-flex;
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 7px;
+        padding: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        color: currentColor;
+        background-color: currentColor;
+      }
+    }
+  }
+  &__text + &__text {
+    margin-top: 12px;
   }
 }
