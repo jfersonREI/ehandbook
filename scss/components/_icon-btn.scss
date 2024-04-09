@@ -127,6 +127,20 @@
     }
   }
 
+  //red
+  &--red {
+    background-color: transparent;
+    color: var(--hrsa-red-400);
+    &:hover {
+      background-color: var(--hrsa-gray-300);
+      color: var(--hrsa-red-500);
+    }
+    &:active {
+      background-color: var(--hrsa-gray-300);
+      color: var(--hrsa-red-600);
+    }
+  }
+
   //outline btns
   //outline-primary
   &--outline-primary {
