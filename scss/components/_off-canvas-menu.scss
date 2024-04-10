@@ -114,8 +114,8 @@ body[noscroll] {
     flex: 1;
   }
   &__icon {
-    margin-right: 12px;
-    font-size: 18px;
+    margin-right: 8px;
+    font-size: 16px;
     line-height: 1;
     color: var(--hrsa-gray-500);
     > i {
@@ -125,7 +125,7 @@ body[noscroll] {
   }
   &__title {
     color: var(--hrsa-blue-500);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
   }
 }

@@ -2939,8 +2939,8 @@ body[noscroll] {
   flex: 1;
 }
 .off-canvas-header__icon {
-  margin-right: 12px;
-  font-size: 18px;
+  margin-right: 8px;
+  font-size: 16px;
   line-height: 1;
   color: var(--hrsa-gray-500);
 }
@@ -2950,7 +2950,7 @@ body[noscroll] {
 }
 .off-canvas-header__title {
   color: var(--hrsa-blue-500);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
