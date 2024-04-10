@@ -2942,18 +2942,6 @@ body[noscroll] {
   font-weight: 600;
 }
 
-.site-messages-header {
-  background-color: var(--white);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0;
-  height: 64px;
-  z-index: 1;
-  position: relative;
-  padding: 16px 8px 16px 12px;
-}
-
 .site-messages-nav-list-group {
   background: var(--white);
   position: absolute;
@@ -3072,23 +3060,4 @@ body[noscroll] {
 }
 .site-messages-nav-list__link--highlight .site-messages-nav-list__datetime {
   color: var(--hrsa-gray-900);
-}
-
-.site-messages-nav-group-inner {
-  background-color: #fff;
-  width: 320px;
-  transform: translate3d(-100%, 0, 0);
-  visibility: visible;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  transition-property: transform;
-  transition-duration: 0.3s;
-}
-.site-messages-nav-group-inner[opened] {
-  transform: translate3d(0, 0, 0);
-}
-.site-messages-nav-group-inner[no-transition] {
-  transition: none;
 }
