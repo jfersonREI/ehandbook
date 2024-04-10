@@ -6,7 +6,6 @@ body[noscroll] {
   touch-action: none;
   -webkit-overflow-scrolling: none;
   overflow: hidden;
-  /* Other browsers */
   overscroll-behavior: none;
 }
 
@@ -66,10 +65,11 @@ body[noscroll] {
   width: $off-canvas-sidebar-width;
   transform: translateX(-100%);
   visibility: visible;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
+  right: unset;
   transition-property: transform;
   transition-duration: $app-guide-transition-duration;
 
@@ -79,6 +79,17 @@ body[noscroll] {
 
   &[no-transition] {
     transition: none;
+  }
+
+  &--right-menu {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: unset;
+    transform: translateX(100%);
+    &[opened] {
+      transform: none;
+    }
   }
 }
 
