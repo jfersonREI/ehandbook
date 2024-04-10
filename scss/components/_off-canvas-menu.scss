@@ -104,7 +104,10 @@ body[noscroll] {
   z-index: 1;
   position: relative;
   padding: 16px 8px 16px 12px;
-  border-bottom: var(--hrsa-gray-300) 1px solid;
+
+  &--bordered {
+    border-bottom: var(--hrsa-gray-300) 1px solid;
+  }
   &__text {
     display: inline-flex;
     align-items: center;

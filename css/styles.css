@@ -2929,6 +2929,8 @@ body[noscroll] {
   z-index: 1;
   position: relative;
   padding: 16px 8px 16px 12px;
+}
+.off-canvas-header--bordered {
   border-bottom: var(--hrsa-gray-300) 1px solid;
 }
 .off-canvas-header__text {
