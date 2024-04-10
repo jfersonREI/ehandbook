@@ -6,7 +6,6 @@ const appSidebarContainer = document.querySelector(
   ".app-mobile-nav-group-inner"
 );
 const appGuideNavicon = document.querySelector(".app-mobile-close-btn");
-const appGuideHeader = document.querySelector(".app-guide-header");
 
 //navicon
 appTopbarNavicon.addEventListener("click", toggleMenu);

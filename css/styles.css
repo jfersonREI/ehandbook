@@ -2814,6 +2814,24 @@ body[noscroll] {
   margin: 0 2px;
 }
 
+.off-canvas-scrim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-property: opacity;
+  transform: translateZ(0);
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+}
+.off-canvas-scrim[visible] {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.3s;
+}
+
 body[noscroll] {
   touch-action: none;
   -webkit-overflow-scrolling: none;
@@ -2822,7 +2840,7 @@ body[noscroll] {
   overscroll-behavior: none;
 }
 
-.site-messages-nav-group {
+.off-canvas-nav-group {
   position: fixed;
   top: 0;
   right: 0;
@@ -2832,21 +2850,21 @@ body[noscroll] {
   height: 100vh;
   z-index: 2;
 }
-.site-messages-nav-group[opened] {
+.off-canvas-nav-group[opened] {
   z-index: 3;
   width: 100%;
 }
-.site-messages-nav-group[opened] .site-messages-nav-group-inner {
+.off-canvas-nav-group[opened] .off-canvas-nav-group-inner {
   width: 100%;
 }
 @media (min-width: 576px) {
-  .site-messages-nav-group[opened] .site-messages-nav-group-inner {
+  .off-canvas-nav-group[opened] .off-canvas-nav-group-inner {
     width: 320px;
   }
 }
 
-.site-messages-nav-group-inner {
-  background-color: #fff;
+.off-canvas-nav-group-inner {
+  background-color: var(--white);
   width: 320px;
   transform: translate3d(-100%, 0, 0);
   visibility: visible;
@@ -2857,11 +2875,44 @@ body[noscroll] {
   transition-property: transform;
   transition-duration: 0.3s;
 }
-.site-messages-nav-group-inner[opened] {
+.off-canvas-nav-group-inner[opened] {
   transform: translate3d(0, 0, 0);
 }
-.site-messages-nav-group-inner[no-transition] {
+.off-canvas-nav-group-inner[no-transition] {
   transition: none;
+}
+
+.off-canvas-header {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  height: 64px;
+  z-index: 1;
+  position: relative;
+  padding: 16px 8px 16px 12px;
+  border-bottom: var(--hrsa-gray-300) 1px solid;
+}
+.off-canvas-header__text {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+}
+.off-canvas-header__icon {
+  margin-right: 12px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--hrsa-gray-500);
+}
+.off-canvas-header__icon > i {
+  font-size: inherit;
+  color: inherit;
+}
+.off-canvas-header__title {
+  color: var(--hrsa-blue-500);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .site-messages-header {
