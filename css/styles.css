@@ -2896,6 +2896,9 @@ body[noscroll] {
   font-size: 13px;
   font-weight: 400;
 }
+.site-messages-nav-list__item:nth-child(even) {
+  background-color: var(--hrsa-gray-025);
+}
 .site-messages-nav-list__text {
   display: inline-flex;
   flex-direction: column;
@@ -2978,6 +2981,9 @@ body[noscroll] {
 .site-messages-nav-list__link--highlight .site-messages-nav-list__title {
   font-weight: 600;
   color: var(--hrsa-gray-900);
+}
+.site-messages-nav-list__link--highlight .site-messages-nav-list__message {
+  color: var(--hrsa-gray-800);
 }
 .site-messages-nav-list__link--highlight .site-messages-nav-list__datetime {
   color: var(--hrsa-gray-900);

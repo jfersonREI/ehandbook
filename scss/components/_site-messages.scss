@@ -84,6 +84,9 @@ body[noscroll] {
     border-bottom: var(--hrsa-gray-300) 1px solid;
     font-size: 13px;
     font-weight: 400;
+    &:nth-child(even) {
+      background-color: var(--hrsa-gray-025);
+    }
   }
   &__text {
     display: inline-flex;
@@ -166,6 +169,9 @@ body[noscroll] {
         &__title {
           font-weight: 600;
           color: var(--hrsa-gray-900);
+        }
+        &__message {
+          color: var(--hrsa-gray-800);
         }
         &__datetime {
           color: var(--hrsa-gray-900);
