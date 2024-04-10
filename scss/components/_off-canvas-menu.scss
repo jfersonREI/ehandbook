@@ -1,4 +1,4 @@
-$off-canvas-sidebar-width: 320px;
+$off-canvas-sidebar-width: 400px;
 $off-canvas-guide-bg-color: var(--white);
 
 //stop scrolling of body
@@ -33,11 +33,38 @@ body[noscroll] {
   }
 }
 
+//close btn
+.off-canvas-close {
+  background-color: transparent;
+}
+.off-canvas-close-btn {
+  background-color: transparent;
+  border: 0;
+  padding: 8px;
+  color: var(--hrsa-blue-100);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  &:hover {
+    color: var(--hrsa-blue-500);
+  }
+  img,
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+}
+
 //wrap for the nav
 .off-canvas-nav-group-inner {
   background-color: $off-canvas-guide-bg-color;
   width: $off-canvas-sidebar-width;
-  transform: translate3d(-100%, 0, 0);
+  transform: translateX(-100%);
   visibility: visible;
   position: absolute;
   top: 0;
@@ -47,7 +74,7 @@ body[noscroll] {
   transition-duration: $app-guide-transition-duration;
 
   &[opened] {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
 
   &[no-transition] {

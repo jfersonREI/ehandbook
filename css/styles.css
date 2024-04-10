@@ -2859,14 +2859,41 @@ body[noscroll] {
 }
 @media (min-width: 576px) {
   .off-canvas-nav-group[opened] .off-canvas-nav-group-inner {
-    width: 320px;
+    width: 400px;
   }
+}
+
+.off-canvas-close {
+  background-color: transparent;
+}
+
+.off-canvas-close-btn {
+  background-color: transparent;
+  border: 0;
+  padding: 8px;
+  color: var(--hrsa-blue-100);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.off-canvas-close-btn:hover {
+  color: var(--hrsa-blue-500);
+}
+.off-canvas-close-btn img,
+.off-canvas-close-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .off-canvas-nav-group-inner {
   background-color: var(--white);
-  width: 320px;
-  transform: translate3d(-100%, 0, 0);
+  width: 400px;
+  transform: translateX(-100%);
   visibility: visible;
   position: absolute;
   top: 0;
@@ -2876,7 +2903,7 @@ body[noscroll] {
   transition-duration: 0.3s;
 }
 .off-canvas-nav-group-inner[opened] {
-  transform: translate3d(0, 0, 0);
+  transform: translateX(0);
 }
 .off-canvas-nav-group-inner[no-transition] {
   transition: none;
@@ -3045,33 +3072,6 @@ body[noscroll] {
 }
 .site-messages-nav-list__link--highlight .site-messages-nav-list__datetime {
   color: var(--hrsa-gray-900);
-}
-
-.site-messages-close {
-  background-color: transparent;
-}
-
-.site-messages-close-btn {
-  background-color: transparent;
-  border: 0;
-  padding: 8px;
-  color: var(--white);
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-.site-messages-close-btn:hover {
-  color: var(--hrsa-blue-100);
-}
-.site-messages-close-btn img,
-.site-messages-close-btn svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
 }
 
 .site-messages-nav-group-inner {

@@ -137,32 +137,6 @@
 
 /////////////////////////////////////////////////////////
 
-//close btn
-.site-messages-close {
-  background-color: transparent;
-}
-.site-messages-close-btn {
-  background-color: transparent;
-  border: 0;
-  padding: 8px;
-  color: var(--white);
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  &:hover {
-    color: var(--hrsa-blue-100);
-  }
-  img,
-  svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-  }
-}
 //wrap for the nav
 .site-messages-nav-group-inner {
   background-color: $app-guide-bg-color;
