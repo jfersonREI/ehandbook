@@ -1973,7 +1973,7 @@ body[noscroll] {
   background-color: var(--hrsa-blue-800);
 }
 .site-badge--red {
-  background-color: #eb0014;
+  background-color: var(--hrsa-red-300);
 }
 
 .sidebar-top-btn {
@@ -2902,11 +2902,15 @@ body[noscroll] {
 .site-messages-nav-list__text {
   display: inline-flex;
   flex-direction: column;
+  min-width: 50%;
 }
 .site-messages-nav-list__title {
   font-size: 13px;
   font-weight: 500;
   color: var(--hrsa-gray-800);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .site-messages-nav-list__message {
   font-size: 12px;
@@ -2977,6 +2981,9 @@ body[noscroll] {
 }
 .site-messages-nav-list__link--highlight {
   box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-500);
+}
+.site-messages-nav-list__link--highlight:hover {
+  box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-600);
 }
 .site-messages-nav-list__link--highlight .site-messages-nav-list__title {
   font-weight: 600;

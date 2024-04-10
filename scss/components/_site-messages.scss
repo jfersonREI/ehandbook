@@ -91,11 +91,16 @@ body[noscroll] {
   &__text {
     display: inline-flex;
     flex-direction: column;
+    min-width: 50%;
   }
   &__title {
     font-size: 13px;
     font-weight: 500;
     color: var(--hrsa-gray-800);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &__message {
     font-size: 12px;
@@ -165,6 +170,9 @@ body[noscroll] {
     }
     &--highlight {
       box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-500);
+      &:hover {
+        box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-600);
+      }
       .site-messages-nav-list {
         &__title {
           font-weight: 600;
