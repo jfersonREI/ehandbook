@@ -48,9 +48,9 @@ function closeScrim() {
 //screen resizing
 let mqls = [
   window.matchMedia("(min-width: 0)"),
-  window.matchMedia("(min-width: 48rem)"),
-  window.matchMedia("(min-width: 62rem)"),
-  window.matchMedia("(min-width: 80rem)"),
+  window.matchMedia("(min-width: 768px)"),
+  window.matchMedia("(min-width: 992px)"),
+  window.matchMedia("(min-width: 1280px)"),
 ];
 
 function mediaqueryresponse() {
