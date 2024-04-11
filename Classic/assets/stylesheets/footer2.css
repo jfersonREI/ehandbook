@@ -1,0 +1,222 @@
+.footer-top[_ngcontent-sdk-154] {
+    padding: 1rem 1rem 0;
+    background-color: #333333;
+  }
+  .footer-top[_ngcontent-sdk-154]   h5[_ngcontent-sdk-154] {
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .footer-top[_ngcontent-sdk-154]   span[_ngcontent-sdk-154] {
+    margin-right: 0.5rem;
+  }
+  .footer-top[_ngcontent-sdk-154]   li[_ngcontent-sdk-154], .footer-top[_ngcontent-sdk-154]   a[_ngcontent-sdk-154] {
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 0.7rem;
+  }
+  .footer-top[_ngcontent-sdk-154]   li[_ngcontent-sdk-154]:hover, .footer-top[_ngcontent-sdk-154]   a[_ngcontent-sdk-154]:hover {
+    color: #f2f2f2;
+  }
+  
+  .footer-bottom[_ngcontent-sdk-154] {
+    background-color: #272727;
+    padding: 0.5rem 0;
+    color: #bababa;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer-bottom[_ngcontent-sdk-154]   ul[_ngcontent-sdk-154] {
+    margin-bottom: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .productDetails[_ngcontent-sdk-154]   ul[_ngcontent-sdk-154]   li[_ngcontent-sdk-154]:first-child {
+    border-left: 1px solid #555555;
+  }
+  .productDetails[_ngcontent-sdk-154]   a[_ngcontent-sdk-154] {
+    margin-left: 0.5rem;
+  }
+  .productDetails[_ngcontent-sdk-154]   a[_ngcontent-sdk-154], .productDetails[_ngcontent-sdk-154]   a[_ngcontent-sdk-154]:hover {
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .disclosure-policy[_ngcontent-sdk-154] {
+    fill: #fff;
+    margin-left: 5px;
+    display: inline-flex;
+  }
+  
+  .depHealt[_ngcontent-sdk-154]   img[_ngcontent-sdk-154] {
+    max-width: 2.5rem;
+  }
+  .adHealth[_ngcontent-sdk-154]   img[_ngcontent-sdk-154] {
+    max-width: 6rem;
+  }
+  
+  .modal-dialog[_ngcontent-sdk-154] {
+    box-shadow: 0px 0px 10px 0px rgba(127, 127, 127, 0.35);
+  }
+  .modal-footer[_ngcontent-sdk-154] {
+    border-top: 0 !important;
+  }
+  .modal-title[_ngcontent-sdk-154] {
+    color: #002656;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .footer-modal-body[_ngcontent-sdk-154] {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+  }
+  .btn-modal[_ngcontent-sdk-154] {
+    background-color: #193d58 !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    box-shadow: 2px 2px 5px 0px rgba(85, 85, 85, 0.35);
+    border-radius: 0 !important;
+    padding: 0.365rem 2rem !important;
+  }
+
+  .modal-body[_ngcontent-sdk-154]   ul[_ngcontent-sdk-154] {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+  }
+  
+
+  
+  
+  @media (min-width: 1200px) {
+    .footer-top[_ngcontent-sdk-154]   .container[_ngcontent-sdk-154] {
+      max-width: 1048px;
+    }
+  }
+  @media (max-width: 767px) {
+    .productDetails[_ngcontent-sdk-154]   ul[_ngcontent-sdk-154]   li[_ngcontent-sdk-154]:first-child {
+      border-left: 0;
+      border-right: 1px solid #555555;
+    }
+    .productDetails[_ngcontent-sdk-154]   a[_ngcontent-sdk-154] {
+      margin-left: 0;
+      margin-right: 0.5rem;
+    }
+  }
+  @media (min-width: 576px) {
+    .modal-dialog[_ngcontent-sdk-154] {
+      max-width: 300px !important;
+    }
+  }
+  
+
+  
+.custom-modal[_ngcontent-sdk-154] {
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-dialog[_ngcontent-sdk-154] {
+    background: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .modal-header[_ngcontent-sdk-154] {
+    padding: 2px 16px;
+    background-color: #0056b3; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-title[_ngcontent-sdk-154] {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  
+  .close[_ngcontent-sdk-154] {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .close[_ngcontent-sdk-154]:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  .modal-body[_ngcontent-sdk-154] {
+    padding: 2px 16px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .modal-footer[_ngcontent-sdk-154] {
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: right;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  
+  .btn-modal[_ngcontent-sdk-154] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-modal[_ngcontent-sdk-154]:hover {
+    background-color: #0056b3;
+  }
+
+
+  .footer-collapse{
+    background-color: #272727;
+    padding: 0.5rem 1rem .5rem;
+  }
+
+  .footer-collapse__button{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .footer-collapse__button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }

@@ -1,0 +1,548 @@
+ul.lmBase {
+    padding-left: 0;
+    border: 1px solid #d4d3be;
+    width: 168px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.lmBase ul li,ul.lmBase {
+    list-style: none;
+    padding-bottom: 1px;
+    padding-top: 1px
+}
+
+ul.lmBase ul {
+    padding-left: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px
+}
+
+ul.lmBase ul ul {
+    padding-left: 0
+}
+
+.lmTitle {
+    line-height: 24px;
+    padding-left: 10px;
+    font-weight: 700;
+    color: #3d3c21;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #d4d3be;
+    background-image: url(../Images/hrsa_theme_sprite_01.png);
+    background-position: 0 -3449px;
+    background-repeat: repeat-x;
+    cursor: pointer
+}
+
+.Expanded,a.Expanded,a.Expanded:hover,Expanded:hover {
+    color: #3d3c21;
+    text-decoration: none
+}
+
+.Collapsed,a.Collapsed,a.Collapsed:hover,Collapsed:hover {
+    color: #3d3c21;
+    text-decoration: none!important;
+    border: 0!important
+}
+
+.NavArrow {
+    position: relative;
+    float: right;
+    right: -10px;
+    top: 8px
+}
+
+a.NavArrow {
+    background-image: url(../Images/hrsa_theme_sprite_01.png);
+    background-position: 99% -3035px;
+    background-repeat: no-repeat
+}
+
+a.Expanded:focus,a.Expanded:hover,a.NavArrow:focus,a.NavArrow:hover,lmTitle a:focus,lmTitle a:hover {
+    border: 0 dotted #000
+}
+
+.lmContentHeader {
+    font-weight: 700;
+    color: #3d3c21;
+    margin-left: -10px
+}
+
+.lmBase ul a:hover {
+    padding-left: 10px;
+    margin-left: -10px;
+    background-color: #e2effd;
+    color: #600;
+    padding-top: 1px;
+    padding-bottom: 1px
+}
+
+.lmBase ul a:focus {
+    border: 0 solid Transparent;
+    outline-width: 1px;
+    outline-style: dotted
+}
+
+.lmBase ul a.selected {
+    border: 1px solid #8fb0d6;
+    border-left: 3px solid #8fb0d6;
+    background-color: #e2effd;
+    padding: 1px 0 1px 7px;
+    margin-top: -2px;
+    margin-left: -10px;
+    color: #600;
+    font-weight: 700;
+    width: 100%
+}
+
+.lmBase a {
+    text-decoration: none!important;
+    display: block;
+    width: 143px;
+    padding: 1px 0
+}
+
+.lmBase .lmIcon {
+    padding-right: 5px;
+    margin-top: -2px;
+    float: left
+}
+
+.lmBase .NavArrowUp {
+    background-image: url(../Images/nav_arrow_up.png)
+}
+
+.lmBase .NavArrowDown,.lmBase .NavArrowUp {
+    background-position: 0 0;
+    position: relative;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    float: right
+}
+
+.lmBase .NavArrowDown {
+    background-image: url(../Images/nav_arrow_down.png);
+    display: inline-block
+}
+
+ul.lmBase ul span {
+    display: block
+}
+
+#colleft {
+    width: 170px;
+    margin-top: 0;
+    float: left;
+    background: #fff;
+    border-bottom: 3px solid #d4d4d4
+}
+
+#colleft #hidePanel {
+    padding: 7px 0 0;
+    float: right;
+    width: 12px;
+    height: 10px;
+    margin: 0 5px 0 0
+}
+
+#colleft #hidePanel a {
+    color: #fff;
+    background-image: url(Images/hidepanel_arrow.gif);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 10px;
+    display: block
+}
+
+#colleft #hidePanel a:hover {
+    color: #fff
+}
+
+#colleft,#showPanel {
+    color: #eee
+}
+
+#colleft .leftheader {
+    background: #337bb4 url(Images/hrsa_theme_sprite_02.png) right -336px no-repeat;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    margin-bottom: 0
+}
+
+#colleft .left_title {
+    float: left;
+    padding: 2px 0 4px 7px;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase
+}
+
+#colleft .left_title span {
+    display: block;
+    padding: 3px 0 4px 10px
+}
+
+#colleft .left_title img {
+    padding-left: 5px
+}
+
+#colleft .leftbase {
+    padding: 0;
+    height: 100%
+}
+
+#showPanel {
+    position: inherit;
+    z-index: 2;
+    left: 0;
+    float: left;
+    padding-top: 2px;
+    display: none;
+    width: 0;
+    height: 80px;
+    cursor: pointer
+}
+
+#showPanel span {
+    display: block;
+    font-size: 1.83em;
+    height: 20px;
+    margin-top: 0;
+    padding: 10px 0 10px 3px;
+    width: 16px;
+    background: #337bb4;
+    color: #fff
+}
+
+#maincol {
+    margin-left: .8%
+}
+
+#colright,#maincol {
+    padding-top: 0;
+    margin-right: .8%;
+    float: none
+}
+
+#colright {
+    margin-left: 180px
+}
+
+#base_right {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 3px solid #d4d7d9;
+    padding-bottom: 15px
+}
+
+body {
+    clear: both;
+    margin: 0;
+    border-top: 3px solid #0a4462;
+    background-color: #eeeff0;
+    min-width: 970px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #414141;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: inherit;
+    font-style: inherit
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1071;
+    cursor: pointer;
+    position: fixed
+}
+
+.heading {
+    font-size: 19px;
+    color: #193d58;
+    font-family: Arial Bold,Arial,sans-serif;
+    padding-left: 16px;
+    font-weight: 700
+}
+
+#roles {
+    margin-top: 50px
+}
+
+.nav-content .container {
+    width: 500px;
+}
+
+.btn.active.focus,.btn.focus,.btn:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.btn-accordion:focus:not(.focus-visible) {
+    outline: none;
+    border-color: none
+}
+
+.btn-accordion {
+    padding: 10px 10px 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+    background-color: transparent
+}
+
+.btn-accordion:active,.btn-accordion:focus,.btn-accordion:hover,.btn.active:focus,.btn:active.focus,.btn:active:focus {
+    background-color: #f2f2f2!important;
+    border-bottom: 1px solid #d7d7d7!important
+}
+
+#arrow-up .btn-primary {
+    background-color: #16364f;
+    height: 70px;
+    width: 65px;
+    color: #f2f2f2;
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 1
+}
+
+#arrow-up .btn-primary:active,#arrow-up .btn-primary:hover {
+    background-color: #2f5470!important;
+    border: none;
+    border-radius: 0
+}
+
+#arrowDown {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+#arrowDown,.bottom-arrow {
+    background-color: transparent
+}
+
+.bottom-arrow {
+    border: none;
+    font-size: 42px;
+    color: #aaa;
+    margin-top: auto
+}
+
+.right-arrow {
+    font-size: 20px;
+    text-align: right;
+}
+
+.right-menu {
+    max-width: 500px;
+    border-left: 1px solid #cfcece;
+    display: none
+}
+
+.sideHead {
+    background-color: #16364f;
+    height: 70px;
+    padding: 0 16px
+}
+
+.left-sidebar__sticky {
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: .5s;
+    display: flex;
+    flex-direction: row
+}
+
+.left-sidebar__sticky .closebtn {
+    position: absolute;
+    right: 10px;
+    width: 43px;
+    height: 43px;
+    top: 14px;
+    background: url(/LayoutService/images/svg/close-icon.svg) no-repeat 50%
+}
+
+.left-sidebar__sticky .closebtn:focus,.sidebar .closebtn:hover {
+    background: url(/LayoutService/images/svg/close-icon-mouseover.svg) no-repeat 50%;
+    position: absolute;
+    width: 43px
+}
+
+.pin-button {
+    background: url(/LayoutService/images/svg/pin-icon.svg) no-repeat 50%;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    right: 54px;
+    top: 14px
+}
+
+.pin-button:focus,.pin-button:hover {
+    background: url(/LayoutService/images/svg/pin-icon-mouseover.svg) no-repeat 50%;
+    position: absolute;
+    width: 43px
+}
+
+.pin-button:active,.pin-button:hover,.left-sidebar__sticky .closebtn:active,.sidebar .closebtn:hover {
+    background-color: #eca421;
+    border-radius: 6px;
+    border: none
+}
+
+.side-logo {
+    width: 145px;
+    margin-top: 10px
+}
+
+.left-menu .btn-default {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+    width: 65px;
+    height: 67px;
+    color: #16364f
+}
+
+.left-menu .btn-default:hover {
+    background-color: #d7d7d7;
+    border-radius: 0
+}
+
+.left-menu .btn-default:active,.left-menu .btn-default:focus {
+    background-color: #eca421;
+    color: #333;
+    border: none;
+    border-radius: 0;
+    outline: 0
+}
+
+.search-bar {
+    margin: 12px
+}
+
+.search-bar>.form-control {
+    height: 42px;
+    border-radius: 0
+}
+
+.btn-search {
+    width: 41px;
+    height: 42px;
+    padding: 2px;
+    background-color: #900;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center
+}
+
+.btn-search i {
+    align-self: center
+}
+
+.row {
+    border-radius: 5px
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 0
+}
+
+.sub-group {
+    width: 100%;
+    padding-top: 10px;
+    color: #555;
+    font-size: 14px
+}
+
+.container.active .content {
+    width: 100%;
+    Padding-left: 10px;
+    height: auto;
+    visibility: visible;
+    max-height: 500px;
+    transition: max-height 1s ease
+}
+
+.content a {
+    text-decoration: none!important
+}
+
+.btn-second-level {
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    padding: 0
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #005087;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 13px
+}
+
+.menu-item:hover {
+    background-color: #f2f2f2;
+    color: #333
+}
+
+.menu-item a {
+    color: #005087
+}
+
+.menu-item.selected {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d7d7d7;
+    color: #333
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top:15px
+    }
+
+    .sidebar a {
+        font-size: 18px
+    }
+}
