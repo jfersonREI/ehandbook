@@ -1,0 +1,158 @@
+html {
+    font-size: 62.5%; }
+  
+  .truncate {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  
+  h2.main_title {
+    font-size: 1.67rem;
+    color: #8e330f;
+    font-family: "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 15px; }
+    h2.main_title img {
+      display: inline; }
+    h2.main_title label {
+      display: inline;
+      font-weight: 600 !important; }
+  
+  .design-section {
+    display: block; }
+  
+  h3.design-title {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.33rem; }
+  
+  h4 {
+    margin: 0.50rem 0 0 0;
+    color: #0d3d5a;
+    text-align: left;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px;
+    line-height: 1.7;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    background: #d8dde6;
+    font-size: 1.33rem; }
+  
+  h5 {
+    display: block;
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    line-height: 20px;
+    color: #788699;
+    font-size: 1.25rem; }
+  
+  .inputSmall {
+    width: 20% !important;
+    min-width: 50px;
+    max-width: 150px; }
+  
+  .inputMedium {
+    width: 50% !important;
+    min-width: 175px;
+    max-width: 350px; }
+  
+  .inputLarge {
+    width: 100% !important;
+    max-width: 500px; }
+  
+  select.form-control:not([size]):not([multiple]) {
+    height: calc(2.95rem + 2px);
+    padding: 0px; }
+  
+  /********* Font Awesome Updates ***********/
+  .fa-increaseIcon {
+    font-size: 1.8rem; }
+  
+  .fa-green {
+    color: green; }
+  
+  .fa-red {
+    color: #8B1A1A; }
+  
+  .fa-blue {
+    color: #0D4F8B; }
+  
+  .radio,
+  .checkbox {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px; }
+    .radio input[type="checkbox"],
+    .checkbox input[type="checkbox"] {
+      position: absolute !important;
+      margin-left: -20px; }
+  
+  .input-group {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto; }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 5.0s;
+    animation: fadein 0.5s, fadeout 0.5s 5.0s; }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0; }
+    to {
+      bottom: 15%;
+      opacity: 1; } }
+  
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0; }
+    to {
+      bottom: 15%;
+      opacity: 1; } }
+  
+  @-webkit-keyframes fadeout {
+    from {
+      bottom: 15%;
+      opacity: 1; }
+    to {
+      bottom: 0;
+      opacity: 0; } }
+  
+  @keyframes fadeout {
+    from {
+      bottom: 15%;
+      opacity: 1; }
+    to {
+      bottom: 0;
+      opacity: 0; } }
+  
+  .alert-success {
+    width: 550px;
+    margin-left: auto;
+    margin-top: 10px;
+    height: 50px;
+    padding-top: 15px;
+    border-left: 4px solid #3c763d;
+    border-top: 1px solid #3c763d;
+    border-right: 1px solid #3c763d;
+    border-bottom: 1px solid #3c763d;
+    font-size: 1.3rem; }
+  
+  .validation-error {
+    color: #a94442; }
+  
