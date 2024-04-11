@@ -2974,7 +2974,7 @@ body[noscroll] {
   font-size: 13px;
   font-weight: 400;
 }
-.site-messages-nav-list__item:nth-child(even) {
+.site-messages-nav-list__item--striped:nth-child(even) {
   background-color: var(--hrsa-gray-025);
 }
 .site-messages-nav-list__text {

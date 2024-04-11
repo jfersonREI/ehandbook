@@ -17,8 +17,11 @@
     border-bottom: var(--hrsa-gray-300) 1px solid;
     font-size: 13px;
     font-weight: 400;
-    &:nth-child(even) {
-      background-color: var(--hrsa-gray-025);
+
+    &--striped {
+      &:nth-child(even) {
+        background-color: var(--hrsa-gray-025);
+      }
     }
   }
   &__text {
