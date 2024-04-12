@@ -57,6 +57,9 @@ body[noscroll] {
     height: 24px;
     fill: currentColor;
   }
+  &--red {
+    color: var(--hrsa-red-500);
+  }
 }
 
 //wrap for the nav

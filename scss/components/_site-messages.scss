@@ -179,7 +179,7 @@
       background-color: var(--hrsa-gray-100);
     }
     &:focus-visible {
-      outline-offset: 0px;
+      outline-offset: -1px;
     }
 
     &--highlight {

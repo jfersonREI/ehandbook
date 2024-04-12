@@ -2888,6 +2888,9 @@ body[noscroll] {
   height: 24px;
   fill: currentColor;
 }
+.off-canvas-close-btn--red {
+  color: var(--hrsa-red-500);
+}
 
 .off-canvas-nav-group-inner {
   background-color: var(--white);
@@ -3109,7 +3112,7 @@ body[noscroll] {
   background-color: var(--hrsa-gray-100);
 }
 .site-messages-nav-list__link:focus-visible {
-  outline-offset: 0px;
+  outline-offset: -1px;
 }
 .site-messages-nav-list__link--highlight {
   box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-500);
