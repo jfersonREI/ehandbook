@@ -13,14 +13,63 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   &__item {
     border-bottom: var(--hrsa-gray-300) 1px solid;
     font-size: 13px;
     font-weight: 400;
+    position: relative;
+    &:hover,
+    &:focus,
+    &:focus-within {
+      color: inherit;
+      background-color: var(--hrsa-gray-200);
+    }
+    &:active {
+      color: inherit;
+    }
 
+    &:focus-visible {
+      outline-offset: 0px;
+    }
     &--striped {
       &:nth-child(even) {
         background-color: var(--hrsa-gray-025);
+      }
+    }
+    &--1-actions {
+      &:hover,
+      &:focus,
+      &:focus-within {
+        .site-messages-nav-list {
+          &__link {
+            padding-right: 16px;
+          }
+          &__actions {
+            visibility: visible;
+          }
+          &__datetime {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+
+    &--2-actions {
+      &:hover,
+      &:focus,
+      &:focus-within {
+        .site-messages-nav-list {
+          &__link {
+            padding-right: 24px;
+          }
+          &__actions {
+            visibility: visible;
+          }
+          &__datetime {
+            visibility: hidden;
+          }
+        }
       }
     }
   }
@@ -83,6 +132,14 @@
     line-height: inherit;
     margin-top: 4px;
   }
+
+  &__actions {
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: calc(50% - 16px);
+    visibility: hidden;
+  }
   &__link {
     padding: 16px;
     display: flex;
@@ -96,14 +153,23 @@
     font-size: inherit;
     font-weight: inherit;
     text-align: left;
+
     &:hover {
       color: inherit;
-      background-color: var(--hrsa-gray-200);
+      background-color: inherit;
     }
     &:active {
       color: inherit;
-      background-color: var(--hrsa-gray-300);
+      background-color: inherit;
     }
+
+    &:active {
+      background-color: var(--hrsa-gray-100);
+    }
+    &:focus-visible {
+      outline-offset: 0px;
+    }
+
     &--highlight {
       box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-500);
       &:hover {

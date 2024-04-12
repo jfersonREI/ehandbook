@@ -2973,9 +2973,38 @@ body[noscroll] {
   border-bottom: var(--hrsa-gray-300) 1px solid;
   font-size: 13px;
   font-weight: 400;
+  position: relative;
+}
+.site-messages-nav-list__item:hover, .site-messages-nav-list__item:focus, .site-messages-nav-list__item:focus-within {
+  color: inherit;
+  background-color: var(--hrsa-gray-200);
+}
+.site-messages-nav-list__item:active {
+  color: inherit;
+}
+.site-messages-nav-list__item:focus-visible {
+  outline-offset: 0px;
 }
 .site-messages-nav-list__item--striped:nth-child(even) {
   background-color: var(--hrsa-gray-025);
+}
+.site-messages-nav-list__item--1-actions:hover .site-messages-nav-list__link, .site-messages-nav-list__item--1-actions:focus .site-messages-nav-list__link, .site-messages-nav-list__item--1-actions:focus-within .site-messages-nav-list__link {
+  padding-right: 16px;
+}
+.site-messages-nav-list__item--1-actions:hover .site-messages-nav-list__actions, .site-messages-nav-list__item--1-actions:focus .site-messages-nav-list__actions, .site-messages-nav-list__item--1-actions:focus-within .site-messages-nav-list__actions {
+  visibility: visible;
+}
+.site-messages-nav-list__item--1-actions:hover .site-messages-nav-list__datetime, .site-messages-nav-list__item--1-actions:focus .site-messages-nav-list__datetime, .site-messages-nav-list__item--1-actions:focus-within .site-messages-nav-list__datetime {
+  visibility: hidden;
+}
+.site-messages-nav-list__item--2-actions:hover .site-messages-nav-list__link, .site-messages-nav-list__item--2-actions:focus .site-messages-nav-list__link, .site-messages-nav-list__item--2-actions:focus-within .site-messages-nav-list__link {
+  padding-right: 24px;
+}
+.site-messages-nav-list__item--2-actions:hover .site-messages-nav-list__actions, .site-messages-nav-list__item--2-actions:focus .site-messages-nav-list__actions, .site-messages-nav-list__item--2-actions:focus-within .site-messages-nav-list__actions {
+  visibility: visible;
+}
+.site-messages-nav-list__item--2-actions:hover .site-messages-nav-list__datetime, .site-messages-nav-list__item--2-actions:focus .site-messages-nav-list__datetime, .site-messages-nav-list__item--2-actions:focus-within .site-messages-nav-list__datetime {
+  visibility: hidden;
 }
 .site-messages-nav-list__text {
   display: inline-flex;
@@ -3035,6 +3064,13 @@ body[noscroll] {
   line-height: inherit;
   margin-top: 4px;
 }
+.site-messages-nav-list__actions {
+  background-color: transparent;
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 16px);
+  visibility: hidden;
+}
 .site-messages-nav-list__link {
   padding: 16px;
   display: flex;
@@ -3051,11 +3087,17 @@ body[noscroll] {
 }
 .site-messages-nav-list__link:hover {
   color: inherit;
-  background-color: var(--hrsa-gray-200);
+  background-color: inherit;
 }
 .site-messages-nav-list__link:active {
   color: inherit;
-  background-color: var(--hrsa-gray-300);
+  background-color: inherit;
+}
+.site-messages-nav-list__link:active {
+  background-color: var(--hrsa-gray-100);
+}
+.site-messages-nav-list__link:focus-visible {
+  outline-offset: 0px;
 }
 .site-messages-nav-list__link--highlight {
   box-shadow: inset 4px 0px 0px 0px var(--hrsa-red-500);
