@@ -43,13 +43,14 @@
       &:focus-within {
         .site-messages-nav-list {
           &__link {
-            padding-right: 16px;
+            padding-right: 32px;
           }
           &__actions {
             visibility: visible;
           }
           &__datetime {
             visibility: hidden;
+            width: 0;
           }
         }
       }
@@ -61,13 +62,14 @@
       &:focus-within {
         .site-messages-nav-list {
           &__link {
-            padding-right: 24px;
+            padding-right: 68px;
           }
           &__actions {
             visibility: visible;
           }
           &__datetime {
             visibility: hidden;
+            width: 0;
           }
         }
       }
@@ -138,7 +140,17 @@
     position: absolute;
     right: 8px;
     top: calc(50% - 16px);
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
     visibility: hidden;
+    .icon-btn {
+      margin: 0;
+    }
+    .icon-btn + .icon-btn {
+      margin-left: 4px;
+    }
   }
   &__link {
     padding: 16px;
