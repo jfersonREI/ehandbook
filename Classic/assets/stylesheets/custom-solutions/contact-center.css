@@ -1,0 +1,8 @@
+@media screen and (max-width: 900px) {
+    .hrsagrid1, .hrsagrid2, .hrsagrid3 {
+        float: none;
+        margin: 0 0 2px;
+        overflow: hidden;
+        padding-left: 0px !important;
+    }
+  }

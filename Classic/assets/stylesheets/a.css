@@ -1,0 +1,189 @@
+.hhsBanner{
+    height: 30px;
+    width: 100%;
+    background-color:#272727;
+    display: flex;
+}
+
+.hhsLogo{
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.hhsLink{
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 7px;
+}
+
+.hhsLink:hover{
+    text-decoration: underline !important;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.bg-banner{
+    background-image: url('/assets/imgs/HeaderBGGradient.png') !important;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100px;
+}
+
+.header-seperator{
+    border-right: 2px solid #7F7F7F;
+    padding-right:15px ;
+}
+
+.navbar-toggler{
+    border-color: #ECA421 !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(/assets/imgs/MenuBars.png) !important;
+}
+
+@media (max-width: 992px){
+.navbar-collapse{
+    background-image: url('/assets/imgs/HeaderBGGradient.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-left: -18px;
+    padding: 18px;
+    margin-right: -16px;
+    margin-top: 10px;
+    display: block;
+} 
+}
+
+
+.nav-link{
+    color:#fff !important;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin-right: 20px;
+    font-size: 1rem !important;
+
+}
+
+
+.nav-link:hover{
+ color:#ECA421 !important;
+
+}
+
+.nav-link:active{
+ border-bottom: 2px solid #ECA421;
+ color:#ECA421 !important;
+ font-weight: 600; 
+}
+.fa-home{
+    font-size: 20px;
+}
+
+
+.navbarv2 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    
+    .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    }
+
+    body{
+        border-top: none;
+    }
