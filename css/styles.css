@@ -2825,8 +2825,8 @@ body[noscroll] {
   margin: 0;
   padding: 0;
   display: grid;
-  row-gap: 24px;
-  column-gap: 24px;
+  row-gap: 12px;
+  column-gap: 12px;
 }
 @media (min-width: 576px) {
   .tasks-header-btn-list {
@@ -2836,18 +2836,22 @@ body[noscroll] {
 @media (min-width: 768px) {
   .tasks-header-btn-list {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 16px;
   }
 }
 @media (min-width: 992px) {
   .tasks-header-btn-list {
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
   }
 }
 
 .tasks-header-btn {
   border: var(--hrsa-gray-300) 1px solid;
   display: inline-flex;
-  background-color: lawngreen;
+  background-color: var(--white);
   margin: 0;
   padding: 0;
   border-radius: 6px;
@@ -2874,6 +2878,7 @@ body[noscroll] {
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
+  text-align: left;
   padding: 8px;
 }
 .tasks-header-btn__headline {
@@ -2884,7 +2889,13 @@ body[noscroll] {
   padding: 0;
 }
 .tasks-header-btn__count {
-  background-color: forestgreen;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 600;
+  color: currentColor;
+  letter-spacing: -0.75px;
+  margin: 0;
+  padding: 0;
 }
 
 .off-canvas-scrim {
