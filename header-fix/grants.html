@@ -1,0 +1,1244 @@
+<!doctype html>
+
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en"
+  dir="ltr"
+  lang="en"
+  class="t-chrome t-chrome123"
+>
+  <head id="ctl00_headTag">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>My Grant Portfolio | EU | HRSA EHBs</title>
+
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <script src="./files/highCharts.min.js.download"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./files/jquery.min.js.download"></script>
+    <script src="./files/knockout.min.js.download"></script>
+    <script src="./files/extlib.min.js.download"></script>
+    <script src="./files/util.min.js.download"></script>
+    <script src="./files/validation.min.js.download"></script>
+
+    <link
+      id="ctl00_Link1"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Platform/Include/Skins/EHB/Images/favicon.ico"
+    />
+    <link
+      id="ctl00_Link2"
+      rel="icon"
+      type="image/ico"
+      href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Platform/Include/Skins/EHB/Images/favicon.ico"
+    />
+
+    <!-- Start solution headContent --------------------------------------------------------------------------------->
+
+    <!-- End solution headContent ----------------------------------------------------------------------------------->
+    <!-- Start head Css --------------------------------------------------------------------------------------------->
+    <link href="./files/pfmComponents_EHB.min.css" rel="stylesheet" />
+    <link href="./files/pfmCustom_EHB.min.css" rel="stylesheet" />
+    <link href="./files/pfm_EHB.min.css" rel="stylesheet" />
+    <link href="./files/pfm_EHB.min.css" rel="stylesheet" />
+
+    <!-- /icon font -->
+    <link rel="stylesheet" href="./files/font-awesome.min.css" />
+
+    <!-- End head Css ----------------------------------------------------------------------------------------------->
+  </head>
+
+  <body>
+    <div id="ctl00_divSkipNav">
+      <a
+        href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx#content"
+        class="skipnav"
+        title="Skip to Main Content"
+        accesskey="s"
+        >Skip to Main Content</a
+      >
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $.get(
+            "https://hrsaUTL15-is.amer.reisystems.com/LayoutService/legacy/templates/sidemenu.html"
+          )
+            .done(function (stream) {
+              $("#sidemenu_placeholder").html(stream);
+            })
+            .fail(function (error) {});
+        });
+        $("#base_right").context.onkeydown = function (e) {
+          var keyPressed = e.keyCode || e.which;
+
+          if (keyPressed === 13) {
+            if (e.target.className == "skipnav") {
+              //selects all focusable elements in the content, than grabs the first of those elements. afterwards set the focus to that element
+              var firstContentElement = $(
+                "#base_right a[href], #base_right area[href], #base_right input:not([disabled]), #base_right select:not([disabled]), #base_right textarea:not([disabled]), #base_right button:not([disabled]), #base_right iframe, #base_right object, #base_right embed, #base_right *[tabindex], #base_right *[contenteditable]"
+              ).filter(":visible")[0];
+              firstContentElement.focus();
+              e.preventDefault();
+            }
+          }
+        };
+      </script>
+    </div>
+    <!-- Start Platform preferencePanel ----------------------------------------------------------------------------->
+    <script type="text/javascript">
+      var clientPlatformDate = new Date();
+      function TimeoffsetMessage(message) {
+        $(document).ready(function () {
+          var tempDate = new Date();
+          var ClientUTCDate = clientPlatformDate;
+          var ClientTimeZoneOffset = tempDate.getTimezoneOffset();
+          var ClientGMTOffset = CalculateGMTOffset(ClientTimeZoneOffset * -1);
+          ClientUTCDate.setMinutes(
+            tempDate.getMinutes() + ClientTimeZoneOffset
+          );
+          var SERVERTIME = ReiSys.Utilities.Util.PostJsonToServiceWithNoParams(
+            ReiSys.Utilities.Util.BaseUrl +
+              "Platform/Interface/Services/SessionService.aspx" +
+              "/GetServerTime"
+          ).d;
+          var serverDate = new Date(Date.parse(SERVERTIME));
+          var serverUTCDate = new Date(Date.parse(SERVERTIME));
+          var serverTimeZoneOfset =
+            ReiSys.Utilities.Util.PostJsonToServiceWithNoParams(
+              ReiSys.Utilities.Util.BaseUrl +
+                "Platform/Interface/Services/SessionService.aspx" +
+                "/GetServerTimeZoneOffSet"
+            ).d;
+          var ServerGMTOffset = CalculateGMTOffset(serverTimeZoneOfset * -1);
+          serverUTCDate.setMinutes(
+            serverDate.getMinutes() + serverTimeZoneOfset
+          );
+
+          var timeDiff = Math.abs(serverUTCDate - ClientUTCDate);
+
+          var dateCorrect = timeDiff < 59000;
+          // alert(timeDiff +''+ dateCorrect);
+          if (!dateCorrect) {
+            ReiSys.Layout.Messages.SystemMessage.AddMessage(message);
+            ReiSys.Layout.Messages.SystemMessage.SetVisibility(true);
+          }
+        });
+      }
+
+      function CalculateGMTOffset(offset) {
+        var offsetInHrs = Math.floor(offset / 60);
+        var offsetInMins = offset % 60;
+
+        if (offsetInHrs > 0) {
+          offsetInHrs = "+" + offsetInHrs;
+        }
+
+        if (offsetInMins == 0) {
+          offsetInMins = "00";
+        }
+
+        var GMTOfset = " ( GMT" + offsetInHrs + ":" + offsetInMins + " )";
+
+        return GMTOfset;
+      }
+    </script>
+    <!-- End Platform preferencePanel ------------------------------------------------------------------------------->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./files/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./files/platform-layout-fluid.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./files/layoutko.min.css" />
+
+    <div id="divTopBannerRoot">
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="./files/newtopbannerko.min.css"
+      />
+      <div class="hhsBanner">
+        <img class="hhsLogo" src="./files/hhsLogoWhite.webp" alt="HHS Logo" />
+        <a class="hhsLink" href="https://www.hrsa.gov/" target="_blank"
+          >Health Resources &amp; Services Administration</a
+        >
+      </div>
+
+      <div id="topnav-panel" role="banner" data-bind="visible:visible">
+        <div
+          class="navbar-default"
+          data-bind="visible:!collapsed()"
+          role="application"
+        >
+          <div class="row justify-content-between navSection">
+            <div class="col logo-nav__section">
+              <div class="logowrapper2" id="logowrapper2">
+                <a
+                  class="hrsa-logo-new"
+                  data-bind="attr: {href: mainNav().homePageUrl}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx"
+                >
+                  <img
+                    src="./files/HRSALogo.png"
+                    height="50"
+                    alt="HRSA Electronic Handbooks"
+                  />
+                  <span class="sr-only">Navigation Link</span>
+                </a>
+                <h1 class="title">
+                  <a
+                    href="http://www.hrsa.gov/"
+                    class="site-name"
+                    aria-label="Health Resources and Services Administration (H R S A) Electronic Handbooks"
+                    >HRSA</a
+                  >
+                  <!-- <span   class="sr-only">Health Resources and Services Administration (H R S A) </span>Electronic Handbooks -->
+                </h1>
+              </div>
+              <div
+                data-bind="template: { name: &#39;toptabs&#39;, data: mainNav }"
+              >
+                <div
+                  class="new__navigation"
+                  data-bind="if: visible"
+                  aria-live="assertive"
+                >
+                  <nav
+                    id="mainMenu"
+                    class="test mainnav"
+                    role="navigation"
+                    aria-label="Main Navigation"
+                  >
+                    <ul class="new__nav-menu" role="menu">
+                      <!-- ko foreach: menuItems -->
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="menuHome"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/EPSExternal/Home"
+                          id="toptabed92715a-da19-43e3-bb26-64bf41445b29"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <span class="sr-only">Home</span>
+                          </div>
+                          <div data-bind="if: text !== &#39;Home&#39;"></div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="tasksTab"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/2010/WebEPSExternal/Interface/PendingTask/PendingTasks.aspx"
+                          id="toptabe3b14c0e-d51c-42f2-abb6-417235db145e"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">Tasks</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Pending Work for You</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="OrganizationsTab"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/2010/WebEPSExternal/Interface/Organization/MyRegisteredOrganizations.aspx"
+                          id="toptab37e6f860-022c-4f00-bcf7-12544ab909f5"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">Organization</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Institution files and archives</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item active"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="grantsTab"
+                      >
+                        <a
+                          class="new__menulink active"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx"
+                          id="toptabac89f407-3778-4c06-8cab-352c8c797ec9"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">Grants</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Grant programs files and archives</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="freeClinicsTab"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/WebFTCA2External/Interface/FCL/Portfolio/FreeClinicsPortfolio.aspx"
+                          id="toptabc30826c8-897f-41cd-9bdd-41dc5484c802"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">Free Clinics</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Free Clinics</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="fQHCLALsTab"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/WebFQHCLAExternal/Interface/Designation/ViewLALPortfolio.aspx"
+                          id="toptab235f94f9-4720-409f-9801-6874136f1819"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">FQHC-LALs</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Look-Alike programs files and archives</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="dashBoardsTab"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-ers.amer.reisystems.com/ENTDashboard.Web/external/home"
+                          id="toptab5fd00b00-520b-41ed-b531-043df18ed6da"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">Dashboards</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Dashboard Home</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+
+                      <li
+                        class="nav-item"
+                        data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === &#39;Home&#39; ? &#39;menuHome&#39; : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                        role="menuitem"
+                        id="resourceTab"
+                      >
+                        <a
+                          class="new__menulink"
+                          data-bind="attr: {href:destination, id:&#39;toptab&#39; + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                          href="https://hrsautl15-is.amer.reisystems.com/EPSExternal/Common/Help"
+                          id="toptabf7067705-1096-4cf7-b3f3-d46e627f4b51"
+                        >
+                          <div data-bind="if: text === &#39;Home&#39;"></div>
+                          <div data-bind="if: text !== &#39;Home&#39;">
+                            <span
+                              class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                            ></span
+                            ><span data-bind="text: text">Resources</span>
+                            <span class="sr-only" data-bind="text: tooltip"
+                              >Resources</span
+                            >
+                            <span class="sr-only"
+                              >Press space bar to expand the navigation
+                              menu</span
+                            >
+                          </div>
+                        </a>
+                        <!-- ko if: showFlyout() && subNavGroups().length > 0 --><!-- /ko -->
+                      </li>
+                      <!-- /ko -->
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <!-- HAMBURGER MENU -->
+
+              <div class="mobile-nav-menu">
+                <div class="topnav-mobile">
+                  <button
+                    onclick="myFunction()"
+                    type="button"
+                    class="main-mobile-nav"
+                    aria-labelledby="hamburguer menu"
+                  >
+                    <i class="fa fa-bars" aria-hidden="true" role="button"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- New Search -->
+            <div class="user-search__section">
+              <div class="search_section">
+                <button
+                  type="button"
+                  class="search-button"
+                  data-bind="click: toggleSearchDropdown"
+                >
+                  <span class="search-button__text">Search </span>
+                  <i
+                    class="fa fa-search search-button__icon"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+
+                <!-- Use the 'visible' binding to toggle visibility based on the observable -->
+                <div
+                  class="search-dropdown"
+                  data-bind="visible: isSearchDropdownVisible"
+                  style="display: none"
+                >
+                  <div class="search-dd__buttongroup">
+                    <button
+                      class="search-dd__dropdown"
+                      aria-expanded="false"
+                      type="button"
+                    >
+                      Default searches
+                    </button>
+                    <ul class="search-dd__dropdown-list">
+                      <!-- List items -->
+                    </ul>
+                  </div>
+                  <div class="search-dd__text-field">
+                    <input
+                      class="search-dd__input"
+                      type="text"
+                      placeholder="Search..."
+                    />
+                  </div>
+                  <div class="suggested-search__section">
+                    <ul class="suggested-search__list-group">
+                      <li class="suggested-search__list">
+                        <button
+                          type="button"
+                          class="suggested-search__list-item"
+                        >
+                          this is a button
+                        </button>
+                      </li>
+                      <li class="suggested-search__list">
+                        <button
+                          type="button"
+                          class="suggested-search__list-item"
+                        >
+                          this is a button
+                        </button>
+                      </li>
+                    </ul>
+
+                    <button class="suggested-search__view-all">
+                      View More Results
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- USER MENU !!!!!!!!!!!!!!!!!!  -->
+            <div
+              data-bind="template: { name: &#39;userMenu&#39;, data: utilityMenu }"
+            >
+              <h2 class="hidden-offscreen">User Navigation</h2>
+              <!-- ko if: menuItems.length -->
+              <div class="user-menu__component">
+                <button
+                  class="user-menu__button"
+                  type="button"
+                  tabindex="0"
+                  data-bind="click: $parent.toggleUserMenu"
+                  aria-label="usermenu button"
+                  title="Usermenu Button"
+                >
+                  <div class="user-menu__accordion-icon">
+                    <i
+                      class="fa fa-chevron-down chev-flip"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+
+                  <div class="user-menu__text-section">
+                    <div class="user-menu__name" data-bind="text: shortName">
+                      First Lastname First Lastname First Lastname
+                    </div>
+                    <div class="user-menu__last-login" id="currentDateTime">
+                      APR 18, 2024, 03:26:01 PM
+                    </div>
+                  </div>
+
+                  <div class="user-menu__accordion-icon">
+                    <i
+                      class="fa fa-user-circle user__icon"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </button>
+
+                <div class="user-menu__panel">
+                  <div class="user-menu__panel-user">
+                    <div class="user-menu__panel-user-icon">
+                      <i
+                        class="fa fa-user-circle user__icon"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="user-menu__panel-username-section">
+                      <div class="user-menu__panel-name">
+                        <span data-bind="text: fullName"></span>
+                      </div>
+                      <div class="user-menu__panel-email">
+                        <span data-bind="text: userName"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ko foreach: menuItems -->
+                  <div class="user-menu__section-header">
+                    <span data-bind="text: text">Manage</span>
+                  </div>
+                  <div
+                    [hidden]="!isUserLoggedIn"
+                    data-bind="if: text !== &#39;Support&#39;"
+                  >
+                    <ul class="user-menu__list" data-bind="foreach: childItems">
+                      <li class="user-menu__item">
+                        <a
+                          class="listitemcolor"
+                          data-bind="text: text, attr: { href: destination }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                          href="https://hrsautl15-is.amer.reisystems.com/2010/WebEPSExternal/Interface/Common/AccessControl/ViewUpdateProfile.aspx"
+                          >View/Update Profile</a
+                        >
+                      </li>
+
+                      <li class="user-menu__item">
+                        <a
+                          class="listitemcolor"
+                          data-bind="text: text, attr: { href: destination }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                          href="https://hrsautl15-is.amer.reisystems.com/2010/WebEPSExternal/Interface/Common/ModernManageFavorites.aspx"
+                          >Manage Favorites</a
+                        >
+                      </li>
+
+                      <li class="user-menu__item">
+                        <a
+                          class="listitemcolor"
+                          data-bind="text: text, attr: { href: destination }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                          href="https://hrsautl15-is.amer.reisystems.com/2010/WebEPSExternal/Interface/Common/RecentlyAccessed/All.aspx"
+                          >View Recently Accessed</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div data-bind="if: text == &#39;Support&#39;"></div>
+
+                  <div class="user-menu__section-header">
+                    <span data-bind="text: text">Support</span>
+                  </div>
+                  <div
+                    [hidden]="!isUserLoggedIn"
+                    data-bind="if: text !== &#39;Support&#39;"
+                  ></div>
+                  <div data-bind="if: text == &#39;Support&#39;">
+                    <ul class="user-menu__list" data-bind="foreach: childItems">
+                      <li class="user-menu__item">
+                        <a
+                          class="listitemcolor"
+                          data-bind="attr: { href: destination, target: (isHelpLink === true ? &#39;_blank&#39; : &#39;&#39;) }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                          href="https://hrsautl15-is.amer.reisystems.com/EPSExternal/Common/Contact"
+                          target=""
+                        >
+                          <span data-bind="text:text">Contact Us</span>
+                          <span
+                            data-bind="visible: isHelpLink"
+                            class="fa fa-external-link fa-externallinkstyle"
+                            style="display: none"
+                          ></span>
+                          <span
+                            data-bind="visible: isHelpLink"
+                            class="sr-only"
+                            aria-haspopup="true"
+                            style="display: none"
+                            >Opens in a new window</span
+                          >
+                        </a>
+                      </li>
+
+                      <li class="user-menu__item">
+                        <a
+                          class="listitemcolor"
+                          data-bind="attr: { href: destination, target: (isHelpLink === true ? &#39;_blank&#39; : &#39;&#39;) }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                          href="https://help.hrsa.gov/display/EHBSKBFG/Index"
+                          target="_blank"
+                        >
+                          <span data-bind="text:text">EHB Help</span>
+                          <span
+                            data-bind="visible: isHelpLink"
+                            class="fa fa-external-link fa-externallinkstyle"
+                          ></span>
+                          <span
+                            data-bind="visible: isHelpLink"
+                            class="sr-only"
+                            aria-haspopup="true"
+                            >Opens in a new window</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- /ko -->
+                  <a
+                    data-bind="attr:{href: logoutUrl}"
+                    class="user-menu__item-logout"
+                  >
+                    <div class="user-menu__item-logout-text">Logout</div>
+                    <i
+                      class="fa fa-sign-out logout-icon"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- /ko -->
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx#"
+          data-bind="css:{pactive:collapsed()}, event:{click:toggle, mouseenter: showTooltip, mouseleave: hideTooltip, focus:showTooltip, blur: hideTooltip}"
+          id="expandCollapseAnchor"
+          class="btn-slide"
+        >
+          <span
+            class="sr-only"
+            data-bind="text:collapsed()?&#39;Expand Top Navigation&#39;:&#39;Collapse Top Navigation&#39;"
+            >Collapse Top Navigation</span
+          >
+        </a>
+        <!-- ko if: isTooltipOpen()  --><!-- /ko -->
+        <!-- Top Navigation Menu -->
+        <div class="mobile-nav-dropdown" id="myLinks">
+          <a
+            class="mobile-nav-link"
+            href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx#news"
+            >News</a
+          >
+          <a
+            class="mobile-nav-link"
+            href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx#contact"
+            >Contact</a
+          >
+          <a
+            class="mobile-nav-link"
+            href="https://hrsautl15-is.amer.reisystems.com/2010/Web2External/Interface/PostAward/GrantRegistration/ViewGrantPortfolio.aspx#about"
+            >About</a
+          >
+        </div>
+
+        <!-- End smartphone / tablet look -->
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+        </script>
+      </div>
+      <script type="text/html" id="globalsearch">
+        <div id="search-block">
+          <div id="TopSearch">
+            <div
+              class="gsr-category"
+              id="gsr-category"
+              style="visibility: hidden;"
+            >
+              <button
+                id="gblsearchsolrcatmenu"
+                class="btn btn-link"
+                data-bind="click: toggleCategoryMenu"
+              >
+                <span data-bind="visible: defaultSearch()">
+                  Default Searches
+                  <span class="sr-only">All Searches</span>
+                </span>
+                <span
+                  data-bind="visible: !defaultSearch(), text: categoryName()"
+                ></span>
+              </button>
+            </div>
+            <div
+              data-bind="visible: categoriesOpen(), template: { name: 'globalsearchcategories', data: $data }"
+            ></div>
+            <!--<pfm-solrsearch-categories [visible]="categoriesOpen" (categorySelected)="categorySelected($event)" (close)="toggleCategoryMenu(true)"
+                      (suggestionsToggled)="toggleSuggestions($event)"></pfm-solrsearch-categories>-->
+            <div
+              class="searchSection"
+              id="searchSection"
+              style="visibility: hidden;"
+            >
+              <!--<input id="topsearchbox" type="text" class="searchbox" title="Search Application" placeholder="Search" [value]="inputText"
+                  [formControl]="inputTextControl" (keydown.esc)="closeSearchResults()">-->
+              <input
+                id="topsearchbox"
+                type="text"
+                autocomplete="off"
+                class="searchbox"
+                title="Search Application"
+                placeholder="Search"
+                data-bind="value: inputText, valueUpdate: 'input'"
+              />
+            </div>
+
+            <div
+              data-bind="visible: suggestionsOpen(), template: { name: 'globalsearchsuggestions', data: $data }"
+            ></div>
+
+            <div
+              data-bind="visible: showNoResultFlyout(), template: { name: 'globalsearchnoresult', data: $data }"
+            ></div>
+
+            <!--<pfm-solrsearch-suggestions [visible]="suggestionsOpen" [results]="results" (close)="closeSearchResults()"></pfm-solrsearch-suggestions>-->
+
+            <button
+              id="gblsearchsolrcatmenu"
+              class="btn btn-link gsr-searchbtn"
+              data-bind="click: function() { search(); collapsesearch() }"
+            >
+              Search
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+              <span class="sr-only">All Searches</span>
+            </button>
+          </div>
+        </div>
+        <div
+          data-bind="visible: suggestionsOpen() || categoriesOpen(), click: outsideClick"
+          class="shadowbox"
+        ></div>
+        <!--(click)="outsideClick()"-->
+      </script>
+      <script type="text/html" id="globalsearchcategories">
+        <div class="searchCategoryFlyout">
+          <ul class="cmMenuVertical">
+            <li
+              class="item"
+              data-bind="css: {active: defaultSearch}, click: selectDefault"
+            >
+              <button
+                class="btn btn-link"
+                id="gblsearchsolrcatdefault"
+                data-bind="event: {keydown: function(data, event) { return onKeyDown(data, event, 'default'); }}"
+              >
+                All
+              </button>
+            </li>
+            <!-- ko foreach: groups() -->
+            <li
+              class="item"
+              data-bind="css: {active: $parents[1].category() && $parents[1].category() !== null && $parents[1].category().id === id}, click: function(data, event) { return $parents[1].selectCategory(data, event, $parents[1]); }"
+            >
+              <button
+                class="btn btn-link"
+                data-bind="id: 'gblsearchsolrcat' + ($index()+1), event: {keydown: function(data, event) { return onKeyDown(data, event, 'category'); }}"
+              >
+                <i class="fa" data-bind="css: $parent.getIconClass($data)"></i>
+                <span data-bind="text: text"></span>
+              </button>
+            </li>
+            <!-- /ko -->
+            <li class="item separator">
+              <button
+                class="btn btn-link"
+                id="gblsearchsolrtogsugg"
+                data-bind="event: {keydown: function(data, event) { return onKeyDown(data, event, 'toggleSuggestions'); }}, click: toggleSuggestions"
+              >
+                <span
+                  data-bind="text: 'Turn ' + (showSuggestions() ? 'Off' : 'On') + ' Suggestions'"
+                ></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </script>
+      <script type="text/html" id="globalsearchsuggestions">
+        <div id="gsr-results">
+          <div class="flyoutcontainer">
+            <div class="flyoutbanner">
+              <span class="left">Search Results </span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="flyoutleft">
+              <div id="DefaultLeftt">
+                <div class="leftcontent" id="callupon">
+                  <div class="clearfix">&nbsp;</div>
+                  <div>
+                    <span class="titles">Default Searches</span>
+                    <ul class="listassistcontainer" id="LeftSelectionList">
+                      <!-- ko foreach: results() -->
+                      <li
+                        class="searchlinkwrapper"
+                        data-bind="css: {active: active}, event: {mouseover: function(data, event) { return $parents[1].onIndexClicked(data, event, $index()); }}"
+                      >
+                        <button
+                          class="btn btn-link searchlink"
+                          data-bind="click: function(data, event) { return $parent.onIndexClicked(data, event, $index()); }, event: {keydown: function(data, event) { return $parents[1].resultsKeyDown(data, event, $index(), 'category'); }}"
+                        >
+                          <span data-bind="text: $data.text"></span>
+                          <span
+                            data-bind="visible: $data.items && $data.items.length > 0, text: ' ' + ($data.items ? '(' + $data.items.length + ')' : '')"
+                          ></span>
+                        </button>
+                      </li>
+                      <!-- /ko -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flyoutright" id="RightSelection">
+              <div id="Tasks">
+                <div class="innerScroll1">
+                  <span class="righttitles">Top Results</span>
+                  <br />
+                  <ul class="listedright">
+                    <!-- ko foreach: results()[activeIndex()].items -->
+                    <li>
+                      <div>
+                        <div
+                          data-bind="attr: {title: $data.hasPermission ? '': 'You don\'t have permissions to access this grant.\nNavigate to the &quot;Add Grant To Portfolio&quot; page to add this grant to your portfolio.'}"
+                        >
+                          <span
+                            class="icon"
+                            style="display:inline-block; vertical-align: middle;"
+                            data-bind="css: $parents[1].getIconClass($data)"
+                          ></span>
+                          <a
+                            data-bind="attr: {href: ($data.hasPermission? $data.url: 'javascript:void(0)'),class: $data.hasPermission ? 'searchresult':'searchresultdisabled',
+                                           target: ($data.openInPopup === true ? '_blank' : '_self')},
+                                           event: {keydown: function(data, event) { return $parents[1].resultsKeyDown(data, event, $index(), 'link'); }
+                                           }"
+                            disabled
+                          >
+                            <span data-bind="text: $data.text"></span>
+                          </a>
+                          <span
+                            data-bind="visible: $data.openInPopup === true"
+                            class="externalIcon"
+                            style="vertical-align: middle; margin-top: 0; height: 16px;"
+                          ></span>
+                          <span
+                            data-bind="visible: $data.openInPopup === true"
+                            class="sr-only"
+                            >opens in a new window</span
+                          >
+                        </div>
+                      </div>
+                    </li>
+                    <!-- /ko -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+      <script type="text/html" id="globalsearchnoresult">
+        <div id="gsr-emptyresults">
+          <div class="flyoutcontainer">
+            <div class="flyoutbanner">
+              <span class="left"> Search Results </span>
+              <div class="clearfix"></div>
+            </div>
+            <div class="flyoutleft" id="RightSelection">
+              <div id="tasks">
+                <div class="innerScroll1">
+                  <span class="righttitles">No results found</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+      <script type="text/html" id="toptabs">
+        <div
+          class="new__navigation"
+          data-bind="if: visible"
+          aria-live="assertive"
+        >
+          <nav
+            id="mainMenu"
+            class="test mainnav"
+            role="navigation"
+            aria-label="Main Navigation"
+          >
+            <ul class="new__nav-menu" role="menu">
+              <!-- ko foreach: menuItems -->
+              <li
+                class="nav-item"
+                data-bind="css: {active:active, open:$root.selectedTab() === $data.markupId}, attr: {id: $data.text === 'Home' ? 'menuHome' : $data.markupId}, event: {mouseleave: $parent.mouseLeave}"
+                role="menuitem"
+              >
+                <a
+                  class="new__menulink"
+                  data-bind="attr: {href:destination, id:'toptab' + groupId}, css: {active:active}, event: {keydown: $parent.onKeypress, mouseenter: $parent.mouseEnter, click: setActiveTabKO}"
+                >
+                  <div data-bind="if: text === 'Home'">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span class="sr-only">Home</span>
+                  </div>
+                  <div data-bind="if: text !== 'Home'">
+                    <span
+                      class="glyphicon visible-xs-inline hidden-md hidden-lg"
+                    ></span
+                    ><span data-bind="text: text"></span>
+                    <span class="sr-only" data-bind="text: tooltip"></span>
+                    <span class="sr-only"
+                      >Press space bar to expand the navigation menu</span
+                    >
+                  </div>
+                </a>
+                <!-- ko if: showFlyout() && subNavGroups().length > 0 -->
+                <div
+                  data-bind="attr: {id: 'toptab' + $data.groupId}, stopBinding: true"
+                >
+                  <!--<pre data-bind="text: ko.toJSON($data, null, 2)"></pre>-->
+                  <div class="sub-nav open" aria-live="assertive">
+                    <ul data-bind="foreach:subNavGroups()">
+                      <li
+                        data-bind="if:$parent.showFlyout(), attr:{id:'group-' + $data.text}"
+                        class="group-title"
+                      >
+                        <span data-bind="text: text"></span>
+                        <ul class="sub-nav-group" data-bind="foreach:items">
+                          <li
+                            data-bind="visible: !$data.videoItems, attr:{group:text}, event: {mouseleave: mouseLeave}"
+                            class="subItem"
+                          >
+                            <!-- ko if: helpFlag -->
+                            <a
+                              data-bind="text: text, attr:{href:helpUrl}, event: {keydown: function(data, event) { return onKeypress(data, event, $parents[1], $root, 'flyoutlink', $parent); }}"
+                              target="_blank"
+                            ></a>
+                            <span class="externalIcon-white"></span>
+                            <!--<span class="sr-only">Opens in a new window</span>-->
+                            Opens in a new window
+                            <!-- /ko -->
+                            <!-- ko ifnot: helpFlag -->
+                            <a
+                              data-bind="attr:{href:destination, target: ($data.isPopUp === true ? '_blank' : null)}, event: {keydown: function(data, event) { return onKeypress(data, event, $parents[1], $root, 'flyoutlink', $parent); }}"
+                            >
+                              <span data-bind="text: text"></span>
+                              <span
+                                data-bind="visible: $data.isPopUp === true"
+                                class="externalIcon-white"
+                              ></span>
+                              <!--<span data-bind="visible: $data.isPopUp === true" class="sr-only">Opens in a new window</span>-->
+                            </a>
+                            <!-- /ko -->
+                            <!-- ko if: hasPopOverContent -->
+                            <a class="popover-info-icon">
+                              <img
+                                class="popover-info-icon"
+                                tabindex="0"
+                                aria-hidden="true"
+                                data-bind="attr:{src:$parents[1].getImageUrl(), id: 'info-' + $data.text.replace(new RegExp(' ', 'g'), '') + $data.displayOrder}, event: {mouseenter: mouseEnter, keydown: function(data, event) { return keyDown(data, event, $root, 'popover', $parentContext.$index()); }}"
+                              />
+                            </a>
+                            <div data-bind="if: showPopover()">
+                              <div
+                                data-bind="visible: showPopover(), template: { name: 'toptabs-popover', data: $data }"
+                              ></div>
+                            </div>
+                            <!-- /ko -->
+                          </li>
+                          <li
+                            data-bind="foreach:$data.videoItems"
+                            class="video"
+                            style="padding-top: 0;"
+                          >
+                            <a
+                              data-bind="attr:{href:url}"
+                              aria-hidden="true"
+                              target="_blank"
+                              class="video-placeholder"
+                              style="padding-bottom: 5px;"
+                              >Electronic HandBooks (EHBs) - New Navigation</a
+                            >
+                            <div
+                              data-bind="style:$parents[2].getVideoStyle(thumbnailUrl)"
+                            ></div>
+                            <div class="video-title">
+                              <a
+                                data-bind="text:displayText, attr:{href:url}, event: {keydown: function(data, event) { return $parent.onKeypress(data, event, $parents[2], $root, 'video', $parent); }}"
+                                target="_blank"
+                              ></a>
+                              <p data-bind="text:duration"></p>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- ko if: $index() >= 3 && $index() % 3 === 0 -->
+                      <br />
+                      <!-- /ko -->
+                    </ul>
+                  </div>
+                </div>
+                <!-- /ko -->
+              </li>
+              <!-- /ko -->
+            </ul>
+          </nav>
+        </div>
+      </script>
+      <script type="text/html" id="toptabs-flyout"></script>
+      <script type="text/html" id="toptabs-popover">
+        <div
+          id="searchoverlaywrapper"
+          class="searchoverlaywrapper"
+          data-bind="with:popOverContent, style:{top:top(), left:left()}"
+          aria-live="assertive"
+        >
+          <div class="overlayarrow">&nbsp;</div>
+          <div class="searchoverlaycontainer shadow">
+            <div class="searchoverlaytitle">
+              <div class="left Grants" data-bind="text:title"></div>
+            </div>
+            <div class="subtitle hover" data-bind="text:$data.subTitle"></div>
+            <div class="content">
+              <div class="list-title">FAQs</div>
+              <ul
+                class="left-list"
+                data-bind="foreach:faqItems, css:{'left-list':videoLinks.length > 0, 'left-only':videoLinks.length === 0}"
+              >
+                <li>
+                  <a
+                    data-bind="text:text, attr:{href:destination}, event: {keydown: function(data, event) { return $parents[1].keyDown(data, event, $parents[1], 'faqlink', $index()); }}"
+                    target="_blank"
+                  ></a>
+                </li>
+              </ul>
+              <ul class="right-list" data-bind="foreach:videoLinks">
+                <li class="list-title">Related Video(s)</li>
+                <li>
+                  <a
+                    data-bind="attr:{href:url}, event: {keydown: function(data, event) { return $parents[1].keyDown(data, event, $parents[1], 'videolink', $index()); }}"
+                    target="_blank"
+                  >
+                    <span data-bind="text: displayText"></span>
+                    <span class="externalIcon-extlink"></span>
+                    <span class="sr-only">Opens in a new window</span>
+                  </a>
+                </li>
+              </ul>
+              <div data-bind="visible: viewAllUrl !== '#'">
+                <a
+                  data-bind="attr:{href:viewAllUrl, id:'topbannerviewall' + $parent.groupId + $index() }, event: {keydown: function(data, event) { return $parent.keyDown(data, event, $parent, 'viewall', $index(), $parents[2], $parents[3], $root); }}"
+                  class="hover"
+                  target="_blank"
+                >
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>View All
+                  FAQs<span class="sr-only">FAQs</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+      <script type="text/html" id="userMenu">
+        <h2 class="hidden-offscreen">User Navigation</h2>
+        <!-- ko if: menuItems.length -->
+        <div class="user-menu__component">
+          <button
+            class="user-menu__button"
+            type="button"
+            tabindex="0"
+            data-bind="click: $parent.toggleUserMenu"
+            aria-label="usermenu button"
+            title="Usermenu Button"
+          >
+            <div class="user-menu__accordion-icon">
+              <i class="fa fa-chevron-down chev-flip" aria-hidden="true"></i>
+            </div>
+
+            <div class="user-menu__text-section">
+              <div class="user-menu__name" data-bind="text: shortName"></div>
+              <div class="user-menu__last-login" id="currentDateTime"></div>
+            </div>
+
+            <div class="user-menu__accordion-icon">
+              <i class="fa fa-user-circle  user__icon" aria-hidden="true"></i>
+            </div>
+          </button>
+
+          <div class="user-menu__panel">
+            <div class="user-menu__panel-user">
+              <div class="user-menu__panel-user-icon">
+                <i class="fa fa-user-circle  user__icon" aria-hidden="true"></i>
+              </div>
+              <div class="user-menu__panel-username-section">
+                <div class="user-menu__panel-name">
+                  <span data-bind="text: fullName"></span>
+                </div>
+                <div class="user-menu__panel-email">
+                  <span data-bind="text: userName"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ko foreach: menuItems -->
+            <div class="user-menu__section-header">
+              <span data-bind="text: text"></span>
+            </div>
+            <div [hidden]="!isUserLoggedIn" data-bind="if: text !== 'Support'">
+              <ul class="user-menu__list" data-bind="foreach: childItems">
+                <li class="user-menu__item">
+                  <a
+                    class="listitemcolor"
+                    data-bind="text: text, attr: { href: destination }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                    class="user-menu__list-item"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div data-bind="if: text == 'Support'">
+              <ul class="user-menu__list" data-bind="foreach: childItems">
+                <li class="user-menu__item">
+                  <a
+                    class="listitemcolor"
+                    data-bind="attr: { href: destination, target: (isHelpLink === true ? '_blank' : '') }, event: { keydown: $parent.keyDown.bind($data, $parentContext.$index(), $index()) }"
+                  >
+                    <span data-bind="text:text"></span>
+                    <span
+                      data-bind="visible: isHelpLink"
+                      class="fa fa-external-link fa-externallinkstyle"
+                    ></span>
+                    <span
+                      data-bind="visible: isHelpLink"
+                      class="sr-only"
+                      aria-haspopup="true"
+                      >Opens in a new window</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- /ko -->
+            <a
+              data-bind="attr:{href: logoutUrl}"
+              class="user-menu__item-logout"
+            >
+              <div class="user-menu__item-logout-text">Logout</div>
+              <i class="fa fa-sign-out logout-icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /ko -->
+      </script>
+    </div>
+  </body>
+</html>
