@@ -894,3 +894,7 @@ li.user-menu__item:hover {
   color: #fff !important;
   text-decoration: none !important;
 }
+
+#content-center {
+  margin-top: 0;
+}
