@@ -1,0 +1,194 @@
+/****************************
+***   System Messages	   ***
+****************************/
+.msg-base {
+  background: url(../../images/shadow-top.png) repeat-x 0 0;
+  padding: 10px 10px 0px 10px;
+  border: 1px solid #000000; }
+  .msg-base i {
+    padding-right: 7px;
+    font-size: 1.1rem; }
+  .msg-base .msgTitle {
+    font-weight: 600;
+    font-size: 1.1rem; }
+  .msg-base ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    padding-top: 5px; }
+    .msg-base ul li {
+      list-style: none;
+      padding-bottom: 5px; }
+
+.msg-faimg {
+  font-size: 1.65rem !important; }
+
+.internalNote {
+  border-radius: 6px;
+  background-color: #deecf3;
+  border: 1px solid #abcbdb;
+  color: #104d6b;
+  padding-bottom: 10px; }
+  .internalNote img {
+    height: 16px;
+    width: 16px; }
+
+.note-message {
+  border-color: #c2d4e4;
+  border-style: solid;
+  border-width: 1px 1px 1px 6px;
+  background-color: #e9eff6;
+  color: #17568e; }
+  .note-message img {
+    margin-right: 5px;
+    height: 16px;
+    width: 16px; }
+
+.confirm-message {
+  border-color: #d2d2ac;
+  border-style: solid;
+  border-width: 1px 1px 1px 6px;
+  background-color: #f3f0d6;
+  color: #58521c; }
+  .confirm-message img {
+    height: 16px;
+    width: 16px; }
+
+.success-message {
+  border-color: #B9D9B7;
+  border-style: solid;
+  border-width: 1px 1px 1px 6px;
+  background-color: #DEF2E9;
+  color: #167449; }
+  .success-message img {
+    height: 16px;
+    width: 16px; }
+
+.failure-message {
+  border-color: #dfc6c8;
+  border-style: solid;
+  border-width: 1px 1px 1px 6px;
+  background-color: #fcf4f5;
+  color: #dd2020;
+  padding-bottom: 5px; }
+  .failure-message img {
+    margin-top: -5px;
+    height: 16px;
+    width: 16px; }
+  .failure-message .fielderr_head {
+    font-weight: bold;
+    color: #414141; }
+  .failure-message .fielderr_ins {
+    color: #414141; }
+  .failure-message #val_msgarea {
+    border-top: 1px dotted #ddcfac;
+    margin-top: 5px;
+    padding-top: 10px; }
+  .failure-message .fielderr_list {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .failure-message .fielderr_list li {
+      display: inline;
+      margin-right: 10px; }
+
+.warning-message {
+  border-color: #e9d9c6;
+  border-style: solid;
+  border-width: 1px 1px 1px 6px;
+  background-color: #fceedd;
+  color: #86490c; }
+  .warning-message img {
+    height: 16px;
+    width: 16px; }
+
+.alert-message {
+  border-color: #f9edb3;
+  border-style: solid;
+  border-width: 1px 1px 1px 6px;
+  background-color: #fdf7d6;
+  color: #806d06; }
+  .alert-message img {
+    height: 16px;
+    width: 16px; }
+
+.notesColImg {
+  display: block;
+  float: left; }
+
+.notesColText {
+  display: block;
+  float: inherit;
+  padding-left: 25px;
+  padding-bottom: 4px; }
+
+.sysAnnouncement {
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  padding: 15px;
+  margin-left: -25px;
+  background: #d0997a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d0997a 49%, #c97a52 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(49%, #d0997a), color-stop(100%, #c97a52));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #d0997a 49%, #c97a52 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #d0997a 49%, #c97a52 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #d0997a 49%, #c97a52 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d0997a 49%, #c97a52 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0997a', endColorstr='#c97a52',GradientType=0 );
+  /* IE6-9 */ }
+  .sysAnnouncement .messageGL {
+    background: url(../images/explain.svg) no-repeat 0 0;
+    padding-left: 20px;
+    color: #000000;
+    font-weight: 600; }
+    .sysAnnouncement .messageGL .hidden-offscreen {
+      display: none; }
+
+.sysAlertsGL_fixed_position {
+  position: relative;
+  top: 0;
+  margin-left: 0px;
+  width: 100%;
+  z-index: 1050;
+  background-color: #fff;
+  border-bottom: 1px solid #0a4462;
+  color: #7e330f;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: auto;
+  padding-top: 3px;
+  text-align: center;
+  padding-bottom: 3px; }
+  .sysAlertsGL_fixed_position .messageGL {
+    background: url(../images/explain.png) no-repeat 0 0;
+    padding-left: 20px;
+    color: #000000;
+    font-weight: 600; }
+
+.sysAlertsGL_fixed_position.hideItem {
+  visibility: hidden; }
+
+.sysAlertsGL_fixed_position.showItem {
+  visibility: visible; }
+
+.page-xs .sysAlertsGL_fixed_position.showItem + .navbar {
+  position: relative;
+  margin-bottom: -60px; }
+
+.page-sm .sysAlertsGL_fixed_position.showItem + .navbar {
+  position: relative;
+  margin-bottom: -60px; }
+
+.page-md .sysAlertsGL_fixed_position.showItem + .navbar {
+  position: relative;
+  margin-bottom: -60px; }
+
+.page-lg .sysAlertsGL_fixed_position.showItem + .navbar {
+  position: relative;
+  margin-bottom: -60px; }

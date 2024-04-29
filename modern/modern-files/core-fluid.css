@@ -1,0 +1,308 @@
+/************************************************************
+***       Core CSS of PFM using Fluid Layouts     	     ***
+*** This contains the fluid layout css for all elements ***
+********************************************************/
+/*** VARIABLE ***/
+.dummy-class {
+  background: #81c2f3; }
+
+/*** MIXIN ***/
+/************************************
+***	Side Menu Variable Declarations   **
+************************************/
+/***	Side Menu Mixins Declarations   **/
+/************************************
+***	External Navigation Menu Variable & Mixin Declarations   **
+************************************/
+/********************************/
+/***  Table Option Variables  ***/
+/********************************/
+/*$editable-table-secondary-color:#F9F5E4;*/
+/*Tabs Mixins*/
+/*** Card Mixins ***/
+/*************************/
+/**       Buttons      **/
+/*************************/
+/** fonts  (Important- Do not change)**/
+body {
+  /*font-size:100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+  font-size: 12px;
+  line-height: 18px;
+  color: #414141;
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: inherit;
+  font-style: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+/** block-level elements **/
+p, dl, pre, table, fieldset, blockquote, label {
+  margin: 0; }
+
+label {
+  font-weight: normal;
+  display: inline; }
+
+/*Anchor Link */
+A:focus {
+  color: #92320a;
+  outline: 1px solid #80B4DB;
+  text-decoration: underline !important; }
+
+A:visited {
+  text-decoration: none; }
+
+A:hover, a:focus {
+  color: #92320a;
+  text-decoration: underline !important; }
+
+A.disabled {
+  color: #727272 !important;
+  cursor: not-allowed; }
+
+/** abbreviations **/
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap; }
+
+.nowrap {
+  white-space: nowrap; }
+
+.fa-increaseIcon {
+  font-size: 1.7rem; }
+
+.fa-green {
+  color: green; }
+
+.fa-yellow {
+  color: #FFD700; }
+
+.fa-red {
+  color: #8B1A1A; }
+
+.fa-blue {
+  color: #014c8c; }
+
+/*Data Entry*/
+.form-group {
+  background-color: #ffffff;
+  min-height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0px;
+  margin-right: 0px !important;
+  margin-left: 0px !important; }
+  .form-group .control-label {
+    padding: 10px 0px;
+    color: #6d6d6d;
+    font-weight: bold; }
+  .form-group .control-input {
+    background-color: #f4f6f9 !important;
+    padding: 10px; }
+  .form-group .input-group {
+    padding: 10px 15px 19px 0px !important;
+    display: block; }
+    .form-group .input-group .form-control {
+      width: 100%; }
+
+.form-control {
+  border-radius: 0px !important;
+  padding: 12px 10px;
+  font-size: 1.2rem; }
+
+select.form-control:not([size]):not([multiple]) {
+  height: 28px;
+  padding: 5px; }
+
+input,
+textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #eee;
+  font-size: 1.2rem; }
+
+input,
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eee;
+  opacity: 1;
+  font-size: 1.2rem; }
+
+input,
+textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #eee;
+  opacity: 1;
+  font-size: 1.2rem; }
+
+input,
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #eee;
+  opacity: 1;
+  font-size: 1.2rem; }
+
+.modal {
+  z-index: 900000 !important; }
+
+.card {
+  border: 0px solid; }
+  .card .card-header {
+    padding: 0.2rem;
+    background-color: #fff;
+    border-bottom: 0px; }
+    .card .card-header h2.sectionTitle {
+      width: 100%;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.33rem;
+      display: inline-block;
+      padding: 4px 5px;
+      margin: 0;
+      line-height: 1.9;
+      white-space: nowrap;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-bottom: 2px solid #97B4C5;
+      background-color: #d4e4f1;
+      border-left: 1px solid #ABCBDB;
+      border-right: 1px solid #ABCBDB;
+      border-top: 1px solid #ABCBDB;
+      color: #0e3c58; }
+      .card .card-header h2.sectionTitle i {
+        color: #0e3c58 !important; }
+    .card .card-header .text-muted h2.sectionTitle {
+      color: #676767 !important;
+      background: #f3f3f3;
+      border-color: #f3f3f3; }
+      .card .card-header .text-muted h2.sectionTitle :hover {
+        cursor: not-allowed; }
+      .card .card-header .text-muted h2.sectionTitle i {
+        color: #676767 !important; }
+  .card .card-block {
+    padding: 0.5rem 1.25rem; }
+
+.instructionText {
+  font-weight: normal;
+  font-style: italic;
+  margin: 3px 0px; }
+
+.commentsTextarea {
+  margin: 1em 0 0.5em 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 9px;
+  color: #2e4e65 !important;
+  border-bottom: 1px solid #2e4e65; }
+
+.alert {
+  border-radius: 0px; }
+
+h2.main_title {
+  font-size: 1.33rem;
+  color: #92320a;
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-top: 10px; }
+
+.table-info, .table-info > td {
+  background-color: #ecf6fb;
+  border-bottom: 1px solid #d9edf7; }
+
+.page-header {
+  border-bottom: 0px; }
+
+#mcphDCPrint .fc-label, #mcphDCPrint .fc-total {
+  padding: 10px;
+  display: inline; }
+
+.totalNumber {
+  background-color: #f4f9fe;
+  padding: 10px;
+  border: 1px solid #97B4C5;
+  text-transform: capitalize; }
+
+.has-danger {
+  color: #9b2622; }
+  .has-danger .form-check-label, .has-danger .col-form-label {
+    color: #414141; }
+
+/*
+IE11 compatibility - font download disabled in HRSA - https://technet.microsoft.com/itpro/windows/keep-secure/block-untrusted-fonts-in-enterprise#Turn_on_and_use_the_Blocking_untrusted_fonts_feature
+*/
+@media all and (-ms-high-contrast: none) {
+  .fa-minus-circle {
+    background-image: url(../images/fa_minus_circle.png);
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+    background-size: 11px; }
+  .fa-times-circle {
+    background-image: url(../images/fa_times_circle.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    background-size: 11px; }
+  .alert .fa-minus-circle {
+    background-image: url(../images/fa_minus_circle.png);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: 0px 0px; }
+  .alert .fa-times-circle {
+    background-image: url(../images/fa_times_circle.png);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: 0px 0px; }
+  .fa-exclamation-circle {
+    background-image: url(../images/fa_exclamation_circle.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    background-size: 12px; }
+  .form-group .fa-minus-circle {
+    background-image: url(../images/fa_minus_circle.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    background-size: 11px; }
+  .form-group .fa-exclamation-circle {
+    background-image: url(../images/fa_exclamation_circle.png);
+    background-repeat: no-repeat;
+    background-position: -1px 0px;
+    background-size: 12px; }
+  .fa-star {
+    background-image: url(../images/fa_star.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    background-size: 8px; }
+  .reqMsg .fa-star {
+    background-image: url(../images/fa_star.png);
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    background-size: 11px; }
+  .fa-caret-right {
+    background-image: url(../images/fa_caret_right.png);
+    background-repeat: no-repeat;
+    background-position: -2px 1px; }
+  .fa-caret-down {
+    background-image: url(../images/fa_caret_down.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px; }
+  .fa-comments-o {
+    background-image: url(../images/fa_comments_o.png);
+    background-repeat: no-repeat;
+    background-position: 1px 2px; }
+  .fa-plus {
+    background-image: url(../images/fa_plus.png);
+    background-repeat: no-repeat;
+    background-position: -1px -1px; }
+  button .fa-times {
+    background-image: url(../images/fa_times_a.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    background-size: 10px; }
+  .fa-sticky-note {
+    background-image: url(../images/fa_sticky_note.png);
+    background-repeat: no-repeat; } }

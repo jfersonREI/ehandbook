@@ -1,0 +1,104 @@
+/**************** MENU BAR TO CONTEXT MENU ****************/
+md-menu-bar button {
+  padding: 2px 10px;
+  background-color: #ffffff;
+  border: 0px solid;
+  color: #337ab7;
+  font-size: 1.4rem; }
+
+md-menu-bar button:hover {
+  background-color: #E5F0FC; }
+
+.md-open-menu-container md-menu-content {
+  padding: 0px; }
+  .md-open-menu-container md-menu-content md-menu-divider {
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .md-open-menu-container md-menu-content md-menu-item {
+    height: auto;
+    border-left: 25px solid #F1F5FB;
+    padding-left: 5px; }
+    .md-open-menu-container md-menu-content md-menu-item .md-button {
+      padding: 0px 0px;
+      height: 26px;
+      font-size: 1.2rem;
+      line-height: inherit;
+      min-height: inherit; }
+      .md-open-menu-container md-menu-content md-menu-item .md-button span {
+        height: auto; }
+  .md-open-menu-container md-menu-content md-menu-item.sub-section {
+    color: #612323;
+    border-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .md-open-menu-container md-menu-content md-menu-item.sub-section .md-button {
+      font-weight: bold;
+      cursor: default; }
+    .md-open-menu-container md-menu-content md-menu-item.sub-section .md-button:focus, .md-open-menu-container md-menu-content md-menu-item.sub-section .md-button:hover {
+      background-color: #ffffff; }
+
+.btn-group .btn-link {
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 1; }
+
+.btn-group .btn-link:hover {
+  background-color: #E5F0FC; }
+
+.btn-group .btn-link.dropdown-toggle {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  right: 0px;
+  z-index: 2; }
+
+.btn-group .btn-link.dropdown-toggle:hover {
+  background-color: #E5F0FC; }
+
+.btn-group ul.dropdown-menu.cmMenuVertical {
+  left: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px; }
+  .btn-group ul.dropdown-menu.cmMenuVertical li {
+    padding: 0px 5px 2px 10px;
+    margin-bottom: -1px; }
+  .btn-group ul.dropdown-menu.cmMenuVertical li.cmheader, .btn-group ul.dropdown-menu.cmMenuVertical li.cmHeader {
+    font-size: 12px;
+    color: #612323;
+    font-weight: 600; }
+  .btn-group ul.dropdown-menu.cmMenuVertical li.cmSubheader {
+    border-left: 25px solid #F1F5FB;
+    font-size: 1.2rem;
+    color: #612323;
+    font-weight: 600; }
+  .btn-group ul.dropdown-menu.cmMenuVertical li.cmGroupHeader {
+    color: #3c3c3c;
+    font-weight: bold;
+    clear: both;
+    padding: 2px,8px,1px,2px;
+    display: block; }
+  .btn-group ul.dropdown-menu.cmMenuVertical li.divider {
+    margin: 0px 0px 5px 0px;
+    height: .05em; }
+  .btn-group ul.dropdown-menu.cmMenuVertical ul.cmTier {
+    border-left: 25px solid #F1F5FB;
+    margin-left: -10px;
+    padding-left: 0px; }
+    .btn-group ul.dropdown-menu.cmMenuVertical ul.cmTier .cmItem {
+      line-height: 14px;
+      padding-top: 4px;
+      padding-bottom: 4px; }
+    .btn-group ul.dropdown-menu.cmMenuVertical ul.cmTier li {
+      list-style: none;
+      font-size: 12px;
+      padding-left: 10px; }
+      .btn-group ul.dropdown-menu.cmMenuVertical ul.cmTier li a.cmLink > img {
+        margin-left: -30px; }
+      .btn-group ul.dropdown-menu.cmMenuVertical ul.cmTier li a.cmLink > i {
+        color: #000000;
+        margin-left: -30px;
+        height: 12px;
+        width: 12px; }
+      .btn-group ul.dropdown-menu.cmMenuVertical ul.cmTier li i + .cmText {
+        margin-left: 14px; }

@@ -1,0 +1,424 @@
+/****************************
+***    Search and List     ***
+****************************/
+.savedSearchError {
+  float: right;
+  margin-right: 120px; }
+
+#tblSearchPanel {
+  position: relative; }
+
+#btnCloseSearchPanel {
+  background: url(../../images/hrsa_theme_sprite_02.png) no-repeat scroll 0px -220px transparent;
+  cursor: pointer;
+  height: 29px;
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  width: 28px;
+  border: 0px solid; }
+
+#btnClearSearchParams {
+  float: right;
+  padding: 5px;
+  width: 4%; }
+
+.ClearSearch {
+  color: #0000ff; }
+
+.ClearSearch:hover {
+  cursor: pointer;
+  text-decoration: underline; }
+
+.module-content {
+  background-color: #f9fbfc;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #cfd7de;
+  overflow: visible;
+  display: inline-block;
+  padding: 0 16px .75em 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%; }
+  .module-content .control-label {
+    padding-left: 5px; }
+  .module-content h3 {
+    color: #0d3d5a;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-bottom: 0px;
+    text-transform: none; }
+  .module-content h4 {
+    color: #0c2c4e;
+    background-color: #e5e8f1;
+    border-bottom: 1px solid #cccccc;
+    font-weight: 600;
+    padding: 3px 5px 3px 10px;
+    text-align: left; }
+  .module-content h4.rowSavedSearchSubHeader {
+    background-color: #e5e8f1 !important;
+    background-image: none !important;
+    border-bottom: 1px solid #d6dae2 !important;
+    border-left: 0 solid #c1c5cd !important;
+    border-right: 0 solid #c1c5cd !important;
+    border-top: 0 solid #c1c5cd !important;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 95%;
+    font-size: 1.2rem; }
+  .module-content h4.rowSubheader {
+    background-color: #e5e8f1 !important;
+    background-image: none !important;
+    border-bottom: 1px solid #d6dae2 !important;
+    border-left: 0 solid #c1c5cd !important;
+    border-right: 0 solid #c1c5cd !important;
+    border-top: 0 solid #c1c5cd !important;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.2rem; }
+    .module-content h4.rowSubheader a {
+      width: 100%;
+      text-align: left;
+      color: #0c2c4e;
+      padding: 0px;
+      font-size: 1.2rem;
+      font-weight: 600; }
+  .module-content .row {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .module-content .spRow {
+    padding-top: 10px; }
+  .module-content .spContent {
+    padding: 0px; }
+    .module-content .spContent label {
+      font-weight: normal; }
+  .module-content .form-group {
+    background-color: transparent;
+    border-bottom: 0px solid;
+    padding-bottom: 10px; }
+    .module-content .form-group .input_width {
+      width: 75%; }
+    .module-content .form-group .spColLeft {
+      float: left;
+      width: 45%; }
+      .module-content .form-group .spColLeft .spContent {
+        text-align: left;
+        padding: 0px;
+        width: 30%;
+        float: left;
+        /*margin-top:25px;*/ }
+        .module-content .form-group .spColLeft .spContent label {
+          font-weight: normal;
+          padding: 0 10px;
+          font-size: 12px; }
+      .module-content .form-group .spColLeft .spEntryfield {
+        float: right;
+        width: 70%;
+        padding-left: 10px; }
+        .module-content .form-group .spColLeft .spEntryfield label {
+          font-weight: normal;
+          display: inline; }
+        .module-content .form-group .spColLeft .spEntryfield #txtTrackingNumber {
+          margin-top: 25px;
+          font-size: 1.6rem; }
+    .module-content .form-group .spColRight {
+      float: left;
+      width: 45%; }
+      .module-content .form-group .spColRight .spContent {
+        text-align: left;
+        padding: 0px;
+        width: 30%;
+        float: left;
+        /*margin-top:25px;*/ }
+        .module-content .form-group .spColRight .spContent label {
+          font-weight: normal;
+          padding: 0;
+          font-size: 12px; }
+      .module-content .form-group .spColRight .spEntryfield {
+        float: right;
+        width: 70%;
+        padding-left: 10px; }
+        .module-content .form-group .spColRight .spEntryfield label {
+          font-weight: normal;
+          display: inline; }
+        .module-content .form-group .spColRight .spEntryfield #rbtnDisplayView {
+          margin-top: 30px; }
+  .module-content .searchsubhead {
+    padding-left: 10px;
+    font-size: 1.2rem; }
+  .module-content .btnArea {
+    float: right; }
+    .module-content .btnArea .form-control {
+      height: 30px; }
+    .module-content .btnArea ul {
+      padding-left: 0px; }
+      .module-content .btnArea ul li {
+        list-style: none;
+        display: inline; }
+    .module-content .btnArea label {
+      font-weight: normal;
+      font-size: 1.2rem; }
+  .module-content .searchNameContainer {
+    float: left; }
+    .module-content .searchNameContainer .searchNameInput {
+      height: 30px;
+      display: inline;
+      margin-right: 3px; }
+
+#andThen {
+  margin-top: 45px; }
+
+/******************* MOBILE ADJUSTMENTS *******************/
+.page-xs .form-horizontal .radio-inline, .page-sm .form-horizontal .radio-inline {
+  display: block !important;
+  margin-left: 0px;
+  padding-top: 20px; }
+
+.page-xs #AdvancedSearchPanel .input-group, .page-sm #AdvancedSearchPanel .input-group {
+  width: 100%; }
+
+.page-xs #AdvancedSearchPanel .spColLeft .spEntryfield, .page-xs #AdvancedSearchPanel .spColRight .spEntryfield, .page-sm #AdvancedSearchPanel .spColLeft .spEntryfield, .page-sm #AdvancedSearchPanel .spColRight .spEntryfield {
+  width: 100%; }
+
+.page-xs #AdvancedSearchPanel .spColLeft .spEntryfield, .page-sm #AdvancedSearchPanel .spColLeft .spEntryfield {
+  padding-right: 0px; }
+
+.page-xs #AdvancedSearchPanel, .page-xs #DisplayOptionsPanel, .page-sm #AdvancedSearchPanel, .page-sm #DisplayOptionsPanel {
+  margin-top: 20px; }
+
+.page-xs .viewarea, .page-sm .viewarea {
+  padding-top: 10px; }
+
+.page-xs ul.viewdetails, .page-sm ul.viewdetails {
+  margin-top: -10px !important;
+  text-align: left; }
+  .page-xs ul.viewdetails .glyphicon, .page-sm ul.viewdetails .glyphicon {
+    display: none; }
+  .page-xs ul.viewdetails button, .page-sm ul.viewdetails button {
+    padding: 0px; }
+
+.page-xs .module-content, .page-sm .module-content {
+  border: 1px solid #c2c8d8; }
+
+.page-xs .form-group.spRow .spColLeft, .page-xs .form-group.spRow .spColRight, .page-sm .form-group.spRow .spColLeft, .page-sm .form-group.spRow .spColRight {
+  float: none;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  width: 100%; }
+
+.page-xs .form-group.spRow .spContent, .page-sm .form-group.spRow .spContent {
+  text-align: left;
+  margin-top: 0px;
+  width: 100%; }
+
+.page-xs .form-group.spRow .spEntryfield, .page-sm .form-group.spRow .spEntryfield {
+  float: none;
+  width: 100%;
+  padding-left: 0px; }
+  .page-xs .form-group.spRow .spEntryfield .spDatePicker, .page-sm .form-group.spRow .spEntryfield .spDatePicker {
+    display: inline-block; }
+
+.page-xs .form-group.spRow #txtTrackingNumber, .page-xs .form-group.spRow #rbtnDisplayView, .page-sm .form-group.spRow #txtTrackingNumber, .page-sm .form-group.spRow #rbtnDisplayView {
+  margin-top: 0%; }
+
+.page-xs .spColRight, .page-sm .spColRight {
+  padding-top: 15px; }
+
+.page-xs #andThen, .page-sm #andThen {
+  margin-top: 0px; }
+
+.page-xs .spColRight, .page-xs .spColLeft, .page-sm .spColRight, .page-sm .spColLeft {
+  margin-bottom: 0px; }
+  .page-xs .spColRight .input-group-btn, .page-xs .spColLeft .input-group-btn, .page-sm .spColRight .input-group-btn, .page-sm .spColLeft .input-group-btn {
+    float: left; }
+  .page-xs .spColRight .control-label, .page-xs .spColLeft .control-label, .page-sm .spColRight .control-label, .page-sm .spColLeft .control-label {
+    padding: 0px 0px 5px 0px !important;
+    color: #000000;
+    font-weight: bold !important; }
+  .page-xs .spColRight input[type='text'], .page-xs .spColLeft input[type='text'], .page-sm .spColRight input[type='text'], .page-sm .spColLeft input[type='text'] {
+    width: 100% !important;
+    padding: 5px;
+    height: 25px; }
+  .page-xs .spColRight #dpAssignedDateFrom input[type='text'], .page-xs .spColRight #dpCompletedDateFrom input[type='text'], .page-xs .spColLeft #dpAssignedDateFrom input[type='text'], .page-xs .spColLeft #dpCompletedDateFrom input[type='text'], .page-sm .spColRight #dpAssignedDateFrom input[type='text'], .page-sm .spColRight #dpCompletedDateFrom input[type='text'], .page-sm .spColLeft #dpAssignedDateFrom input[type='text'], .page-sm .spColLeft #dpCompletedDateFrom input[type='text'] {
+    font-size: 1.6rem;
+    width: 70% !important; }
+  .page-xs .spColRight #dpAssignedDateFrom button, .page-xs .spColRight #dpCompletedDateFrom button, .page-xs .spColLeft #dpAssignedDateFrom button, .page-xs .spColLeft #dpCompletedDateFrom button, .page-sm .spColRight #dpAssignedDateFrom button, .page-sm .spColRight #dpCompletedDateFrom button, .page-sm .spColLeft #dpAssignedDateFrom button, .page-sm .spColLeft #dpCompletedDateFrom button {
+    height: 25px; }
+    .page-xs .spColRight #dpAssignedDateFrom button i, .page-xs .spColRight #dpCompletedDateFrom button i, .page-xs .spColLeft #dpAssignedDateFrom button i, .page-xs .spColLeft #dpCompletedDateFrom button i, .page-sm .spColRight #dpAssignedDateFrom button i, .page-sm .spColRight #dpCompletedDateFrom button i, .page-sm .spColLeft #dpAssignedDateFrom button i, .page-sm .spColLeft #dpCompletedDateFrom button i {
+      top: -2px; }
+
+.page-xs .btnArea, .page-sm .btnArea {
+  float: none !important; }
+  .page-xs .btnArea ul, .page-sm .btnArea ul {
+    padding-left: 0px; }
+    .page-xs .btnArea ul li, .page-sm .btnArea ul li {
+      list-style: none;
+      display: inline; }
+      .page-xs .btnArea ul li input[type='text'], .page-sm .btnArea ul li input[type='text'] {
+        width: 100% !important; }
+    .page-xs .btnArea ul li:first-child, .page-sm .btnArea ul li:first-child {
+      display: block; }
+    .page-xs .btnArea ul li:nth-child(2), .page-sm .btnArea ul li:nth-child(2) {
+      display: block; }
+      .page-xs .btnArea ul li:nth-child(2) input, .page-sm .btnArea ul li:nth-child(2) input {
+        float: left; }
+    .page-xs .btnArea ul li:nth-child(3), .page-sm .btnArea ul li:nth-child(3) {
+      display: block;
+      float: left; }
+      .page-xs .btnArea ul li:nth-child(3) input, .page-sm .btnArea ul li:nth-child(3) input {
+        float: right; }
+    .page-xs .btnArea ul li:nth-child(4), .page-sm .btnArea ul li:nth-child(4) {
+      display: block;
+      width: 25%;
+      float: left; }
+
+.page-xs select.form-control, .page-sm select.form-control {
+  width: 100% !important;
+  height: 35px !important;
+  font-size: 1.6rem; }
+
+.page-xs .searchNameInput, .page-sm .searchNameInput {
+  height: 30px;
+  display: inline; }
+
+.page-xs .searchNameContainer, .page-sm .searchNameContainer {
+  float: none !important; }
+
+#DisplayOptionsPanel select.form-control {
+  height: 30px !important;
+  padding-left: 0px;
+  width: 50% !important;
+  float: left; }
+
+#DisplayOptionsPanel .spContent {
+  margin-top: 0px; }
+
+#DisplayOptionsPanel .spEntryField {
+  float: left;
+  display: block;
+  width: 65%;
+  margin-left: 10px; }
+
+.page-xs #DisplayOptionsPanel .spColRight, .page-sm #DisplayOptionsPanel .spColRight {
+  clear: both; }
+
+.page-xs #DisplayOptionsPanel select.form-control, .page-sm #DisplayOptionsPanel select.form-control {
+  font-size: 1.6rem;
+  height: 30px !important;
+  padding-left: 0px;
+  width: 50% !important;
+  float: left;
+  padding-top: 2px; }
+
+.page-xs #DisplayOptionsPanel .spContent label, .page-sm #DisplayOptionsPanel .spContent label {
+  margin-top: 0px; }
+
+.page-xs #DisplayOptionsPanel .spEntryField, .page-sm #DisplayOptionsPanel .spEntryField {
+  width: 100% !important;
+  float: left;
+  margin-left: 0px; }
+
+.format {
+  font-size: .92rem;
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 5px; }
+
+/***** spot-checks ******/
+.actionPanel .btn-group button {
+  cursor: pointer !important; }
+
+.checkboxlist label {
+  font-size: 1.2rem; }
+
+@media (max-width: 991px) {
+  .checkboxlist {
+    width: 100% !important; } }
+
+/*****Search area above the grid*****/
+.winmodule {
+  padding-top: 2px; }
+  .winmodule .winmodule-content {
+    overflow: visible; }
+
+.winmodule_close {
+  height: 29px;
+  width: 28px;
+  background: transparent url(../../Images/ehb/hrsa_theme_sprite_02.png) no-repeat 0 -220px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  text-indent: -1000px;
+  border: medium none;
+  overflow: hidden; }
+
+.module {
+  border-bottom: 4px solid #E7E7E7;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%; }
+
+.module-content {
+  background-color: #F9FBFC;
+  border-top: 1px solid #CFD7DE;
+  border-bottom: 0 solid #F0F0F0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0 16px 0.75em 10px; }
+  .module-content p {
+    padding-bottom: 25px; }
+
+.module-bold {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.17rem;
+  color: #0D3D5A;
+  margin-top: 8px !important; }
+
+.module-subHead {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.17rem;
+  color: #0D3D5A;
+  margin-top: 8px !important;
+  border-bottom: 1px dotted #BFCDD8; }
+
+.module_tb {
+  padding: 4px 0; }
+  .module_tb td {
+    margin-top: 1px;
+    line-height: 15px;
+    padding-bottom: 5px; }
+  .module_tb .Tdwidth {
+    width: 15%; }
+
+.SideMenuFilter {
+  float: inherit;
+  position: absolute;
+  background-color: #E3ECF4;
+  display: none;
+  min-width: 150px;
+  cursor: pointer;
+  color: #152C40;
+  font-weight: 400;
+  border: 1px solid #A9C6DC;
+  font-size: 0.92rem;
+  border-bottom: 2px solid #7991A3;
+  border-right: 2px solid #7991A3;
+  z-index: 1;
+  margin: 20px 0 0 -10px;
+  padding: 0 0 5px; }
